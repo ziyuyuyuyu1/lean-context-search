@@ -1,0 +1,14 @@
+{
+  "updates": 100,
+  "checkpoint_updates": [
+    25,
+    50
+  ],
+  "head_dim": 128,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "alpha": 0.3,
+  "temperature": 0.07,
+  "weight_decay": 0.0001,
+  "seed": 20261001
+}

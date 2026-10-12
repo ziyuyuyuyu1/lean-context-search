@@ -1,0 +1,20 @@
+{
+  "rows": 310579,
+  "dimension": 4096,
+  "dtype": "float32",
+  "source_index_sha256": "b5f43868a9bcf154de8cc201166b2808c1e37ae2a853919071e1ededeb7acf0c",
+  "source_metadata_sha256": "787ce11ebbea7a0bc2cada223fb0399a94126fd947e40d8b26ce0b34cae7ef15",
+  "source_texts_sha256": "b0fc635291154389dbdb1df9cc49b06f1d398a0963452f84d23016c7d12a32e8",
+  "ordered_names_sha256": "21da306f27c8f3b3aea4b0dc5ef7ab47d8ba3153ca1b78a33eb6d2ff95743efe",
+  "export_sha256": "cade788f3edb0097e48ec9c39b93a18618630f352337fdea8ce876ca35a7c761",
+  "cuvs_version": "25.12.00",
+  "base_vectors_bytes": 5088526464,
+  "changed_rows": 3222,
+  "changed_passages_sha256": "2257ec1920d2663be9dca43933a671c2b3bf783c8836d43627c836676e5c311f",
+  "contexts_sha256": "9d5c44e549c5af0ea8e3b710a4f821a93488527ebd232e59ff3c992e7ba263fa",
+  "enriched_passages_sha256": "701e78d77c84100e49824a52bad9173efe5132b71be86773485020b8fd786052",
+  "mathlib_context_commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+  "lean_toolchain": "leanprover/lean4:v4.28.0-rc1",
+  "original_index_source_commit": null,
+  "embedding_limit_tokens": 40960
+}

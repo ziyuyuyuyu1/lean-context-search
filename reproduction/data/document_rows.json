@@ -1,0 +1,4178 @@
+[
+  {
+    "compact_row": 0,
+    "corpus_row": 1,
+    "name": "AList",
+    "vector_sha256": "55cd32616abd394a49b26260c41137685aa1d6370cb9a1ac2f056fdee6b58353"
+  },
+  {
+    "compact_row": 1,
+    "corpus_row": 18,
+    "name": "AddActionSemiHomClass",
+    "vector_sha256": "6eeacd01356c7e29262e5a364f5a9b45c4b5c3fe12aed7b37c596c715082499b"
+  },
+  {
+    "compact_row": 2,
+    "corpus_row": 56,
+    "name": "AddGroupSeminormClass",
+    "vector_sha256": "b1dcb7f70746c27bc801922e4aaac1bd6b9a359f45172caa0b4f531d6837a53f"
+  },
+  {
+    "compact_row": 3,
+    "corpus_row": 116,
+    "name": "AffineSubspace",
+    "vector_sha256": "8deb11c55f78a9633e0000c045f06b746f5e3b503ddc91246d6f35a6b0f307eb"
+  },
+  {
+    "compact_row": 4,
+    "corpus_row": 146,
+    "name": "ApplicativeTransformation",
+    "vector_sha256": "f78a7c961e8aa0840befe149c0f90fb455c46aae9bad6d6bd85bb3248eae88c9"
+  },
+  {
+    "compact_row": 5,
+    "corpus_row": 203,
+    "name": "BoundedGENhdsClass",
+    "vector_sha256": "e9c0d003508ec5c0b7060bb9961ad0dcc5f6b3be02f7b82c920b1c32ffc56f2b"
+  },
+  {
+    "compact_row": 6,
+    "corpus_row": 208,
+    "name": "BoundedOrder",
+    "vector_sha256": "f522f4bb7b0f6cb2bac7b30650e498454320cb16288dc52acbfe0e607caaef21"
+  },
+  {
+    "compact_row": 7,
+    "corpus_row": 209,
+    "name": "BoundedOrderHom",
+    "vector_sha256": "1376e2bd0e4ee52552a4653d0283f76d3a958cf6b295bf58a2d77e4280b26c10"
+  },
+  {
+    "compact_row": 8,
+    "corpus_row": 255,
+    "name": "ChainCompletePartialOrder",
+    "vector_sha256": "5eb07a7aec53c61088262e973fa8327236d81e394468a62e19baaf81e4583663"
+  },
+  {
+    "compact_row": 9,
+    "corpus_row": 280,
+    "name": "CoalgCat",
+    "vector_sha256": "8027e2e3143215ac0fd866de0daa0a257fc9efb0b9402c9458b3202efa1a334b"
+  },
+  {
+    "compact_row": 10,
+    "corpus_row": 301,
+    "name": "CommGroup",
+    "vector_sha256": "1618bd2236a0089b7655286ba4ec8cd328ac19c2d13a41985184ef9da8eaf8b4"
+  },
+  {
+    "compact_row": 11,
+    "corpus_row": 309,
+    "name": "CommRing",
+    "vector_sha256": "a2c143f1da7c8d9bcb0eb93b7e42403e366da11f4a8bed76fe703bbb70e69078"
+  },
+  {
+    "compact_row": 12,
+    "corpus_row": 329,
+    "name": "CompactlySupportedContinuousMapClass",
+    "vector_sha256": "56739f9514c320f9899048af41a241b961917c2223c90d99b2d63a2867e28b71"
+  },
+  {
+    "compact_row": 13,
+    "corpus_row": 342,
+    "name": "CompleteLinearOrder",
+    "vector_sha256": "53157b3d33cadc68afb56bcf5e4ca876ff4eeb1c92827527f44bcc2ec15dc855"
+  },
+  {
+    "compact_row": 14,
+    "corpus_row": 344,
+    "name": "CompletePartialOrder",
+    "vector_sha256": "22b8c68707d0e52886848f98ce5a7878f414d98633d698a60da4bb4e21e2f4da"
+  },
+  {
+    "compact_row": 15,
+    "corpus_row": 345,
+    "name": "CompleteSemilatticeInf",
+    "vector_sha256": "b10bf8d2e10b1ac8d2a709d737d6fb50e615b821bc3e2b72be5d1440c0c69c32"
+  },
+  {
+    "compact_row": 16,
+    "corpus_row": 408,
+    "name": "ContMDiffSection",
+    "vector_sha256": "1a393ee1f8d0ca569154347aa753d95f8131528cca7a5638077f915f50cf860e"
+  },
+  {
+    "compact_row": 17,
+    "corpus_row": 418,
+    "name": "ContinuousAffineEquiv",
+    "vector_sha256": "a56b3b933d5e847b8657e6c241747ab9ea56388d8686cb5549cee693c47b4149"
+  },
+  {
+    "compact_row": 18,
+    "corpus_row": 419,
+    "name": "ContinuousAffineMap",
+    "vector_sha256": "ff83733ac04630b6aff13373f35539b1f5b71c2fe10ec5227668eaa0add70e2e"
+  },
+  {
+    "compact_row": 19,
+    "corpus_row": 438,
+    "name": "ContinuousLinearEquiv",
+    "vector_sha256": "eeb893ad485be821709436d4d29a5f9bdcbe123aab3a0d67613f81d38b48ac6e"
+  },
+  {
+    "compact_row": 20,
+    "corpus_row": 455,
+    "name": "ContinuousOrderHomClass",
+    "vector_sha256": "7c1c95a3d04c8dfdccc7acc13b1ad704eabd5553ee3d8f6ac91d680926e225fa"
+  },
+  {
+    "compact_row": 21,
+    "corpus_row": 457,
+    "name": "ContinuousSemilinearEquivClass",
+    "vector_sha256": "c85813cb171ec199590369c52232d355b7b63204e9a7881e928850063a6e81be"
+  },
+  {
+    "compact_row": 22,
+    "corpus_row": 458,
+    "name": "ContinuousSemilinearMapClass",
+    "vector_sha256": "ebacc99efc286c8455742a5229fe7874be911138a103abd75a9c472ae4342992"
+  },
+  {
+    "compact_row": 23,
+    "corpus_row": 470,
+    "name": "ConvexBody",
+    "vector_sha256": "752d711cde5d77ea5c5225622884abe584712eec7cd8b39984c559ce15e14a7e"
+  },
+  {
+    "compact_row": 24,
+    "corpus_row": 491,
+    "name": "CuspFormClass",
+    "vector_sha256": "47c3259f6dddcf99bb6a99c57973c8b11ee037d491366611ef631fce1a48149f"
+  },
+  {
+    "compact_row": 25,
+    "corpus_row": 539,
+    "name": "DirectedSystem",
+    "vector_sha256": "ca7200cb3c0d6853c20b155c1f624460f4e828d08034c11ab4a82f735794d552"
+  },
+  {
+    "compact_row": 26,
+    "corpus_row": 566,
+    "name": "DivisionRing",
+    "vector_sha256": "cd3e9c0c0eefcb0a54bf50e302628718988fc4a7f62a75cbcf8e39f558e0ef27"
+  },
+  {
+    "compact_row": 27,
+    "corpus_row": 599,
+    "name": "EquivFunctor",
+    "vector_sha256": "2ac67227168a89d2a9c85ebf7910211dcf35d59f541da389ca7393b8febddc1e"
+  },
+  {
+    "compact_row": 28,
+    "corpus_row": 610,
+    "name": "EsakiaHomClass",
+    "vector_sha256": "672db6f10875cb39c483323898abb912bb48194040dffc52821ba2f607ffebfd"
+  },
+  {
+    "compact_row": 29,
+    "corpus_row": 611,
+    "name": "Estimator",
+    "vector_sha256": "e3b463b73bd1583ddde8c65f0636cb1fa797d955513a9dd89b5986d34a96f725"
+  },
+  {
+    "compact_row": 30,
+    "corpus_row": 656,
+    "name": "FiniteAddGrp",
+    "vector_sha256": "e08684052d299f41faa8b4fa02937fd0a973c152277ca05076bd2a3685ee23e8"
+  },
+  {
+    "compact_row": 31,
+    "corpus_row": 660,
+    "name": "FiniteGaloisIntermediateField",
+    "vector_sha256": "f93c8ef0d739c684e190f19ad95d160f2436ea4749d33a446c97238d2f1ff72b"
+  },
+  {
+    "compact_row": 32,
+    "corpus_row": 661,
+    "name": "FiniteGrp",
+    "vector_sha256": "0055c8c2d78c44039f7086c35ca4308604b7ed9a542bb75040826c285a3c4bb6"
+  },
+  {
+    "compact_row": 33,
+    "corpus_row": 666,
+    "name": "Finmap",
+    "vector_sha256": "16c502071157cc9fc2bfbcf2b77e537c0250ca4b4f350a57e0424c22cd27f436"
+  },
+  {
+    "compact_row": 34,
+    "corpus_row": 687,
+    "name": "FourierModule",
+    "vector_sha256": "1918a9926f46d02e3aaca58789bd08f00e32d5667e5d6762f3fd5bcdb57a5fd3"
+  },
+  {
+    "compact_row": 35,
+    "corpus_row": 689,
+    "name": "FourierSMul",
+    "vector_sha256": "6c88340d8310ccb62c5a42e44da0ee5fa0e3166bc3440753ce44b18f025edf7b"
+  },
+  {
+    "compact_row": 36,
+    "corpus_row": 727,
+    "name": "GaloisInsertion",
+    "vector_sha256": "1608e2cfdbe22afdcf8d7a70a2f62dd80659a811c69d74dc4149c322501a2bd5"
+  },
+  {
+    "compact_row": 37,
+    "corpus_row": 737,
+    "name": "GradeMaxOrder",
+    "vector_sha256": "36af248a97a1e6c770fe8cebb376a7bde03be522f1ad62e3931f175753eb84bb"
+  },
+  {
+    "compact_row": 38,
+    "corpus_row": 739,
+    "name": "GradeOrder",
+    "vector_sha256": "791008beb3a2e14c5d65c0da2f50377458bac045bb9238764b0e7f7e2e89cc3e"
+  },
+  {
+    "compact_row": 39,
+    "corpus_row": 747,
+    "name": "GroupConeClass",
+    "vector_sha256": "582eaf31f54a43ec35f92b5d2aa8bbbd4e81bfa054915650b026b06b5dd0ad6b"
+  },
+  {
+    "compact_row": 40,
+    "corpus_row": 790,
+    "name": "HasFPowerSeriesOnBall",
+    "vector_sha256": "af421906977196a75c2952e2fb90c59eca239cc081e90fc5934c5be9167d0ec1"
+  },
+  {
+    "compact_row": 41,
+    "corpus_row": 792,
+    "name": "HasFPowerSeriesWithinOnBall",
+    "vector_sha256": "ddfe2d83eb33a2dad93d78b202ce18dd8afe42ee89f371f74ecb31e81686bd52"
+  },
+  {
+    "compact_row": 42,
+    "corpus_row": 794,
+    "name": "HasFTaylorSeriesUpToOn",
+    "vector_sha256": "5912e188f307578692543888a17acb22708cf5b75149e10732dbc99029e6e0d3"
+  },
+  {
+    "compact_row": 43,
+    "corpus_row": 797,
+    "name": "HasFiniteFPowerSeriesOnBall",
+    "vector_sha256": "74710e8e49ad3e6ef2b42eabbcc2edaac94bc22a1f75dc62dabef519807e3ffc"
+  },
+  {
+    "compact_row": 44,
+    "corpus_row": 802,
+    "name": "HasInfs",
+    "vector_sha256": "6b4d71a38e982f0df11a506fc1f9afa14b53ffa1c625323617bc09a2b3fbdb9f"
+  },
+  {
+    "compact_row": 45,
+    "corpus_row": 809,
+    "name": "HasMemOrNegMem",
+    "vector_sha256": "82ac37705120ced9e8a800a33ced7605767ae333cb415f489ddbdea1a5bb2698"
+  },
+  {
+    "compact_row": 46,
+    "corpus_row": 819,
+    "name": "HasRankNullity",
+    "vector_sha256": "ecbe6359abb917f99ba85b8d9fbffb6442b7a17b1809f9fb0fddf4d698867c97"
+  },
+  {
+    "compact_row": 47,
+    "corpus_row": 833,
+    "name": "HasUpperLowerClosure",
+    "vector_sha256": "143b4bc95403d3b9cc759a72576f91bd8113616cdd00d82f5ae70bd380b22b54"
+  },
+  {
+    "compact_row": 48,
+    "corpus_row": 941,
+    "name": "IncidenceAlgebra",
+    "vector_sha256": "88896deae6e65632b72e7bb26de9c0abab2456dd25a1ee0a18ab67c9ae5a8bf7"
+  },
+  {
+    "compact_row": 49,
+    "corpus_row": 944,
+    "name": "IndexedPartition",
+    "vector_sha256": "90fe7d42372da3b0c13e821b4ecdefe8f10186127d2a16b4e94de221235ba18c"
+  },
+  {
+    "compact_row": 50,
+    "corpus_row": 946,
+    "name": "InfConvergenceClass",
+    "vector_sha256": "618999a61b1366d898df1a191fcc393bc12e65b9908e221a240a35b04d066ba2"
+  },
+  {
+    "compact_row": 51,
+    "corpus_row": 951,
+    "name": "InfSet",
+    "vector_sha256": "a07a30e4c023528f98ddb5f266d23391347a9e7b682ab6992e7592ed2090cbe1"
+  },
+  {
+    "compact_row": 52,
+    "corpus_row": 1024,
+    "name": "IsAddQuotientCoveringMap",
+    "vector_sha256": "ee969d0464e6ae4aacf029f39ce37b58bcb43fa13a7d3d6b1d5e72526cab687f"
+  },
+  {
+    "compact_row": 53,
+    "corpus_row": 1042,
+    "name": "IsApproximateSubgroup",
+    "vector_sha256": "68e3b3b8c796ad5389693be475d0fb4e3450d34c3c79fa9afba0aa7af38e99ce"
+  },
+  {
+    "compact_row": 54,
+    "corpus_row": 1056,
+    "name": "IsBoundedBilinearMap",
+    "vector_sha256": "f24732ddbab1b6e37497a8e25e559df30ff9ae6c7fd3f96eb5eecb9ced7d2eaa"
+  },
+  {
+    "compact_row": 55,
+    "corpus_row": 1082,
+    "name": "IsCommJordan",
+    "vector_sha256": "d1ca0f0646e6fa3077f70be96d9298b38e797a80206b851da8c4d0cef4787d49"
+  },
+  {
+    "compact_row": 56,
+    "corpus_row": 1096,
+    "name": "IsContMDiffRiemannianBundle",
+    "vector_sha256": "f73718d6b19aabb6bdfb58f23d66a65b4049578667cf515c0aa33b0c277e87d0"
+  },
+  {
+    "compact_row": 57,
+    "corpus_row": 1097,
+    "name": "IsContinuousRiemannianBundle",
+    "vector_sha256": "477c6ed3b313786e5013077b01c2fe9b11937890d3abbba540b6f8f5be918351"
+  },
+  {
+    "compact_row": 58,
+    "corpus_row": 1108,
+    "name": "IsDedekindDomain",
+    "vector_sha256": "3f6ce67dbf540b457585c546e44427ada4e9a79ef41c0841c7482a80500bb75a"
+  },
+  {
+    "compact_row": 59,
+    "corpus_row": 1133,
+    "name": "IsFiltration",
+    "vector_sha256": "5588b2ce598659c28578fe23721c1e710116840e138c41821ba8bb70cca800e1"
+  },
+  {
+    "compact_row": 60,
+    "corpus_row": 1144,
+    "name": "IsGaloisGroup",
+    "vector_sha256": "b6bd2cba04936b405e954bac49bab7643be0ab39dc1ce96fde035ce9897128be"
+  },
+  {
+    "compact_row": 61,
+    "corpus_row": 1149,
+    "name": "IsHausdorff",
+    "vector_sha256": "727cad4ad697e766f9b6b395ed35a05aa3b6190ffa933734206ce9fe5c2ae5ae"
+  },
+  {
+    "compact_row": 62,
+    "corpus_row": 1151,
+    "name": "IsHilbertSum",
+    "vector_sha256": "37b8d696dc2a723bbb942a3be8ed8769be2b68be47b1867db7dcdb3ee62ea260"
+  },
+  {
+    "compact_row": 63,
+    "corpus_row": 1173,
+    "name": "IsKleinFour",
+    "vector_sha256": "8f91313cb2a40a938e733d1c22b13874bb106fd943b7adba03f1bbb7dcd5835b"
+  },
+  {
+    "compact_row": 64,
+    "corpus_row": 1249,
+    "name": "IsNormalClosure",
+    "vector_sha256": "88013c24e4082c8aeab114ee8c234554a060ffdfdc41de93edbdd68c65b9f547"
+  },
+  {
+    "compact_row": 65,
+    "corpus_row": 1281,
+    "name": "IsPredArchimedean",
+    "vector_sha256": "9a175bb4d58068005c4d3dde9a05a2b16e7697e15906a457dffee7cb9a4cead7"
+  },
+  {
+    "compact_row": 66,
+    "corpus_row": 1287,
+    "name": "IsPrincipalIdealRing",
+    "vector_sha256": "c5e6c75ca8095ccd2ed9e045dede40f4fd64f5be017e56ce6f2279b6fa6e0f27"
+  },
+  {
+    "compact_row": 67,
+    "corpus_row": 1291,
+    "name": "IsPurelyInseparable",
+    "vector_sha256": "743d9f7d64612ad8b8c04483f97ad90e2835c0b7fc1e1a29f66aa5a39d49da0a"
+  },
+  {
+    "compact_row": 68,
+    "corpus_row": 1295,
+    "name": "IsQuotientCoveringMap",
+    "vector_sha256": "ed1e876722c8e95dcf335766c982eeb3349842f5f6075703b0bdf838656ac4e9"
+  },
+  {
+    "compact_row": 69,
+    "corpus_row": 1319,
+    "name": "IsSemiprimaryRing",
+    "vector_sha256": "2a124ff7d0b24a258db3b589ad6676e5a5a02a199a2e140a18fc2a291c602c49"
+  },
+  {
+    "compact_row": 70,
+    "corpus_row": 1320,
+    "name": "IsSemireal",
+    "vector_sha256": "8d19656c019fadb91b6a347799da6ab0ac5b0923801bfb1aec3c695c52980cff"
+  },
+  {
+    "compact_row": 71,
+    "corpus_row": 1323,
+    "name": "IsSepClosed",
+    "vector_sha256": "228b0b5cc7f97bfb1b05e15f0be08e742e3b5588a3d123f05201df1dcd3fccb4"
+  },
+  {
+    "compact_row": 72,
+    "corpus_row": 1339,
+    "name": "IsSpectralMap",
+    "vector_sha256": "504e4d233d3d9e229d399db974ef9d888570427fa1f8fe2fc9e10ac5d0ced937"
+  },
+  {
+    "compact_row": 73,
+    "corpus_row": 1359,
+    "name": "IsSymmOp",
+    "vector_sha256": "b6a65e53a65c3f4e27874eac45f409d163ad12d2f69179ad9def8e8c93bee5a7"
+  },
+  {
+    "compact_row": 74,
+    "corpus_row": 1523,
+    "name": "LightDiagram",
+    "vector_sha256": "2bf576a8ba8a13bd72b1794ed5e9e974b432382ade039b97e8251ced38a76872"
+  },
+  {
+    "compact_row": 75,
+    "corpus_row": 1542,
+    "name": "LinearIsometryEquiv",
+    "vector_sha256": "4722ab00f5f6e2cf8bcd6d3332717020f8a9332c11e1a663ba798a78080689b5"
+  },
+  {
+    "compact_row": 76,
+    "corpus_row": 1611,
+    "name": "MeasurableConstSMul",
+    "vector_sha256": "a349c54a915df5c26ec7141c1c3553cdfe4df5000252d266336ea4bac840a321"
+  },
+  {
+    "compact_row": 77,
+    "corpus_row": 1612,
+    "name": "MeasurableConstVAdd",
+    "vector_sha256": "d328bd15e5d75d2e6672d03a2ab12b2af05c151bb8a27bd5bc79d2c88f4bcecf"
+  },
+  {
+    "compact_row": 78,
+    "corpus_row": 1613,
+    "name": "MeasurableDiv",
+    "vector_sha256": "71cbd040a2cd18105c28192e132bf62588a3cdaa4a200d1a13d00c5839b2aceb"
+  },
+  {
+    "compact_row": 79,
+    "corpus_row": 1614,
+    "name": "MeasurableDiv₂",
+    "vector_sha256": "0c8dd93b00cc8c2da836cb4dc47e1f637059485926d53eaf4e62e5f979947167"
+  },
+  {
+    "compact_row": 80,
+    "corpus_row": 1617,
+    "name": "MeasurableEquiv",
+    "vector_sha256": "308da3d0230c2532ddc82cd1bcd86a3d8a24129a08142625380d5728f37be8e4"
+  },
+  {
+    "compact_row": 81,
+    "corpus_row": 1624,
+    "name": "MeasurablePow",
+    "vector_sha256": "ccd31c8c5b3353b43a566918f001865050bdb5d52446026dbc580e2bbd89efb6"
+  },
+  {
+    "compact_row": 82,
+    "corpus_row": 1625,
+    "name": "MeasurableSMul",
+    "vector_sha256": "b9dd2b5f9492ef19886c41ba490fd6432e60f29e914bea02e4256e4ebcf9fd5c"
+  },
+  {
+    "compact_row": 83,
+    "corpus_row": 1629,
+    "name": "MeasurableSpace",
+    "vector_sha256": "e03c6e642dd8ead0ad0d314c2154abbadd429bb731a50ae3957cf29109bf338a"
+  },
+  {
+    "compact_row": 84,
+    "corpus_row": 1633,
+    "name": "MeasurableSup₂",
+    "vector_sha256": "ecd9b0bc9df740ba6712c7c293e12d63ab1e5f1568f97a18c992e4772d4865e5"
+  },
+  {
+    "compact_row": 85,
+    "corpus_row": 1634,
+    "name": "MeasurableVAdd",
+    "vector_sha256": "5e4b1d891032b1608ea573957cb9e96d3804d2ab28b0ff304a283499b1c03c4f"
+  },
+  {
+    "compact_row": 86,
+    "corpus_row": 1635,
+    "name": "MeasurableVAdd₂",
+    "vector_sha256": "f7e3987fc257252eac67b90fe2567f6f1c002d63950cef99b5f6ddf6d6edc1c9"
+  },
+  {
+    "compact_row": 87,
+    "corpus_row": 1648,
+    "name": "MixedCharZero",
+    "vector_sha256": "927874e68dcaa6c170f5d4b2a22937d7034ad2e539f15d63d7d45d8ffa42b773"
+  },
+  {
+    "compact_row": 88,
+    "corpus_row": 1654,
+    "name": "ModularForm",
+    "vector_sha256": "c3033224afd38367a5fbd8b61e4bd3c8ea0ef3d90652a79b9d6ec4ccd356e221"
+  },
+  {
+    "compact_row": 89,
+    "corpus_row": 1678,
+    "name": "MoritaEquivalence",
+    "vector_sha256": "7bc6cac69111d9f82932188b5cdedf1c5e19954c090a3d5df34f964f92715b38"
+  },
+  {
+    "compact_row": 90,
+    "corpus_row": 1684,
+    "name": "MulActionSemiHomClass",
+    "vector_sha256": "164d600703f43d1f5cc584800f4e9500605f960b87a7220f97ed6e3c225adba4"
+  },
+  {
+    "compact_row": 91,
+    "corpus_row": 1698,
+    "name": "MulCharClass",
+    "vector_sha256": "c745f681b03016bc88f511da07e90e66eb2d0bdf9970b8f424fb9c78b987fc2e"
+  },
+  {
+    "compact_row": 92,
+    "corpus_row": 1729,
+    "name": "MulSemiringActionHom",
+    "vector_sha256": "dbf8ff86e4cc26803ab26dbae74b11d197280e3d2f30c2ba47429f5382860a5d"
+  },
+  {
+    "compact_row": 93,
+    "corpus_row": 1736,
+    "name": "MultilinearMap",
+    "vector_sha256": "edc0e73d0c99b0b375d157f92fe86404378f89954f33251c57017840be772072"
+  },
+  {
+    "compact_row": 94,
+    "corpus_row": 1749,
+    "name": "MvQPF",
+    "vector_sha256": "191759a4d91edf5418a2253787a7540d82a5641d5ad65edd6a84b0bf796d0b47"
+  },
+  {
+    "compact_row": 95,
+    "corpus_row": 1763,
+    "name": "NoBotOrder",
+    "vector_sha256": "ed93f877995208004eccf38446a3a248efde5839bbfa9e6e4be4829ed5c3112c"
+  },
+  {
+    "compact_row": 96,
+    "corpus_row": 1781,
+    "name": "NonUnitalCommSemiring",
+    "vector_sha256": "0aca38aee25c72ef9bf3e8b1f87498582889e120757929cfb59385ebede63e58"
+  },
+  {
+    "compact_row": 97,
+    "corpus_row": 1782,
+    "name": "NonUnitalContinuousFunctionalCalculus",
+    "vector_sha256": "1de30a29f9a5c9af90dfa7a45a26c0ecb60c14867a2785502e7e45cced0786c4"
+  },
+  {
+    "compact_row": 98,
+    "corpus_row": 1790,
+    "name": "NonUnitalRing",
+    "vector_sha256": "0763b0fc6e604e1f99b520d1976b7642dc657cc37d42781fe4eec650172c33cc"
+  },
+  {
+    "compact_row": 99,
+    "corpus_row": 1825,
+    "name": "NormSMulClass",
+    "vector_sha256": "11bf31fecd10bb0ce935401bf199fbda861ec63e344ba0a9f8febe752d2b172c"
+  },
+  {
+    "compact_row": 100,
+    "corpus_row": 1833,
+    "name": "NormedAddGroupHom",
+    "vector_sha256": "250c30bda28968b50c988f45ec65ba3e5371de8f980a0b149098bb065b022fec"
+  },
+  {
+    "compact_row": 101,
+    "corpus_row": 1861,
+    "name": "OneHom",
+    "vector_sha256": "6ac708820d43c446db9e6c70991f7714bab142e26f70f3aaf6e4e6df696e2ffd"
+  },
+  {
+    "compact_row": 102,
+    "corpus_row": 1877,
+    "name": "OrderBot",
+    "vector_sha256": "1a2544e04b3fbf4fede18efd885bbc346a26ac0fb36a4aede4c1d84d9bc7ebc9"
+  },
+  {
+    "compact_row": 103,
+    "corpus_row": 1885,
+    "name": "OrderMonoidHom",
+    "vector_sha256": "4167f7652906e9ad7f5b3584483de9de8f394cf680e4b4823cbb4e54ab47923b"
+  },
+  {
+    "compact_row": 104,
+    "corpus_row": 1886,
+    "name": "OrderMonoidIso",
+    "vector_sha256": "b93fa1639fab27d0bce2955e4a84f09a09263b263ae41cfca0cd4f0ed57fdece"
+  },
+  {
+    "compact_row": 105,
+    "corpus_row": 1887,
+    "name": "OrderMonoidWithZeroHom",
+    "vector_sha256": "7938e8a557e8932de4d707d54654c8f282043376b05762d2b6d151fab33b4aea"
+  },
+  {
+    "compact_row": 106,
+    "corpus_row": 1908,
+    "name": "PFunctor",
+    "vector_sha256": "1be4812da7d70c00ce6b6273a8d914380e68f7e9e8b752bf881e0da260b7f221"
+  },
+  {
+    "compact_row": 107,
+    "corpus_row": 1925,
+    "name": "PartialDiffeomorph",
+    "vector_sha256": "48b5273b3e33c2d3fdc14cf85be0f853dca0c3bac281db575596d89fb12d8b2f"
+  },
+  {
+    "compact_row": 108,
+    "corpus_row": 1938,
+    "name": "PerfectField",
+    "vector_sha256": "b4cf830e29203e4e583f716c281ca96655cb92796452865a8496f9038bdca10a"
+  },
+  {
+    "compact_row": 109,
+    "corpus_row": 1954,
+    "name": "PolynomialLaw",
+    "vector_sha256": "416354b76cb2f76cb9a61f2d205eec46dca3551f426e073604bfece28e5e5f61"
+  },
+  {
+    "compact_row": 110,
+    "corpus_row": 1972,
+    "name": "PreErgodic",
+    "vector_sha256": "076a64aba8c5c0f613103747fc0d87cda6fe60b42270d7641b85fac2ffb3cf82"
+  },
+  {
+    "compact_row": 111,
+    "corpus_row": 1985,
+    "name": "Preord",
+    "vector_sha256": "0796b2fbbbb50f7c3128f44c34c7b1051470566544940ebdcf3bd3ea35f3ad0b"
+  },
+  {
+    "compact_row": 112,
+    "corpus_row": 2005,
+    "name": "ProfiniteAddGrp",
+    "vector_sha256": "1f2e9dc406a8dd9f283b9e4de4aa59260f2180f2fb6e94ec97a9d833ae2eac8e"
+  },
+  {
+    "compact_row": 113,
+    "corpus_row": 2014,
+    "name": "ProperVAdd",
+    "vector_sha256": "6a6698d881b1b023db2ab58fb82f0b558bc43b5bc1600ce2b12daa65f72b758c"
+  },
+  {
+    "compact_row": 114,
+    "corpus_row": 2018,
+    "name": "PseudoEpimorphism",
+    "vector_sha256": "1b64a99a24d42c40b32c0d658d4f90852d547c11a25db3efb74e8ef77346e5cf"
+  },
+  {
+    "compact_row": 115,
+    "corpus_row": 2019,
+    "name": "PseudoEpimorphismClass",
+    "vector_sha256": "ce4cc3bb71c4e85e73055728e1ddd3696daee2fb125ed71f8e1ff9a6e0ef109c"
+  },
+  {
+    "compact_row": 116,
+    "corpus_row": 2090,
+    "name": "Ring",
+    "vector_sha256": "6c13d06684f41f70cd4df7f25fe1419c57b0c48b5d3ae0cd9edeffd5ea24fdf5"
+  },
+  {
+    "compact_row": 117,
+    "corpus_row": 2096,
+    "name": "RingEquiv",
+    "vector_sha256": "872206d229f45b3a189fa4c9f09cc12ac31d85d408f94575c3e7a1a446f9a3e4"
+  },
+  {
+    "compact_row": 118,
+    "corpus_row": 2156,
+    "name": "SemidirectProduct",
+    "vector_sha256": "2063bc9f9bca7e8ebea9c3bd039bee97f491a29993cf2fd45e1a63fcc43c67a0"
+  },
+  {
+    "compact_row": 119,
+    "corpus_row": 2174,
+    "name": "SemilinearIsometryClass",
+    "vector_sha256": "e6840b824c8da1645d49b5ca98578a972f04da6cdd1939679c6e5d12e55a02b7"
+  },
+  {
+    "compact_row": 120,
+    "corpus_row": 2175,
+    "name": "SemilinearIsometryEquivClass",
+    "vector_sha256": "f32d452fd2421ae18a59368f5ea39f104cf858ad883b347db220508d2cdc3641"
+  },
+  {
+    "compact_row": 121,
+    "corpus_row": 2178,
+    "name": "Seminorm",
+    "vector_sha256": "c654f70735d7f25bfb7a6c22320c92fac6afbc526e51915004de0f9037bcbe97"
+  },
+  {
+    "compact_row": 122,
+    "corpus_row": 2188,
+    "name": "Semiring",
+    "vector_sha256": "2aa66c5f49fd94989b170fd70626e422c6e1e9449adf0a81c2240373141515a5"
+  },
+  {
+    "compact_row": 123,
+    "corpus_row": 2220,
+    "name": "SlashInvariantForm",
+    "vector_sha256": "330ed3c19135dba82dc86abf6fe1fc2b2d006ddbc4faff2ac982781cd3d13ce1"
+  },
+  {
+    "compact_row": 124,
+    "corpus_row": 2221,
+    "name": "SlashInvariantFormClass",
+    "vector_sha256": "d272cd31c6c8f3086200d850c7c3f941aaf23d272ef350df60fcd2d85dec4146"
+  },
+  {
+    "compact_row": 125,
+    "corpus_row": 2230,
+    "name": "SpectralMap",
+    "vector_sha256": "0847e90284ec5bb1cb1850a198d87ff158028292873e67f802061c58c759cd87"
+  },
+  {
+    "compact_row": 126,
+    "corpus_row": 2231,
+    "name": "SpectralMapClass",
+    "vector_sha256": "6f7145d65531644b68c14cf1d7c6c0494e1a0c55a5c5a06ec6bba332b6280008"
+  },
+  {
+    "compact_row": 127,
+    "corpus_row": 2273,
+    "name": "StrongFEPair",
+    "vector_sha256": "d2671aafd0c9cae8bd420a12b33a6e8076ea420af3737bb721409af24d5a7d53"
+  },
+  {
+    "compact_row": 128,
+    "corpus_row": 2293,
+    "name": "Sublattice",
+    "vector_sha256": "ee9a739aacf57f3f8803c4e60946a332953ef3e0faceefac13ecd7c798aa8b6f"
+  },
+  {
+    "compact_row": 129,
+    "corpus_row": 2294,
+    "name": "Sublocale",
+    "vector_sha256": "18019d80a949c61f343225028777b4236081bd1a9cc76c05d2201dfb017c563e"
+  },
+  {
+    "compact_row": 130,
+    "corpus_row": 2327,
+    "name": "SupConvergenceClass",
+    "vector_sha256": "c201553d1755711b2a538cd5411f9af19db3281807b4953e31076c97ece898d7"
+  },
+  {
+    "compact_row": 131,
+    "corpus_row": 2369,
+    "name": "TestFunction",
+    "vector_sha256": "7aa3a56bc12f80da5cfbba5bb640e2ea7cab4d33ae8080754b511c7219c68194"
+  },
+  {
+    "compact_row": 132,
+    "corpus_row": 2370,
+    "name": "TestFunctionClass",
+    "vector_sha256": "2c51bba78b7017fb607f5b3a9b800e65c0f4b9a89b512df25b38b4311163527a"
+  },
+  {
+    "compact_row": 133,
+    "corpus_row": 2410,
+    "name": "TwoUniqueProds",
+    "vector_sha256": "977dc6c5b4c87653c5705e5749efbebbfdc6e8515ddda678e8d4a1b8913b10ff"
+  },
+  {
+    "compact_row": 134,
+    "corpus_row": 2411,
+    "name": "TwoUniqueSums",
+    "vector_sha256": "635edf915ac7bf06abe358c92875116cfa936e0eb97fd8c9306c2251c55b87d2"
+  },
+  {
+    "compact_row": 135,
+    "corpus_row": 2417,
+    "name": "Uncountable",
+    "vector_sha256": "99003fbe8b68ef5f755fbbd1b170781094b5b6d5dddc512183ee5fdd4c7e752c"
+  },
+  {
+    "compact_row": 136,
+    "corpus_row": 2474,
+    "name": "ValuationRing",
+    "vector_sha256": "3efe4906d8a45b0a1b7ef9a1f774c16ff16078297fa262862e9aaa555a8324a5"
+  },
+  {
+    "compact_row": 137,
+    "corpus_row": 2488,
+    "name": "VectorPrebundle",
+    "vector_sha256": "deb8f844863100b92192f9fe34c672a148e7e3a4f14a33bd7777034a0a5a9eeb"
+  },
+  {
+    "compact_row": 138,
+    "corpus_row": 2498,
+    "name": "WeakFEPair",
+    "vector_sha256": "b6833ae52733e9d425a6c6e89e77de02f1ae5fd5d9c48d7510127031e9e81b48"
+  },
+  {
+    "compact_row": 139,
+    "corpus_row": 2504,
+    "name": "WellOrder",
+    "vector_sha256": "f082870c08b7b3a24ee47e3b739382e6edfd70eb4285a206f6939a2b806f7d3e"
+  },
+  {
+    "compact_row": 140,
+    "corpus_row": 30407,
+    "name": "Action.Hom",
+    "vector_sha256": "0e97ac749517a6df0abc4fb1298dac5c1f9a7c8e18d07ae2d985be053f003755"
+  },
+  {
+    "compact_row": 141,
+    "corpus_row": 30945,
+    "name": "AddActionHom.map_vadd'",
+    "vector_sha256": "3afc9fc34aa171261039efefed1c885e0dbf6fa7846ae3424d0d6afca7af3004"
+  },
+  {
+    "compact_row": 142,
+    "corpus_row": 30946,
+    "name": "AddActionHom.mk",
+    "vector_sha256": "3c69e36cf083e7c307f3e0ae7d0aaa7af84e3909f0b93a905fc1fc8c0465fc6d"
+  },
+  {
+    "compact_row": 143,
+    "corpus_row": 30962,
+    "name": "AddActionHom.toFun",
+    "vector_sha256": "76164a071ff539f6350e094f27f20be90928b9fd3c561b0de4d050fcead632c7"
+  },
+  {
+    "compact_row": 144,
+    "corpus_row": 30967,
+    "name": "AddActionSemiHomClass.mk",
+    "vector_sha256": "9f65d259d88bbdfa58225329532bf4741dccce4d92b4bec1d2a2a7d1ce7aeb27"
+  },
+  {
+    "compact_row": 145,
+    "corpus_row": 31785,
+    "name": "AddCommMonoidWithOne.add_comm",
+    "vector_sha256": "ce4f36966ebaf722d3b7ebc2ff9cdc817dd53f291e6b18973ea7b863e1e45335"
+  },
+  {
+    "compact_row": 146,
+    "corpus_row": 32548,
+    "name": "AddGroup.FG",
+    "vector_sha256": "3641f5c6f2185f6cf196c8ace60b9161a6c185d3cee77cf29b6a19f1d8a8f412"
+  },
+  {
+    "compact_row": 147,
+    "corpus_row": 33306,
+    "name": "AddMonCat.Hom",
+    "vector_sha256": "c062770e619cf49516eb2619dd40002a66049c71657775c4fdf8a5bde8380c9e"
+  },
+  {
+    "compact_row": 148,
+    "corpus_row": 34385,
+    "name": "AddMonoidWithOne.natCast_succ",
+    "vector_sha256": "bb402d00022f858877aa8f355377fc9a3707e43e324b1c2be448ad327ed0bd0b"
+  },
+  {
+    "compact_row": 149,
+    "corpus_row": 34394,
+    "name": "AddMonoidWithOne.toOne",
+    "vector_sha256": "1d5cf216b85a9f96fda8b8919f9c33e84a3573c9db21dc1eadb5a09f6928071d"
+  },
+  {
+    "compact_row": 150,
+    "corpus_row": 34728,
+    "name": "AddRightCancelMonoid.toAddRightCancelSemigroup",
+    "vector_sha256": "0809ed4f99f4f681219a9745a5e71820afb1e01e1add04e275670cc050efdce2"
+  },
+  {
+    "compact_row": 151,
+    "corpus_row": 36387,
+    "name": "AddSubmonoidClass.mk",
+    "vector_sha256": "70cf74e37aedfef76b53ac6481533343462220f46f3067a12db5d2bf7142f3e0"
+  },
+  {
+    "compact_row": 152,
+    "corpus_row": 37338,
+    "name": "Affine.Simplex",
+    "vector_sha256": "1a6fc466ac8e10ed865032f524db19a51a3022d44765d44a10daddd21dd05355"
+  },
+  {
+    "compact_row": 153,
+    "corpus_row": 39173,
+    "name": "Algebra.Smooth",
+    "vector_sha256": "5edb3b720c6a28a7adcf46dcbf52c8a64f2d68dac8e444925ca091608a49ba37"
+  },
+  {
+    "compact_row": 154,
+    "corpus_row": 39176,
+    "name": "Algebra.Unramified",
+    "vector_sha256": "ed397b53675463b5a478cadd4446559dd5cf0fa94e661bb31905d5208ebe061f"
+  },
+  {
+    "compact_row": 155,
+    "corpus_row": 39757,
+    "name": "AlgebraicGeometry.FormallyUnramified",
+    "vector_sha256": "cc6ca418e30c7dd1469791c009c36042c4b853c304095b8836284d32b19eed31"
+  },
+  {
+    "compact_row": 156,
+    "corpus_row": 39758,
+    "name": "AlgebraicGeometry.HasAffineProperty",
+    "vector_sha256": "4efb97cb698cd711bb7361c9c1fe631a30df9e89999d9344c6f0b3600da7808a"
+  },
+  {
+    "compact_row": 157,
+    "corpus_row": 39759,
+    "name": "AlgebraicGeometry.HasRingHomProperty",
+    "vector_sha256": "e91eecb66870b6e120883a3e7278ff55c639a1e65c1a9589bf23861fb567b27f"
+  },
+  {
+    "compact_row": 158,
+    "corpus_row": 39770,
+    "name": "AlgebraicGeometry.IsIntegralHom",
+    "vector_sha256": "afb7c5b4495af4a156f422c55070dc68e0a503725d1239756371135d1dfebd2c"
+  },
+  {
+    "compact_row": 159,
+    "corpus_row": 39778,
+    "name": "AlgebraicGeometry.IsPreimmersion",
+    "vector_sha256": "64bad20088b9e70da2c06a10ca503b86e94c4ce93ccd4ed717579ca8ef069b81"
+  },
+  {
+    "compact_row": 160,
+    "corpus_row": 39782,
+    "name": "AlgebraicGeometry.IsSmooth",
+    "vector_sha256": "9061b68decb80f09db636fba8beb61f2eb9a84f1e442b07b3f6a05a9d679781a"
+  },
+  {
+    "compact_row": 161,
+    "corpus_row": 39786,
+    "name": "AlgebraicGeometry.LocallyOfFinitePresentation",
+    "vector_sha256": "9b814be4fc3395c3cc4e7215128fe7a611d240f6a0ecb3562286217779975c3d"
+  },
+  {
+    "compact_row": 162,
+    "corpus_row": 39787,
+    "name": "AlgebraicGeometry.LocallyOfFiniteType",
+    "vector_sha256": "bd136e575b81f809ec03b37498d57c95f9aee2f4fbb00e7e624af568b7e8e99d"
+  },
+  {
+    "compact_row": 163,
+    "corpus_row": 39824,
+    "name": "AlgebraicGeometry.UniversallyOpen",
+    "vector_sha256": "d4b1b0bf23935bf6fe72789fee4e65084ea7c91fa9aecb80918ec3bd3ae50f1d"
+  },
+  {
+    "compact_row": 164,
+    "corpus_row": 42912,
+    "name": "BddDistLat.isBoundedOrder",
+    "vector_sha256": "d3072240e6173e19039329eb0cf10bc706ed1a02e568019764011883bf30311d"
+  },
+  {
+    "compact_row": 165,
+    "corpus_row": 42958,
+    "name": "BddLat.isBoundedOrder",
+    "vector_sha256": "f9e5a7c2d797efb3a67da6b96ad0888909fe09e10c798f7cedb44b53763c242c"
+  },
+  {
+    "compact_row": 166,
+    "corpus_row": 43060,
+    "name": "Besicovitch.SatelliteConfig",
+    "vector_sha256": "3bb67914c5561843edb0c0ff53bb415cf2bf57bbf32a14fc95ec7604f94c9966"
+  },
+  {
+    "compact_row": 167,
+    "corpus_row": 43127,
+    "name": "BialgCat.instRing",
+    "vector_sha256": "b6446d89216f965aa78d1a70351b9a3d47ecb6dd247ce3807c9dea25fc811a5b"
+  },
+  {
+    "compact_row": 168,
+    "corpus_row": 44018,
+    "name": "BorelSpace.measurable_eq",
+    "vector_sha256": "333c3b2640fe0885bbed094530a5dfcf7102030694bb4c2af3c8f089122ef9cf"
+  },
+  {
+    "compact_row": 169,
+    "corpus_row": 44653,
+    "name": "BoundedOrder.toOrderBot",
+    "vector_sha256": "ab576396571060fba88492a92b704a6d9d77101006fef46c808432bb1fac37e3"
+  },
+  {
+    "compact_row": 170,
+    "corpus_row": 44721,
+    "name": "BoundedSub.isBounded_sub",
+    "vector_sha256": "80bd329448425b8ec715987e902576b04b5f26128512fddad0eee08945c2fb4d"
+  },
+  {
+    "compact_row": 171,
+    "corpus_row": 44749,
+    "name": "BoundingSieve.prodPrimes",
+    "vector_sha256": "911c1c8427e75e1452b68170b7893b7c93ab126591d8d1ce9d51b106c800306c"
+  },
+  {
+    "compact_row": 172,
+    "corpus_row": 44765,
+    "name": "BoundingSieve.weights",
+    "vector_sha256": "186e8d370f6eea05064aafd7fd496f82ee31e9408b63f27d7b7574b81bcce99c"
+  },
+  {
+    "compact_row": 173,
+    "corpus_row": 45436,
+    "name": "CStarModule.inner_add_right",
+    "vector_sha256": "da706972fc38a8ab260b4dffa06b0c146f93b2003d5d01bd7ae6208cc61f3c08"
+  },
+  {
+    "compact_row": 174,
+    "corpus_row": 45541,
+    "name": "CancelDenoms.CancelResult",
+    "vector_sha256": "5b932b35147842636099704760aa25476c7663d0e073c78d3479f0f320c56d29"
+  },
+  {
+    "compact_row": 175,
+    "corpus_row": 46720,
+    "name": "CategoryTheory.BasedFunctor",
+    "vector_sha256": "4bca18d3dc28064376bab903c952fcfc0257a5e3d29734f08163b8b3e02dd50b"
+  },
+  {
+    "compact_row": 176,
+    "corpus_row": 46723,
+    "name": "CategoryTheory.BicategoricalCoherence",
+    "vector_sha256": "f9f1e42c1a910df140359264d490c157a67d5b08589659b020a4d951a426490e"
+  },
+  {
+    "compact_row": 177,
+    "corpus_row": 46815,
+    "name": "CategoryTheory.Equivalence",
+    "vector_sha256": "52398c8629d930da54c9b31a426992a27e237ae3205af705814b7a856a17b76a"
+  },
+  {
+    "compact_row": 178,
+    "corpus_row": 46842,
+    "name": "CategoryTheory.Grothendieck",
+    "vector_sha256": "e41c06215fbf34a7ef2bb4b5d39ddf49c9702605be08aaf4b7d66ed04e111fb5"
+  },
+  {
+    "compact_row": 179,
+    "corpus_row": 46882,
+    "name": "CategoryTheory.HasShift",
+    "vector_sha256": "023a5a0eef003d536419113716d022948b6452edb9154de41c39610354d4b5b3"
+  },
+  {
+    "compact_row": 180,
+    "corpus_row": 46883,
+    "name": "CategoryTheory.HasSplitCoequalizer",
+    "vector_sha256": "3f482b8e05d7a72d0663575a5d24ee94d38c7147424f36eb60320eb5c6e5293b"
+  },
+  {
+    "compact_row": 181,
+    "corpus_row": 46884,
+    "name": "CategoryTheory.HasSplitEqualizer",
+    "vector_sha256": "47c8f0017e8d5459b25386c02949b6da461a780b6d00f38f7de66066577b460d"
+  },
+  {
+    "compact_row": 182,
+    "corpus_row": 46899,
+    "name": "CategoryTheory.Injective",
+    "vector_sha256": "4c0c7583e7b0887a6c650125a743cb78cf0fd2de63b990ef227014275e7aa94c"
+  },
+  {
+    "compact_row": 183,
+    "corpus_row": 46935,
+    "name": "CategoryTheory.IsIdempotentComplete",
+    "vector_sha256": "50ffe66a17b9a0bf5a740b87c2d8dd3e2ff1d017e2f498c2c010ed56eb2fd9dd"
+  },
+  {
+    "compact_row": 184,
+    "corpus_row": 46967,
+    "name": "CategoryTheory.IsSplitEqualizer",
+    "vector_sha256": "30c666c7c7e49c9b883eef70a880c7cb1399d72f4cfa9d6601ad803f3bb36bb0"
+  },
+  {
+    "compact_row": 185,
+    "corpus_row": 47000,
+    "name": "CategoryTheory.Mon",
+    "vector_sha256": "184ddc0ccfb2727621d9b90c2c974401771a64e174d5521c8db945b58600f02f"
+  },
+  {
+    "compact_row": 186,
+    "corpus_row": 47044,
+    "name": "CategoryTheory.PreservesPullbacksOfInclusions",
+    "vector_sha256": "f497ee0911d7278811844e0433df314accbfa706f30e8ab13ea369853bb51598"
+  },
+  {
+    "compact_row": 187,
+    "corpus_row": 47065,
+    "name": "CategoryTheory.RepresentablyCoflat",
+    "vector_sha256": "77f8d2e804efe928f5e9f1c90db0717299b0eae1547df9297108565ba9fcf608"
+  },
+  {
+    "compact_row": 188,
+    "corpus_row": 47078,
+    "name": "CategoryTheory.Sieve",
+    "vector_sha256": "74305e33331b3ceab45983c558d2a56164cc229b6b484b5bf773e94921e30b2c"
+  },
+  {
+    "compact_row": 189,
+    "corpus_row": 47104,
+    "name": "CategoryTheory.StrictlyUnitaryPseudofunctor",
+    "vector_sha256": "b0970e0dcbc69d65d186a04966c2258feabe0e74cd7283c60d4e6ae077947ae1"
+  },
+  {
+    "compact_row": 190,
+    "corpus_row": 50652,
+    "name": "CharZero.mk",
+    "vector_sha256": "666e2192459e78ee82977bf49ad56d0932a695f3d9b394d7c83a05ea125d0c19"
+  },
+  {
+    "compact_row": 191,
+    "corpus_row": 50695,
+    "name": "ChartedSpace.LiftPropWithinAt",
+    "vector_sha256": "56e4f6adf2eca47f5d2b813b4dca18d0707a210b5cac92b5bd71eb1983c97965"
+  },
+  {
+    "compact_row": 192,
+    "corpus_row": 51548,
+    "name": "ClosedSubmodule.mk",
+    "vector_sha256": "d22e6af2f82a6b8ed2e7e1a773a0acce2000cb68d4a3c1ee730a728e4c85ff8b"
+  },
+  {
+    "compact_row": 193,
+    "corpus_row": 51745,
+    "name": "CoalgEquiv.left_inv",
+    "vector_sha256": "4f0a81d3cf7f83ccf2f7ebaa24f04a4fbac43a5762a2e02b506197015f05a7b4"
+  },
+  {
+    "compact_row": 194,
+    "corpus_row": 52558,
+    "name": "CommGroup.toGroup",
+    "vector_sha256": "e336f98d94691f5e68269e4697e12742b9af5e0012dc829e145585760da22894"
+  },
+  {
+    "compact_row": 195,
+    "corpus_row": 52863,
+    "name": "CommRing.toRing",
+    "vector_sha256": "0e0e9a9144637b3ac784ef85b3c4aa1a3fb8be0b2a18412fa53db40587a8322d"
+  },
+  {
+    "compact_row": 196,
+    "corpus_row": 53530,
+    "name": "CompactIccSpace.isCompact_Icc",
+    "vector_sha256": "06ddf7bcd5a07a061b2b4aad8f2b3870d859126f16713785a2184c7b5d76382a"
+  },
+  {
+    "compact_row": 197,
+    "corpus_row": 53747,
+    "name": "CompactlySupportedContinuousMapClass.mk",
+    "vector_sha256": "4c6f9a0830852b0bb77744a645079f57bc19eaa20683bacec2057f869456579d"
+  },
+  {
+    "compact_row": 198,
+    "corpus_row": 53905,
+    "name": "CompleteLat.str",
+    "vector_sha256": "10f265a5ca7d07e7e4e2336a6878a796b7ce404c0f8332b560789a2ee454070c"
+  },
+  {
+    "compact_row": 199,
+    "corpus_row": 54020,
+    "name": "CompleteLinearOrder.toCompleteLattice",
+    "vector_sha256": "0883b8d04e5113af71d24385e31de68263a64289ff854b721fa4b17d0f7ee670"
+  },
+  {
+    "compact_row": 200,
+    "corpus_row": 54029,
+    "name": "CompleteLinearOrder.toOrd",
+    "vector_sha256": "bbe08c3d36724c4c898db7cfcc8106570ee09f81f2cbad7eb990b82c669990b6"
+  },
+  {
+    "compact_row": 201,
+    "corpus_row": 54075,
+    "name": "CompleteSemilatticeInf.mk",
+    "vector_sha256": "44a949ce55524ab86aa0f9fe6095ff73a8660ee0c9bd5f89cf73706aa2e7ba80"
+  },
+  {
+    "compact_row": 202,
+    "corpus_row": 54082,
+    "name": "CompleteSemilatticeInf.toPartialOrder",
+    "vector_sha256": "537c9aa3e46bd9a7f72633ae50c55630d6e1e688c4c38968137f2e6f3251398c"
+  },
+  {
+    "compact_row": 203,
+    "corpus_row": 54176,
+    "name": "CompletelyDistribLattice.himp_bot",
+    "vector_sha256": "5f4d3c108d845376c562ad4b57edc0ebfed97b71e719ebeaee9eb5575157e041"
+  },
+  {
+    "compact_row": 204,
+    "corpus_row": 56110,
+    "name": "Computability.FinEncoding",
+    "vector_sha256": "4455eb5f8cf04d2e537d3c5851827bd9b3ac512cbbac816219ce8415e360d90d"
+  },
+  {
+    "compact_row": 205,
+    "corpus_row": 56869,
+    "name": "ConditionallyCompleteLinearOrderedField.toField",
+    "vector_sha256": "c6c79dfbb2737ac417fd93f61757a4376fa88a725bb389a75e00bf496a8e38aa"
+  },
+  {
+    "compact_row": 206,
+    "corpus_row": 56880,
+    "name": "Configuration.ProjectivePlane",
+    "vector_sha256": "771a124115a115127eba710fe460f95b60801dd9128419d09dcade5a43cfa9a4"
+  },
+  {
+    "compact_row": 207,
+    "corpus_row": 57909,
+    "name": "ContMDiffInv₀.mk",
+    "vector_sha256": "e7fbf7b3c7fca0d3dc6b300535b145bf3516ae585ff431f659f2e192b3d6a2e2"
+  },
+  {
+    "compact_row": 208,
+    "corpus_row": 59546,
+    "name": "ContinuousEval.mk",
+    "vector_sha256": "d3b57e161b004b87d0ae585d2cd42b7a0fe90027b8ad470a794656bf22849a08"
+  },
+  {
+    "compact_row": 209,
+    "corpus_row": 60910,
+    "name": "ContinuousMap.Homotopy",
+    "vector_sha256": "2d0569fcd3a15dd9dfda44cf274827a4be457f8d92aa500c4aff608776fb705b"
+  },
+  {
+    "compact_row": 210,
+    "corpus_row": 60912,
+    "name": "ContinuousMap.HomotopyLike",
+    "vector_sha256": "14671ed6b1146ee5c92d6dd9efb4bff789fe513ec058bbe3ac476f7eb195e014"
+  },
+  {
+    "compact_row": 211,
+    "corpus_row": 62478,
+    "name": "ContinuousSqrt.sqrt",
+    "vector_sha256": "a3101391ed860d000ee159c1c708a8dd884c44c7b1d941e8a2149ea21129f9c3"
+  },
+  {
+    "compact_row": 212,
+    "corpus_row": 62692,
+    "name": "ContravariantClass.elim",
+    "vector_sha256": "0cc3b83e23b194af310f58d774238b8202777959e6c9b5ceee22a1319245e9ed"
+  },
+  {
+    "compact_row": 213,
+    "corpus_row": 64333,
+    "name": "DFunLike.coe_injective'",
+    "vector_sha256": "9cdd68a3ea7005e2dd2c989f95d00bbe504117726cc749e65950b9d127831bec"
+  },
+  {
+    "compact_row": 214,
+    "corpus_row": 64348,
+    "name": "DFunLike.mk",
+    "vector_sha256": "b32bb45bf9be00ccd83aa2fed2c0007462a6f0358c1cab46c49243fea97df598"
+  },
+  {
+    "compact_row": 215,
+    "corpus_row": 64565,
+    "name": "DenselyNormedField.lt_norm_lt",
+    "vector_sha256": "7e1db53ef2f3317aa6b2c63713ddd21ba1fe422f3d9ada3352c33a3b21269650"
+  },
+  {
+    "compact_row": 216,
+    "corpus_row": 66505,
+    "name": "DiscreteTiling.Protoset",
+    "vector_sha256": "323681b5a59cc763621c310c87ffe694770835325976663ab04083b02a8edc44"
+  },
+  {
+    "compact_row": 217,
+    "corpus_row": 66535,
+    "name": "DiscreteUniformity.mk",
+    "vector_sha256": "6aa58169995d666bce715386b3a6e52f301083626a9bdb7208a853ad4130b99f"
+  },
+  {
+    "compact_row": 218,
+    "corpus_row": 66885,
+    "name": "DividedPowers.dpow_zero",
+    "vector_sha256": "b880eab5c66fc009b0efc257d2f6dafa51a5cb3aa9f5c6a9825227eecd64442e"
+  },
+  {
+    "compact_row": 219,
+    "corpus_row": 67007,
+    "name": "DivisionRing.mul_inv_cancel",
+    "vector_sha256": "2d1c84c991050644db123c605d73f963842132b96f85334a8ed74ae8548f06d5"
+  },
+  {
+    "compact_row": 220,
+    "corpus_row": 67026,
+    "name": "DivisionRing.toRatCast",
+    "vector_sha256": "ec4de9a5ffe6e0565ec4cf1b3bc4ebca12f8a5c1710a991a29b118d38fb781fa"
+  },
+  {
+    "compact_row": 221,
+    "corpus_row": 67027,
+    "name": "DivisionRing.toRing",
+    "vector_sha256": "f96fed26fa637750184c1bb1b35b6c7ca20de7b7dcb4e8e0e7409709c555a437"
+  },
+  {
+    "compact_row": 222,
+    "corpus_row": 70062,
+    "name": "EckmannHilton.IsUnital",
+    "vector_sha256": "a82582b5bb15f4cb57390c57c32d5c72b5bd3ccf1cbc40f145280dbba5d19953"
+  },
+  {
+    "compact_row": 223,
+    "corpus_row": 71644,
+    "name": "ErgodicVAdd.mk",
+    "vector_sha256": "7d8740a794c86ca97617a2cdfe1297fdd9b55da1b4b05172de4fb3b4599cd1f5"
+  },
+  {
+    "compact_row": 224,
+    "corpus_row": 71845,
+    "name": "EuclideanGeometry.Concyclic",
+    "vector_sha256": "2a89a7c1a024674a3f550cedcce0792a196d3c1e63c555cb9bf8ecfeba8371dc"
+  },
+  {
+    "compact_row": 225,
+    "corpus_row": 72377,
+    "name": "ExistsAddOfLE.mk",
+    "vector_sha256": "06f3aafd492e532cd428ece5407c909241d1fd42e77b2bc7b62a6bceedf05f3c"
+  },
+  {
+    "compact_row": 226,
+    "corpus_row": 73116,
+    "name": "Filter.IsMeasurablyGenerated",
+    "vector_sha256": "13e369147109625f57f4fc6b7d51453a312c979d5bcc454fc99e60492a8b922e"
+  },
+  {
+    "compact_row": 227,
+    "corpus_row": 76770,
+    "name": "FiniteAddGrp.isFinite",
+    "vector_sha256": "3041974d5f1e63c5109091b8aa81e6eaf35974f2f7fdce44dea1c122b53476b0"
+  },
+  {
+    "compact_row": 228,
+    "corpus_row": 77006,
+    "name": "FiniteGrp.isFinite",
+    "vector_sha256": "de36d01fb0c5e0a9c801e28b5aac97c85d00b43538d1bc503fadd0eb8bf7ef5b"
+  },
+  {
+    "compact_row": 229,
+    "corpus_row": 77007,
+    "name": "FiniteGrp.mk",
+    "vector_sha256": "955a8ef77cbba72a4dea40485da92df74091c6466bb17d0d75a8a6777078f92f"
+  },
+  {
+    "compact_row": 230,
+    "corpus_row": 83771,
+    "name": "Fintype.elems",
+    "vector_sha256": "350198cf29e716cb9baf3db29ac35c5a3e25d41ff4fe9e7fadbfc5844e5b1230"
+  },
+  {
+    "compact_row": 231,
+    "corpus_row": 84280,
+    "name": "FloorSemiring.gc_floor",
+    "vector_sha256": "2fb8df5a4da024dd4ebb4ca977d0f0adf9fbc28b7a4b94555d9902ee4048495a"
+  },
+  {
+    "compact_row": 232,
+    "corpus_row": 84289,
+    "name": "Flow.IsSemiconjugacy",
+    "vector_sha256": "2181fe51344f0fc64e668eb469e0d0c0af86b6d3bf7524ff27d74d9cb6d70a5f"
+  },
+  {
+    "compact_row": 233,
+    "corpus_row": 84619,
+    "name": "FourierInvSMul.mk",
+    "vector_sha256": "03c17609e070290a45cec2a99fa65101b2b80e73106c3e745c487e8c4fa787a3"
+  },
+  {
+    "compact_row": 234,
+    "corpus_row": 86111,
+    "name": "Function.Embedding",
+    "vector_sha256": "ab263e073ac736214f745990c25be0eac3d8345e59c46afc78534c2f05315803"
+  },
+  {
+    "compact_row": 235,
+    "corpus_row": 87287,
+    "name": "Geometry.SimplicialComplex",
+    "vector_sha256": "daffef834da35898cecaf59506aa53bbb3de3e3b6d09a53d4efe5771ac6cfd9a"
+  },
+  {
+    "compact_row": 236,
+    "corpus_row": 87312,
+    "name": "GradeMaxOrder.toGradeOrder",
+    "vector_sha256": "12ec008aaac65779f19d67bfc9df400e3d3de89f0769b52fc828e55df0bd8c0f"
+  },
+  {
+    "compact_row": 237,
+    "corpus_row": 87634,
+    "name": "GroupConeClass.mk",
+    "vector_sha256": "c2b7ab35b1109c830009c2a8d77f463468b9e7ed53fcf800ec7c8bffe0b45356"
+  },
+  {
+    "compact_row": 238,
+    "corpus_row": 87804,
+    "name": "GroupSeminorm.inv'",
+    "vector_sha256": "81e337531dd90e1c0a93b38ce1bc147df2d5c51561feb6f30c2078449c364d0d"
+  },
+  {
+    "compact_row": 239,
+    "corpus_row": 88164,
+    "name": "HahnSeries.SummableFamily",
+    "vector_sha256": "8523766b6aaa290bff8dbc8d3be50d9014f1026ca257316396fb3e21deb50581"
+  },
+  {
+    "compact_row": 240,
+    "corpus_row": 89587,
+    "name": "HasFiniteFPowerSeriesOnBall.finite",
+    "vector_sha256": "6596a6cc8b8cfa30feb4241b8034c6a0a66782da171233a07e18831491836d6e"
+  },
+  {
+    "compact_row": 241,
+    "corpus_row": 89591,
+    "name": "HasFiniteFPowerSeriesOnBall.mk",
+    "vector_sha256": "ce146102f3fc4ea0840fff9eec5563d84bd8f49289c7540ec82eac68fe45f61f"
+  },
+  {
+    "compact_row": 242,
+    "corpus_row": 94101,
+    "name": "IdemSemiring.mk",
+    "vector_sha256": "6cdc69b44da6af53405ccd3b15e5946af64a3b439bfcd595cc7d354c2a7c3f2f"
+  },
+  {
+    "compact_row": 243,
+    "corpus_row": 94134,
+    "name": "ImplicitFunctionData.hasStrictFDerivAt_leftFun",
+    "vector_sha256": "ce684d9a4bef8dfd5ef84a63fe6b1bec28252b576bf481dc397ffeab1e8f7b69"
+  },
+  {
+    "compact_row": 244,
+    "corpus_row": 94368,
+    "name": "InfConvergenceClass.mk",
+    "vector_sha256": "c28d6ad474d0ecf0a78a7939ac0131e8b46b37f959df0f435a0b04e88556e991"
+  },
+  {
+    "compact_row": 245,
+    "corpus_row": 94371,
+    "name": "InfConvergenceClass.tendsto_coe_atBot_isGLB",
+    "vector_sha256": "66b7965b298dee9c0d32b458589ea6fc97fc9ad4c6a7bf275eb817f7c35dba03"
+  },
+  {
+    "compact_row": 246,
+    "corpus_row": 94523,
+    "name": "InfTopHomClass.toInfHomClass",
+    "vector_sha256": "15927a7ba4942b5c5c4debc0ee13b379858019966dac789083e1faba4a0370c7"
+  },
+  {
+    "compact_row": 247,
+    "corpus_row": 97181,
+    "name": "IsAddQuotientCoveringMap.mk",
+    "vector_sha256": "1ce9399bd3da2a52f7e2dcc5f1a0834211f940e00a8942f694296f9298968fe2"
+  },
+  {
+    "compact_row": 248,
+    "corpus_row": 97198,
+    "name": "IsAddRegular.right",
+    "vector_sha256": "233bd714addd4b9ba3bfa3b4731202b79c36e26c0dd538aff18cd726ee0683a8"
+  },
+  {
+    "compact_row": 249,
+    "corpus_row": 97428,
+    "name": "IsAdjoinRoot.mk",
+    "vector_sha256": "cac405c157a6462a62ed4495e690eb327842b52b8d682b5431a2706aa1f39f89"
+  },
+  {
+    "compact_row": 250,
+    "corpus_row": 97562,
+    "name": "IsAlgClosure.isAlgebraic",
+    "vector_sha256": "3c0a934bfaed13371f48da2be5c0988f64c8c3f93fc1e30abc6b54b9625e933c"
+  },
+  {
+    "compact_row": 251,
+    "corpus_row": 98720,
+    "name": "IsContDiffImplicitAt.bijective",
+    "vector_sha256": "b80b96b52f66680af6dba19ee60740a0d99ad670283842e66fc3ca066e2dd49e"
+  },
+  {
+    "compact_row": 252,
+    "corpus_row": 98726,
+    "name": "IsContDiffImplicitAt.hasFDerivAt",
+    "vector_sha256": "5aed96306f7b488f6051d0c9e3621226263e7e900d833854b301c11318bfc2e9"
+  },
+  {
+    "compact_row": 253,
+    "corpus_row": 98750,
+    "name": "IsContinuousRiemannianBundle.exists_continuous",
+    "vector_sha256": "cd7444bf4cf8fa1b7015a7c0008ad698674bd07f8aaba56170418acfd0eedd39"
+  },
+  {
+    "compact_row": 254,
+    "corpus_row": 98751,
+    "name": "IsContinuousRiemannianBundle.mk",
+    "vector_sha256": "f55329f2a732f47c95351cf2f554b8ba7491dceaf84f0aa8a1097995f4d7bc09"
+  },
+  {
+    "compact_row": 255,
+    "corpus_row": 99123,
+    "name": "IsDenseEmbedding.injective",
+    "vector_sha256": "66f7cdb2ba09a3486bf47219d6fb64c980a884f70f5138a1815453a83bd4c61f"
+  },
+  {
+    "compact_row": 256,
+    "corpus_row": 99798,
+    "name": "IsHausdorff.mk",
+    "vector_sha256": "b12662a355e99d2d2365f4f2bb346e1d427de3446b3e9d10a51efa12287ec436"
+  },
+  {
+    "compact_row": 257,
+    "corpus_row": 100466,
+    "name": "IsLocalHom.mk",
+    "vector_sha256": "7ca0b24adfc27545517cafa8f24e1c1505f78c630dee648a36d5779dc1fc8354"
+  },
+  {
+    "compact_row": 258,
+    "corpus_row": 101580,
+    "name": "IsMprojection.mk",
+    "vector_sha256": "1e41a5e30a8db71c65edc502ba35bc3ef67a8ce90ca2100861581cf70f73a38b"
+  },
+  {
+    "compact_row": 259,
+    "corpus_row": 102094,
+    "name": "IsOrderBornology.mk",
+    "vector_sha256": "0dd1a4ab06d5b219711953a4777d75526cd1572d16c3d776cc8d1a58a45e22ef"
+  },
+  {
+    "compact_row": 260,
+    "corpus_row": 102099,
+    "name": "IsOrderConnected.conn",
+    "vector_sha256": "304c8b95d9d6ffd435c0b7ed64f2b13d9ce525cc95dc23ceb7cec37adbf843a0"
+  },
+  {
+    "compact_row": 261,
+    "corpus_row": 102749,
+    "name": "IsPurelyInseparable.mk",
+    "vector_sha256": "def8aae16bc783ccc6605f2494c6e6946e9f5c178ce6747939638f25a3c25e87"
+  },
+  {
+    "compact_row": 262,
+    "corpus_row": 102780,
+    "name": "IsQuotientCoveringMap.mk",
+    "vector_sha256": "b4e94b40a9cf20ed1300271021b2cb9348e0968f4e961a09382341ea2afcc668"
+  },
+  {
+    "compact_row": 263,
+    "corpus_row": 102784,
+    "name": "IsQuotientCoveringMap.toContinuousConstSMul",
+    "vector_sha256": "6f8dd020261b89eb1e0d190d2910e5c14a85197d6696582e492e9da07e04de6e"
+  },
+  {
+    "compact_row": 264,
+    "corpus_row": 103314,
+    "name": "IsSepClosed.mk",
+    "vector_sha256": "08e7a3cd6fee69749d29df7a30926b4683e2c83cf90f2def69ce02c23a67a42e"
+  },
+  {
+    "compact_row": 265,
+    "corpus_row": 103323,
+    "name": "IsSepClosed.splits_of_separable",
+    "vector_sha256": "a6a82387e5ae7cb06ff825c23ccdebfc74e9f2d71173831d7f49f098aee08e93"
+  },
+  {
+    "compact_row": 266,
+    "corpus_row": 103500,
+    "name": "IsSpectralMap.mk",
+    "vector_sha256": "88dd18f96410b05703dac24cd2090f0ece8cef17d559028c27ce715e201ad9cd"
+  },
+  {
+    "compact_row": 267,
+    "corpus_row": 103503,
+    "name": "IsSpectralMap.toContinuous",
+    "vector_sha256": "8db4d675a847ceb569e8f2b182ddc58f1601245badfee458eff679eb90053190"
+  },
+  {
+    "compact_row": 268,
+    "corpus_row": 103688,
+    "name": "IsSuccArchimedean.mk",
+    "vector_sha256": "bccb868abaafcf7d4efb038a3bccb0ae6f0b093e98e320d8d2dc152f833519ec"
+  },
+  {
+    "compact_row": 269,
+    "corpus_row": 104754,
+    "name": "IsometryEquiv.isometry_toFun",
+    "vector_sha256": "9872a4969a1d79c90f072ebddf584fd129466674cc8df0df5de4233dc6cc1542"
+  },
+  {
+    "compact_row": 270,
+    "corpus_row": 106116,
+    "name": "LieAdmissibleAlgebra.toModule",
+    "vector_sha256": "ee3d2a79e4f8fa22fdeb3a6fb25ab1adc6b83d345c5fec6ac263ce0fc12be507"
+  },
+  {
+    "compact_row": 271,
+    "corpus_row": 106135,
+    "name": "LieAlgebra.IsKilling",
+    "vector_sha256": "f874a85fc8897a094e5e0e3418d6657507c9cccdeef9197674be99f355747cb4"
+  },
+  {
+    "compact_row": 272,
+    "corpus_row": 106439,
+    "name": "LieEquiv.mk",
+    "vector_sha256": "d29ace2fcaa99f42dc6ad7245246b3abf4eba27ccec3741a447b23ae97d4e527"
+  },
+  {
+    "compact_row": 273,
+    "corpus_row": 106482,
+    "name": "LieGroup.toContMDiffMul",
+    "vector_sha256": "3bbd584c1dd91c7e5b092e05861ff1c487fdcc5ca961cc6ff22cf264d69bec88"
+  },
+  {
+    "compact_row": 274,
+    "corpus_row": 106657,
+    "name": "LieModule.IsTrivial",
+    "vector_sha256": "3d57509b1fb78e8109b6e4d6966336d9d314536d011dc61e9bdcfa5e603a4975"
+  },
+  {
+    "compact_row": 275,
+    "corpus_row": 108778,
+    "name": "LinearIsometryEquiv.mk",
+    "vector_sha256": "fd76372d404125711554bee5f6e7937a8f4bfcbc0772c5a2ab63100e929dd0d9"
+  },
+  {
+    "compact_row": 276,
+    "corpus_row": 108790,
+    "name": "LinearIsometryEquiv.norm_map'",
+    "vector_sha256": "535a07e78d44a9f05798916ea88be6cb247f1dbe33c1da020da2ffdd680d131e"
+  },
+  {
+    "compact_row": 277,
+    "corpus_row": 110441,
+    "name": "LinearMap.toMulActionHom",
+    "vector_sha256": "faa4cb152a922ed9fd3f9e38fbae389cb221c26044501684c9a60e6694ac5ac5"
+  },
+  {
+    "compact_row": 278,
+    "corpus_row": 110592,
+    "name": "LinearOrder.toMax",
+    "vector_sha256": "f74f3541e90c3b41e45d6fbf28f71e934d421d9ebc09b82549d6f6db466ba8f9"
+  },
+  {
+    "compact_row": 279,
+    "corpus_row": 110668,
+    "name": "LinearOrderedAddCommGroupWithTop.zsmul_zero'",
+    "vector_sha256": "5599b92170d2a112c68b55c3c86a81fe580a0db63ef504b0e11e9f4cf2bcc385"
+  },
+  {
+    "compact_row": 280,
+    "corpus_row": 113586,
+    "name": "LocallyCompactSpace.local_compact_nhds",
+    "vector_sha256": "0363919741a4380ce4d4bacdf4a269cdcde6a29ef703d4639f45ac61de1d6e04"
+  },
+  {
+    "compact_row": 281,
+    "corpus_row": 114679,
+    "name": "Matrix.TransvectionStruct",
+    "vector_sha256": "6dc8ce10f803eefe299432c8d803211b72de1404f89940ed7700e0b97425c8e4"
+  },
+  {
+    "compact_row": 282,
+    "corpus_row": 117195,
+    "name": "Matroid.Matroidᵣ",
+    "vector_sha256": "550cbcd7fd6561d2a7e08526d71be6b60b699185dfe757d2852156cb9bdc05d8"
+  },
+  {
+    "compact_row": 283,
+    "corpus_row": 118311,
+    "name": "MeasurableConstSMul.mk",
+    "vector_sha256": "3a11162d62d4eda0246f1dc9dc618f9ecf8d848f1e688fd27bf77a2217e9e4df"
+  },
+  {
+    "compact_row": 284,
+    "corpus_row": 118316,
+    "name": "MeasurableConstVAdd.mk",
+    "vector_sha256": "4372f3ff4d0c1908252cc00c5064f6940ed58ce577740357e8eb79f1714c0aa9"
+  },
+  {
+    "compact_row": 285,
+    "corpus_row": 118354,
+    "name": "MeasurableEmbedding.injective",
+    "vector_sha256": "3409448c08baf3c3e298801a745cd34519df439f3c9c3a417b40e2be83c47f0f"
+  },
+  {
+    "compact_row": 286,
+    "corpus_row": 118483,
+    "name": "MeasurableEquiv.mk",
+    "vector_sha256": "d56421487e1c902163b89cdcd3dcb1c21a1fb460935f432eed04a71ca44dd4f0"
+  },
+  {
+    "compact_row": 287,
+    "corpus_row": 118603,
+    "name": "MeasurableInf.mk",
+    "vector_sha256": "2a655b96ec3f90f85640674330815566b81432b78db39405df488951693d2c49"
+  },
+  {
+    "compact_row": 288,
+    "corpus_row": 118614,
+    "name": "MeasurableInv.mk",
+    "vector_sha256": "c627a912d7d2f606c18c0972d8b3838c53335279891f865c408cd99641e0166e"
+  },
+  {
+    "compact_row": 289,
+    "corpus_row": 118641,
+    "name": "MeasurableSMul.mk",
+    "vector_sha256": "9cc63031d0f06ae18ce14243f7c6ae8b10fd445030c623fc729c8af41b88aec1"
+  },
+  {
+    "compact_row": 290,
+    "corpus_row": 118778,
+    "name": "MeasurableSpace.DynkinSystem",
+    "vector_sha256": "41a34ec93d5336738aee3d7d7e1c98c8ddf3c72f975c8ba705ec1278f02ac312"
+  },
+  {
+    "compact_row": 291,
+    "corpus_row": 118781,
+    "name": "MeasurableSpace.SeparatesPoints",
+    "vector_sha256": "f55df709e11db026aa64ef3871ffdbc981a440ad946a7def01aa677e03d66ed6"
+  },
+  {
+    "compact_row": 292,
+    "corpus_row": 118921,
+    "name": "MeasurableSpace.measurableSet_iUnion",
+    "vector_sha256": "95dcd6655952f05ded93983a7e8c48d33469d375a4d4f802a85ebee8b5ddc0aa"
+  },
+  {
+    "compact_row": 293,
+    "corpus_row": 118994,
+    "name": "MeasurableVAdd₂.mk",
+    "vector_sha256": "173b0d6c6005f3f1f652ef5435a0dcc7fd8e36afa5cf7c5dae8eab8c41678fe8"
+  },
+  {
+    "compact_row": 294,
+    "corpus_row": 119027,
+    "name": "MeasureTheory.HasAddFundamentalDomain",
+    "vector_sha256": "9ed2cc911840be9781cb0f4b3b03445caf0337148e9dc4e2bf7b1ad8add24871"
+  },
+  {
+    "compact_row": 295,
+    "corpus_row": 119030,
+    "name": "MeasureTheory.HasPDF",
+    "vector_sha256": "40ff7fd69d9b02898a62fbcf9eb254dc878037986d3bfda1229c1570a2f592ac"
+  },
+  {
+    "compact_row": 296,
+    "corpus_row": 119063,
+    "name": "MeasureTheory.IsSetAlgebra",
+    "vector_sha256": "99dd2e75c4e46c1a78c726fb756635356acb0e3e142d75b626eb5a3fb65ab946"
+  },
+  {
+    "compact_row": 297,
+    "corpus_row": 119085,
+    "name": "MeasureTheory.Measure",
+    "vector_sha256": "af9de38fdaf8d7eafad604749ac5b85700937c52bb5bb369b71c97d328566efa"
+  },
+  {
+    "compact_row": 298,
+    "corpus_row": 119094,
+    "name": "MeasureTheory.OuterMeasureClass",
+    "vector_sha256": "3667eeed0cb5ee895e414b80759f5147884f6552998dc6dd5dc8541ef08664c6"
+  },
+  {
+    "compact_row": 299,
+    "corpus_row": 119098,
+    "name": "MeasureTheory.SFinite",
+    "vector_sha256": "3168638862b749e5026cd435de0a328284d8bb5aa9e2b2c6c8fe56f2dfba9c99"
+  },
+  {
+    "compact_row": 300,
+    "corpus_row": 119105,
+    "name": "MeasureTheory.SimpleFunc",
+    "vector_sha256": "da3821519f1e5940e13f18ae479712c6c6e9899e428c476549a2096205c2c1b2"
+  },
+  {
+    "compact_row": 301,
+    "corpus_row": 119110,
+    "name": "MeasureTheory.TendstoInDistribution",
+    "vector_sha256": "7e144440f288a282e9e463826f21be3113c3af03aed54a07ea690998f9461901"
+  },
+  {
+    "compact_row": 302,
+    "corpus_row": 119115,
+    "name": "MeasureTheory.VAddInvariantMeasure",
+    "vector_sha256": "9e79fc2da9bcd088c5d57ec3ab86a63e07481c0b6de941df03aea34b0bd72245"
+  },
+  {
+    "compact_row": 303,
+    "corpus_row": 123568,
+    "name": "ModularForm.bdd_at_cusps'",
+    "vector_sha256": "b6eec41a9fb15cb6d34ea748e4a00a2f22ffaa9cf33323cf0fce8a93497d5a01"
+  },
+  {
+    "compact_row": 304,
+    "corpus_row": 123607,
+    "name": "ModularForm.holo'",
+    "vector_sha256": "ba36452d15c7a48302a785ff1af8e0b60a3919257f12e5cd30d9a859d34d09fe"
+  },
+  {
+    "compact_row": 305,
+    "corpus_row": 123635,
+    "name": "ModularForm.mk",
+    "vector_sha256": "6d2cf041571140253cfb142aefd0bba13fabd9e322867b44ca5604b14abfda5b"
+  },
+  {
+    "compact_row": 306,
+    "corpus_row": 124101,
+    "name": "Module.mk",
+    "vector_sha256": "9ae45c692c5292035476237fb15611c024990e4b1be48006271293a1eff5dea7"
+  },
+  {
+    "compact_row": 307,
+    "corpus_row": 126534,
+    "name": "MoritaEquivalence.mk",
+    "vector_sha256": "c814a68009d3057fa7dca596f11a4d8ba16da7b024ee005d42ec9f2043193975"
+  },
+  {
+    "compact_row": 308,
+    "corpus_row": 126942,
+    "name": "MulActionSemiHomClass.mk",
+    "vector_sha256": "0756bd1dd282d84bb68721893a64657cde308f3b6267698857c369d051fa09c1"
+  },
+  {
+    "compact_row": 309,
+    "corpus_row": 127210,
+    "name": "MulCharClass.map_nonunit",
+    "vector_sha256": "621f3fd1dd91822b7bfc15d4848adf931ab93b601e5c4339762b6a798215db43"
+  },
+  {
+    "compact_row": 310,
+    "corpus_row": 127728,
+    "name": "MulMemClass.mk",
+    "vector_sha256": "af30c3c8642e1f2a38491b376f2f69f813bd171f490571c374b1e6b651c78d26"
+  },
+  {
+    "compact_row": 311,
+    "corpus_row": 128072,
+    "name": "MulPosMono.mk",
+    "vector_sha256": "248ffff7960462693cdb0e8759645715f18640ef16c92b3bb78e05286f973344"
+  },
+  {
+    "compact_row": 312,
+    "corpus_row": 128281,
+    "name": "MulZeroOneClass.zero_mul",
+    "vector_sha256": "8ec89bdba1cfa6afe8908aab1571c030bc9686daab0ab01efdba154686964760"
+  },
+  {
+    "compact_row": 313,
+    "corpus_row": 131483,
+    "name": "MvPowerSeries.HasSubst",
+    "vector_sha256": "4962d2fad417e0a3fcc720fd0839954d2b46da8d236aad8c885135eb28099745"
+  },
+  {
+    "compact_row": 314,
+    "corpus_row": 135524,
+    "name": "NonAssocRing.intCast_ofNat",
+    "vector_sha256": "71cba20073167b227b293ac111502d2690c30cd570a8c541f0fc42e58b197788"
+  },
+  {
+    "compact_row": 315,
+    "corpus_row": 135539,
+    "name": "NonAssocRing.toNonUnitalNonAssocRing",
+    "vector_sha256": "a6f0d3c4c103ee6834019b9ad303f6f6123ad7b79db8872d22aa21503c6212c1"
+  },
+  {
+    "compact_row": 316,
+    "corpus_row": 135549,
+    "name": "NonAssocSemiring.natCast_zero",
+    "vector_sha256": "3021b7944d923c92cbd3d31dc5e3d3a5470f47376d5d033f9f02201901106bac"
+  },
+  {
+    "compact_row": 317,
+    "corpus_row": 135787,
+    "name": "NonUnitalCommRing.mk",
+    "vector_sha256": "5599a01582106be69c58f7c0e310c736db344353bc40689f19dac348ecd3905a"
+  },
+  {
+    "compact_row": 318,
+    "corpus_row": 135857,
+    "name": "NonUnitalNonAssocCommSemiring.toCommMagma",
+    "vector_sha256": "538576cb38b2d10370c7857a0996049a3e79c9daab7d491718841698fe52f6e4"
+  },
+  {
+    "compact_row": 319,
+    "corpus_row": 135939,
+    "name": "NonUnitalRing.toNonUnitalNonAssocRing",
+    "vector_sha256": "acdf1017bacbf713a01431755a49a366f40fa646e606908e5a64804fc68f6083"
+  },
+  {
+    "compact_row": 320,
+    "corpus_row": 136707,
+    "name": "NonUnitalSubring.mk",
+    "vector_sha256": "6084a6d3bfc199a37ab54eda354e9675c150cdca024e456994c9ca957661b677"
+  },
+  {
+    "compact_row": 321,
+    "corpus_row": 137530,
+    "name": "NormalizationMonoid.mk",
+    "vector_sha256": "b6fa18befe0b472adfd93402e2e6f340af6afef96983cb0b6a7ffb7ea37dcf1f"
+  },
+  {
+    "compact_row": 322,
+    "corpus_row": 137700,
+    "name": "NormedAddGroupHom.mk",
+    "vector_sha256": "3b8bfd99f915590ff1bfe167843572ff27a6ad4769c8c5effe46f1647f57f6fc"
+  },
+  {
+    "compact_row": 323,
+    "corpus_row": 137923,
+    "name": "NormedRing.dist_eq",
+    "vector_sha256": "eaa064e9b1ef28802a2e64af97dae150549c4ea711c2a861e473947f2201c6f6"
+  },
+  {
+    "compact_row": 324,
+    "corpus_row": 137945,
+    "name": "NormedRing.toRing",
+    "vector_sha256": "723aa10db47ca39e1d5c73833266511a25ae6ead59e6101fe6bea3db7b56e1e6"
+  },
+  {
+    "compact_row": 325,
+    "corpus_row": 138724,
+    "name": "OmegaCompletePartialOrder.toPartialOrder",
+    "vector_sha256": "f60e6984b5260a17a51ed1e3b239849a2c4b1098730012c51a6b630f41b16db5"
+  },
+  {
+    "compact_row": 326,
+    "corpus_row": 138824,
+    "name": "OneMemClass.one_mem",
+    "vector_sha256": "606a209f1c2a20306de541f0a518c8698d0abf1e4a76ca200fdbcb39369345b6"
+  },
+  {
+    "compact_row": 327,
+    "corpus_row": 139631,
+    "name": "Order.Coframe",
+    "vector_sha256": "a231df27773d6973f733f79d55158680c3bcc617a7d1fd12d8b775c17feb392d"
+  },
+  {
+    "compact_row": 328,
+    "corpus_row": 139658,
+    "name": "Order.Ideal",
+    "vector_sha256": "11118b6b39ed79419ddb7edf4f55afef08ec61f7b1975db1122d42f66102f463"
+  },
+  {
+    "compact_row": 329,
+    "corpus_row": 141287,
+    "name": "OrderMonoidIso.map_le_map_iff'",
+    "vector_sha256": "540d93c3ef483bd595d305cee0e76955ee6f39cad39148c87c11458348d9d28f"
+  },
+  {
+    "compact_row": 330,
+    "corpus_row": 141581,
+    "name": "OrderedFinpartition.mk",
+    "vector_sha256": "d23185c5c7fab1826f8a126e87a27abf6ec123c254f89180ed3f8d35f848a9f0"
+  },
+  {
+    "compact_row": 331,
+    "corpus_row": 143947,
+    "name": "PFunctor.mk",
+    "vector_sha256": "10701d6d5b1ce5812f19f7ff1e2f96a8fd32990462ae777886573cd5346aa7f1"
+  },
+  {
+    "compact_row": 332,
+    "corpus_row": 145649,
+    "name": "PartialOrder.toPreorder",
+    "vector_sha256": "4b118b78ffaad1209e3cd6869fbc627ed0fbe48e3de483e325dcea0d452b8772"
+  },
+  {
+    "compact_row": 333,
+    "corpus_row": 146061,
+    "name": "PerfectField.mk",
+    "vector_sha256": "da5ffc21ee7a290933495bfec805dcfb3762e44673cf69bda96963979287dfd0"
+  },
+  {
+    "compact_row": 334,
+    "corpus_row": 150979,
+    "name": "PolynomialLaw.mk",
+    "vector_sha256": "e3adb2d15e9cb54ddbb2697d215c19d539f31233aa403d529f5e3d407ad85fa9"
+  },
+  {
+    "compact_row": 335,
+    "corpus_row": 151251,
+    "name": "PosPart.posPart",
+    "vector_sha256": "905121ce5bcd64f502bc12f70ac8121cd5d4b64700aad0250216b457f860345f"
+  },
+  {
+    "compact_row": 336,
+    "corpus_row": 152187,
+    "name": "Preord.Hom",
+    "vector_sha256": "7238eeb2757f4f256c8bc447d00293fab6de5f226b5e6d428473a139c3faca41"
+  },
+  {
+    "compact_row": 337,
+    "corpus_row": 152225,
+    "name": "Preord.str",
+    "vector_sha256": "f8fb8c59d879bda8f40badf57c5972183c7868a708cbcc80779f428656f781c9"
+  },
+  {
+    "compact_row": 338,
+    "corpus_row": 153454,
+    "name": "ProbabilityTheory.HasLaw",
+    "vector_sha256": "fb2b58b8aecc59151c380f0f521fba86c538e2c27e4508caccdfbd5034711863"
+  },
+  {
+    "compact_row": 339,
+    "corpus_row": 153477,
+    "name": "ProbabilityTheory.IsMeasurableRatCDF",
+    "vector_sha256": "bf1feb94c8c357d3ddde5b1b90237e001f11cdbf52a188885fab733038d0783e"
+  },
+  {
+    "compact_row": 340,
+    "corpus_row": 155194,
+    "name": "ProfiniteAddGrp.mk",
+    "vector_sha256": "2a6566cae5e2af8031e24724678cf8bcbe9e5c57d7de44d5204fb77fd32f183d"
+  },
+  {
+    "compact_row": 341,
+    "corpus_row": 155646,
+    "name": "PseudoEpimorphismClass.toRelHomClass",
+    "vector_sha256": "2b6105368532711b3bcc9a26e1f3fab3ed47f1b22f32bc5e74f3f5d6efb1941b"
+  },
+  {
+    "compact_row": 342,
+    "corpus_row": 156317,
+    "name": "Quantale.mk",
+    "vector_sha256": "2bbd31372f10e3b7bba01da38d194207b2c019256f617f70d8ae7e73f7f9b6ce"
+  },
+  {
+    "compact_row": 343,
+    "corpus_row": 156347,
+    "name": "QuasiErgodic.toQuasiMeasurePreserving",
+    "vector_sha256": "70836387ca0484aecdb329c000d91f080113bd752d916172e5f8c79024766b18"
+  },
+  {
+    "compact_row": 344,
+    "corpus_row": 161603,
+    "name": "RelHom.toFun",
+    "vector_sha256": "d42535693a79696dcaeda45bd26b8b3b682854a63fed06d9413b745d59eae0e7"
+  },
+  {
+    "compact_row": 345,
+    "corpus_row": 162780,
+    "name": "RightPreLieAlgebra.toIsScalarTower",
+    "vector_sha256": "d932e1d9fb014f3840574f1b8a24da08cd8161ade1666a9340d56889ab3881f9"
+  },
+  {
+    "compact_row": 346,
+    "corpus_row": 162906,
+    "name": "Ring.mk",
+    "vector_sha256": "c69c36c7e1f068bd7c1363a74c85cc216bb613c0386553bcaf58641ca28a1f3e"
+  },
+  {
+    "compact_row": 347,
+    "corpus_row": 162955,
+    "name": "Ring.toAddCommGroup",
+    "vector_sha256": "a302136161e6b77307a5de5fb87e639765f39415bb232c649a810ff97e6233e8"
+  },
+  {
+    "compact_row": 348,
+    "corpus_row": 162956,
+    "name": "Ring.toAddGroupWithOne",
+    "vector_sha256": "3b562c72c121e8fcfa9aa0b1235d9ec55bbd51b85078762ded5b2f6f4b9d99c1"
+  },
+  {
+    "compact_row": 349,
+    "corpus_row": 162965,
+    "name": "Ring.toSemiring",
+    "vector_sha256": "22b480d950e4143c4888c29a1ebd77477f65053eec7aed70654c5d7393763979"
+  },
+  {
+    "compact_row": 350,
+    "corpus_row": 163048,
+    "name": "RingCat.ring",
+    "vector_sha256": "28647dc66a25340c4519ce8994839ffb00a9610a18231e86d69564726ee16c5a"
+  },
+  {
+    "compact_row": 351,
+    "corpus_row": 163659,
+    "name": "RingHom.PropertyIsLocal",
+    "vector_sha256": "e4279739e8b1f174437ca6e7ed84173e197953371a90f75a9115bd5c8016f7d1"
+  },
+  {
+    "compact_row": 352,
+    "corpus_row": 164117,
+    "name": "RingHomSurjective.is_surjective",
+    "vector_sha256": "e082d2d7d4a209f044647e4d2bf43b60ef6e6ca3cf6c6fbba21485d0ad32214c"
+  },
+  {
+    "compact_row": 353,
+    "corpus_row": 164946,
+    "name": "SMulCon.mk",
+    "vector_sha256": "5b649fd24532c02446f9d2007f063ddccc92bb7a1c1871d8c1ff2a3780f612c7"
+  },
+  {
+    "compact_row": 354,
+    "corpus_row": 165068,
+    "name": "SProd.mk",
+    "vector_sha256": "c83d47b0a4ec89d95dcfe99e21825d5e000fa7ee28c6c69c4f3d2cf45f376a71"
+  },
+  {
+    "compact_row": 355,
+    "corpus_row": 165087,
+    "name": "SSet.RelativeMorphism",
+    "vector_sha256": "3d3929918eb62e3284bdc89160521543185fec18e23138ac525a7a124bbca94e"
+  },
+  {
+    "compact_row": 356,
+    "corpus_row": 165706,
+    "name": "SelectInsertParamsClass.replaceRange",
+    "vector_sha256": "86be75d7bdea6f73a5feabc3a8d4f5435a7c2c1da93e71e6ac23b8a457414dc0"
+  },
+  {
+    "compact_row": 357,
+    "corpus_row": 166077,
+    "name": "Semifield.toDivisionSemiring",
+    "vector_sha256": "118aa5c8083164ef22d9db5073ae5f28ace6be600c6a318fb048005b67dffbf2"
+  },
+  {
+    "compact_row": 358,
+    "corpus_row": 166143,
+    "name": "Semigrp.carrier",
+    "vector_sha256": "cb4bfca213a866006367d1e9507ffb4b7f5032ead238a08de3c0a876d3732420"
+  },
+  {
+    "compact_row": 359,
+    "corpus_row": 166227,
+    "name": "SemilatticeInf.inf",
+    "vector_sha256": "98134d01d1cb3bea712a728a3701a0e76e2213c942303661c31b97a6e35b7092"
+  },
+  {
+    "compact_row": 360,
+    "corpus_row": 166240,
+    "name": "SemilatticeInf.toPartialOrder",
+    "vector_sha256": "136396862746fd114e2e92b70ce03113f55168cbb94b2fcaac1ec62080cdbd9e"
+  },
+  {
+    "compact_row": 361,
+    "corpus_row": 166580,
+    "name": "Seminorm.toAddGroupSeminorm",
+    "vector_sha256": "84e611e0a70e7578494ad13dc65b3c599edf40672cf8153407dbed948729e5eb"
+  },
+  {
+    "compact_row": 362,
+    "corpus_row": 166632,
+    "name": "SeminormedAddCommGroup.mk",
+    "vector_sha256": "162e74700a9c3e0916b97c4232631f894ab35351d5a2ebdba7312696450e0f16"
+  },
+  {
+    "compact_row": 363,
+    "corpus_row": 166669,
+    "name": "SeminormedAddGroup.toPseudoMetricSpace",
+    "vector_sha256": "5b1a510b31633900ea5295a21694f6356ca3980ca97f100e5ab85e3cf9aa6ab6"
+  },
+  {
+    "compact_row": 364,
+    "corpus_row": 166739,
+    "name": "SeminormedSpace.Core",
+    "vector_sha256": "5ac27eceedc82b6957632c1d3463f7a7b1519555300048ba7d67185dd69932b9"
+  },
+  {
+    "compact_row": 365,
+    "corpus_row": 167211,
+    "name": "Set.FiniteExhaustion",
+    "vector_sha256": "b1af0cad0ca5bb72d2c6f6fdd8cfda3dda39de1aac760445ed80a37195f89f0d"
+  },
+  {
+    "compact_row": 366,
+    "corpus_row": 172781,
+    "name": "SheafOfModules.IsFiniteType",
+    "vector_sha256": "33ac6823550e5ea44af6e533d46cc3e90f2a5c66334344b9cf765fef86efc196"
+  },
+  {
+    "compact_row": 367,
+    "corpus_row": 173326,
+    "name": "SimpleGraph.IsFiveWheelLike",
+    "vector_sha256": "cbb784defe4a6416f330efbf5c5713959efec1dab65d150b513cd7063923c2ce"
+  },
+  {
+    "compact_row": 368,
+    "corpus_row": 173335,
+    "name": "SimpleGraph.IsPathGraph3Compl",
+    "vector_sha256": "7e492aef2fa15e1ee7b91cfda02c58e938cbfb580be49687439fcee3d4374073"
+  },
+  {
+    "compact_row": 369,
+    "corpus_row": 173339,
+    "name": "SimpleGraph.IsTree",
+    "vector_sha256": "a97b6e239eeacbfd5ac96e561333cf6a3f2d845b52de65f53c702e67b226e275"
+  },
+  {
+    "compact_row": 370,
+    "corpus_row": 175590,
+    "name": "SpectralMapClass.mk",
+    "vector_sha256": "ce3627d40e5f5f94b61ca3cb3839169367f44fd0b2d20da9d982d1a61f67453b"
+  },
+  {
+    "compact_row": 371,
+    "corpus_row": 177218,
+    "name": "SubAddAction.carrier",
+    "vector_sha256": "d569938b6d6915784e59d8b0ebe20c5f83be20b3da7902d483e4c12039631d6b"
+  },
+  {
+    "compact_row": 372,
+    "corpus_row": 177461,
+    "name": "SubNegMonoid.toSub",
+    "vector_sha256": "c1b03c38e79d34a01937662b47129577bd373a734e1daccce172bfc143bf214b"
+  },
+  {
+    "compact_row": 373,
+    "corpus_row": 177501,
+    "name": "SubadditiveHomClass.mk",
+    "vector_sha256": "17af2f39002c38829e229dcb4ddc23fc4e95844e3b57124a827e6207b268af71"
+  },
+  {
+    "compact_row": 374,
+    "corpus_row": 178174,
+    "name": "SubfieldClass.mk",
+    "vector_sha256": "5b8f90a4d1ba3c5f846d87991e5386055feb60553927f6edadbce16d292ca783"
+  },
+  {
+    "compact_row": 375,
+    "corpus_row": 178194,
+    "name": "Subgroup.IsArithmetic",
+    "vector_sha256": "483d45133215b6aa7ca61423b02cbb864fbe1f9fc1c13e0e344cbeac722d34e6"
+  },
+  {
+    "compact_row": 376,
+    "corpus_row": 179330,
+    "name": "Sublattice.carrier",
+    "vector_sha256": "8194d785a678f04961d0aaee70f793e3a5937919277974e0b0500364061af2e3"
+  },
+  {
+    "compact_row": 377,
+    "corpus_row": 179461,
+    "name": "Sublocale.carrier",
+    "vector_sha256": "38b3172605095e488236673a91b785d0b1fc3550a162b6b93268c9eb7630363d"
+  },
+  {
+    "compact_row": 378,
+    "corpus_row": 181262,
+    "name": "SubmodulesRingBasis.inter",
+    "vector_sha256": "e36e457e14d320ac8cc39ee6249bb4a5a2b9b8e7064c77d2c1052108ee1f4a3f"
+  },
+  {
+    "compact_row": 379,
+    "corpus_row": 182265,
+    "name": "Subsemigroup.carrier",
+    "vector_sha256": "e04a29a6a4595f5dc696eb32215524f71cc7f2aeef116c5c62ce500329455f3d"
+  },
+  {
+    "compact_row": 380,
+    "corpus_row": 182841,
+    "name": "SubsemiringClass.toAddSubmonoidClass",
+    "vector_sha256": "08099a4c9153266bd5f960e6139dba27999b13cba6beb9edfa85bce21448be4d"
+  },
+  {
+    "compact_row": 381,
+    "corpus_row": 182847,
+    "name": "SubsemiringClass.toSubmonoidClass",
+    "vector_sha256": "85ea7200819d8a89973ee922d6393fda64e6ede162b9145304817ce4af371864"
+  },
+  {
+    "compact_row": 382,
+    "corpus_row": 183658,
+    "name": "SupConvergenceClass.mk",
+    "vector_sha256": "745eeb7689efff19b74ed40b4a2790b739059aee4b9385fdecfafda442928d86"
+  },
+  {
+    "compact_row": 383,
+    "corpus_row": 183661,
+    "name": "SupConvergenceClass.tendsto_coe_atTop_isLUB",
+    "vector_sha256": "5dc3bf6e6d41da8c4b569858093cd39a0648145adb9b54f691e850941db82653"
+  },
+  {
+    "compact_row": 384,
+    "corpus_row": 185280,
+    "name": "TestFunctionClass.map_hasCompactSupport",
+    "vector_sha256": "921f4f8811b0a330d0618a4e49f341e80700417d518799b8ccdc998f6ea1db09"
+  },
+  {
+    "compact_row": 385,
+    "corpus_row": 185281,
+    "name": "TestFunctionClass.mk",
+    "vector_sha256": "cfa9821efffdad0c10a4bdd7ba99831113c0e363677e0edb7dcc25895e661830"
+  },
+  {
+    "compact_row": 386,
+    "corpus_row": 185975,
+    "name": "Topology.IsOpenEmbedding",
+    "vector_sha256": "dcec44cb03f66b13cf7324b36305c113ecc15c2f780e65eb5e371bcaa1bd53aa"
+  },
+  {
+    "compact_row": 387,
+    "corpus_row": 186639,
+    "name": "Trivialization.open_baseSet",
+    "vector_sha256": "9c6a3b807f6ff18ac7dad676b70c8eb2362256686c8535cb0226a7060cc9cb1d"
+  },
+  {
+    "compact_row": 388,
+    "corpus_row": 186927,
+    "name": "Turing.TM2ComputableAux",
+    "vector_sha256": "faca08128388c41ffd85596a6317a445a602c74547befecc55b58194caa05764"
+  },
+  {
+    "compact_row": 389,
+    "corpus_row": 187714,
+    "name": "ULiftable.congr",
+    "vector_sha256": "6af7b3935477fb80f11f17fccdc37e896b9ab04e9732ae3b2c9cf2d1457ac896"
+  },
+  {
+    "compact_row": 390,
+    "corpus_row": 187720,
+    "name": "ULiftable.mk",
+    "vector_sha256": "b45a184f908663e4666200d5036fcd12552a74a8b7e72228af69fb50382f2a7f"
+  },
+  {
+    "compact_row": 391,
+    "corpus_row": 188825,
+    "name": "UnitalShelf.toOne",
+    "vector_sha256": "bc951d147bbdb8cf77835cb771d25a36c63f612b51aa49ae7e3d9dfdec2be2bf"
+  },
+  {
+    "compact_row": 392,
+    "corpus_row": 189405,
+    "name": "Units.val",
+    "vector_sha256": "45cfed8b24592d636397ab100551c19387bab8150638434ceba482e4c2d6604c"
+  },
+  {
+    "compact_row": 393,
+    "corpus_row": 190878,
+    "name": "VectorBundleCore.IsContMDiff",
+    "vector_sha256": "0f211658290df8ca77384fdf9648c715e426b268e03033691c7dde9d8612094b"
+  },
+  {
+    "compact_row": 394,
+    "corpus_row": 191495,
+    "name": "WeierstrassCurve.IsCharNeTwoNF",
+    "vector_sha256": "7e0ec38f7ffc49c7cd256dd2d61e02456aeb27a47cf37b14cf6fc6d4d540dffe"
+  },
+  {
+    "compact_row": 395,
+    "corpus_row": 191498,
+    "name": "WeierstrassCurve.IsCharTwoJEqZeroNF",
+    "vector_sha256": "b3fc0ef005d4eddf9400232ac7ee1fcdd76e839b6a02ab6dde198796ce2d1f2d"
+  },
+  {
+    "compact_row": 396,
+    "corpus_row": 191499,
+    "name": "WeierstrassCurve.IsCharTwoJNeZeroNF",
+    "vector_sha256": "68af3b4890cc5fba21a8aefaabd369e2196cf8aa59604fcf3f9aad08995a9a29"
+  },
+  {
+    "compact_row": 397,
+    "corpus_row": 191505,
+    "name": "WeierstrassCurve.IsShortNF",
+    "vector_sha256": "60bdd52548e630656c9b5ed739740983b567bfce3744df1f4c15aa7ad3353ced"
+  },
+  {
+    "compact_row": 398,
+    "corpus_row": 194092,
+    "name": "ZFSet.Definable",
+    "vector_sha256": "f3e124a29fcd072ae363f5c1ca4879a72bc1b6c34e2e687f513d0d86f0f9ed34"
+  },
+  {
+    "compact_row": 399,
+    "corpus_row": 199659,
+    "name": "Affine.Simplex.mk",
+    "vector_sha256": "fd8922b6555177cc9baf8780ec78472c5bba4591b78b395fc4ac785b944c24cb"
+  },
+  {
+    "compact_row": 400,
+    "corpus_row": 200092,
+    "name": "Algebra.EssFiniteType.cond",
+    "vector_sha256": "6355fe86bea5cf63763f82e6eafc71130cbdff82900803258496b21b4609f8c8"
+  },
+  {
+    "compact_row": 401,
+    "corpus_row": 200443,
+    "name": "Algebra.Generators.mk",
+    "vector_sha256": "dd9cbb8e67f6b89ad7e5a08c4a25288ab690fc326c4e6756cedf55e260b95dba"
+  },
+  {
+    "compact_row": 402,
+    "corpus_row": 200972,
+    "name": "Algebra.Smooth.finitePresentation",
+    "vector_sha256": "a202e3d6140c85013339127cfd7d8248087cc8a62824714938ce7cddeaa7ec52"
+  },
+  {
+    "compact_row": 403,
+    "corpus_row": 200976,
+    "name": "Algebra.Smooth.mk",
+    "vector_sha256": "2c005d4e6129995b9c935502a215df9a02062e2cfceed83c2182ca7dfeeaf280"
+  },
+  {
+    "compact_row": 404,
+    "corpus_row": 201414,
+    "name": "AlgebraicGeometry.AffineTargetMorphismProperty.IsLocal",
+    "vector_sha256": "b09c5e180533315f8d6f5de685ff81e04e7712fa7add783b0080e6fe7464535c"
+  },
+  {
+    "compact_row": 405,
+    "corpus_row": 201434,
+    "name": "AlgebraicGeometry.ExistsHomHomCompEqCompAux.c",
+    "vector_sha256": "0a5479aa59e7d1a7533c89b093c85d0cd294225a08d47d34e0f1d1d35611c4d4"
+  },
+  {
+    "compact_row": 406,
+    "corpus_row": 201444,
+    "name": "AlgebraicGeometry.ExistsHomHomCompEqCompAux.hc",
+    "vector_sha256": "4a97bfe3c3cee8025873a19f5264fd883f4579d84452624541e9a39b6677bf43"
+  },
+  {
+    "compact_row": 407,
+    "corpus_row": 201488,
+    "name": "AlgebraicGeometry.FormallyUnramified.formallyUnramified_appLE",
+    "vector_sha256": "c66240a5f2130375e32645a9a53fcf84fa01c4e66af566ffa8389d7268e816a3"
+  },
+  {
+    "compact_row": 408,
+    "corpus_row": 201496,
+    "name": "AlgebraicGeometry.FormallyUnramified.mk",
+    "vector_sha256": "80141f895a652e3038a335e33bd8b7592488bca3b4e8eba76185646b07ae7e00"
+  },
+  {
+    "compact_row": 409,
+    "corpus_row": 201976,
+    "name": "AlgebraicGeometry.IsPreimmersion.mk",
+    "vector_sha256": "2670e85ecc66c82f37d38fff1963ba8f177a38a8c4a1458bfbd7feed265218e8"
+  },
+  {
+    "compact_row": 410,
+    "corpus_row": 202078,
+    "name": "AlgebraicGeometry.LocallyOfFinitePresentation.mk",
+    "vector_sha256": "2b4b76f671075b53dd4b3656d5b212782ab8a49c9784aebf62ccb73f29743829"
+  },
+  {
+    "compact_row": 411,
+    "corpus_row": 202097,
+    "name": "AlgebraicGeometry.LocallyRingedSpace.Hom",
+    "vector_sha256": "0efc9b07ecca20ff47d42ac7d4b9bce5b03fdfce143b5b55700daeea404c6b3e"
+  },
+  {
+    "compact_row": 412,
+    "corpus_row": 202264,
+    "name": "AlgebraicGeometry.PresheafedSpace.Hom",
+    "vector_sha256": "f0caa6d8b4fffb7baa397769aafc57d0c83c64a523464f03b54ed3a636b54cc6"
+  },
+  {
+    "compact_row": 413,
+    "corpus_row": 202265,
+    "name": "AlgebraicGeometry.PresheafedSpace.IsOpenImmersion",
+    "vector_sha256": "5d26bbb184133658718136cf1f734a4d61c597d6a1bab6860e14a67d6d9b7737"
+  },
+  {
+    "compact_row": 414,
+    "corpus_row": 202486,
+    "name": "AlgebraicGeometry.QuasiSeparated.quasiCompact_diagonal",
+    "vector_sha256": "d73ddd6204c78ee0c36ce98a0238e130e17803dbdb3ed3d5f3411223f3b663f4"
+  },
+  {
+    "compact_row": 415,
+    "corpus_row": 202510,
+    "name": "AlgebraicGeometry.Scheme.AffineCover",
+    "vector_sha256": "787618831dd875547d35eca0f009e113e7013974ccd8b7569ce2c5aeefa46c9f"
+  },
+  {
+    "compact_row": 416,
+    "corpus_row": 202523,
+    "name": "AlgebraicGeometry.Scheme.IsQuasiAffine",
+    "vector_sha256": "57d13b368954cc3f77363a9b05ccff45ddeabe8262563635c342c785ea19162c"
+  },
+  {
+    "compact_row": 417,
+    "corpus_row": 203483,
+    "name": "AlgebraicTopology.DoldKan.MorphComponents",
+    "vector_sha256": "a41230c1f1512d579b12dbb2dedb6e86f51cd767c60f39d21e484aac0f0d2ebc"
+  },
+  {
+    "compact_row": 418,
+    "corpus_row": 204519,
+    "name": "Bipointed.Hom.map_fst",
+    "vector_sha256": "e9aab1a8f43f04e9d04841d509ff5c84c0053727615d4f61a372c0d09de59bb7"
+  },
+  {
+    "compact_row": 419,
+    "corpus_row": 205191,
+    "name": "BoxIntegral.TaggedPrepartition.toPrepartition",
+    "vector_sha256": "e73f1eda6ded0c2c4df56f1ba5b1a78294d20996bcc7f7fd3ff7a2ad3806072d"
+  },
+  {
+    "compact_row": 420,
+    "corpus_row": 205690,
+    "name": "CategoryTheory.Adjunction.CoreHomEquiv",
+    "vector_sha256": "d687f2ff56d503be67b71e271a73e067b4bef50d2e5a63b99e2ff342c4771019"
+  },
+  {
+    "compact_row": 421,
+    "corpus_row": 206817,
+    "name": "CategoryTheory.BimonObj.mul_comul",
+    "vector_sha256": "94a27bd2dbfd6038be2d7b59e9c149dc7b58d5fa571a17467afd000454a3b6ff"
+  },
+  {
+    "compact_row": 422,
+    "corpus_row": 206942,
+    "name": "CategoryTheory.BundledHom.hom_ext",
+    "vector_sha256": "1420f67a3f0c18170a88639b15e5c804b6058ae811d1cac4b8d1cad3e1f15c08"
+  },
+  {
+    "compact_row": 423,
+    "corpus_row": 207178,
+    "name": "CategoryTheory.Cat.Hom₂",
+    "vector_sha256": "bc379e19eb5bfd7c30edc3b00f3d2a3d39bccda5b3f6dbf44735be32c674690f"
+  },
+  {
+    "compact_row": 424,
+    "corpus_row": 207482,
+    "name": "CategoryTheory.CategoryWithHomology.hasHomology",
+    "vector_sha256": "62549b42dd94d26d040de0e2eebd0305f5056e4b6541ce40a0c8ae6a3c320a13"
+  },
+  {
+    "compact_row": 425,
+    "corpus_row": 207684,
+    "name": "CategoryTheory.Closed.adj",
+    "vector_sha256": "49421578f607becc89e3c3556956e25605f15d953cd1254c566fa82b1fc2a363"
+  },
+  {
+    "compact_row": 426,
+    "corpus_row": 207728,
+    "name": "CategoryTheory.CommComon.comon",
+    "vector_sha256": "a6b0c276ff9465ca76a3871c7507d9a903bbf8d4d43ffdffbd276d8dddb7eddf"
+  },
+  {
+    "compact_row": 427,
+    "corpus_row": 207894,
+    "name": "CategoryTheory.CommSq.HasLift",
+    "vector_sha256": "3a089755a3346917f9c90328365c65efa9d7f6b6b11c036a6567be7b50488511"
+  },
+  {
+    "compact_row": 428,
+    "corpus_row": 207895,
+    "name": "CategoryTheory.CommSq.LiftStruct",
+    "vector_sha256": "ca890c75eed2987927d59fe7de45f7a577baf0c730755b8150483d05db43efce"
+  },
+  {
+    "compact_row": 429,
+    "corpus_row": 208785,
+    "name": "CategoryTheory.Congruence.mk",
+    "vector_sha256": "d528bcab80d228ccd14f6cb9ad15788d89fa60a3ae24790794c3e0daeaa0f9a9"
+  },
+  {
+    "compact_row": 430,
+    "corpus_row": 209530,
+    "name": "CategoryTheory.Discrete.as",
+    "vector_sha256": "787c6fc01380c7e830b52fe9d007695f95fc9b5f6ca45a9773af3daacf42b6eb"
+  },
+  {
+    "compact_row": 431,
+    "corpus_row": 210631,
+    "name": "CategoryTheory.Functor.CommShift",
+    "vector_sha256": "f65f06ebc8859e8bebcbff9928259407dc1dbe94854f0be9735ad6f6b0a17343"
+  },
+  {
+    "compact_row": 432,
+    "corpus_row": 210642,
+    "name": "CategoryTheory.Functor.Faithful",
+    "vector_sha256": "6ee34c37efc27d624c76f1b57dcdfbdddd4bdced6c2b4864f37c27baa8fede30"
+  },
+  {
+    "compact_row": 433,
+    "corpus_row": 210672,
+    "name": "CategoryTheory.Functor.IsEquivalence",
+    "vector_sha256": "6867113adc988c3f9b51bc51afcc227824cb3cc6c1f49f0df15b082a2cc1a175"
+  },
+  {
+    "compact_row": 434,
+    "corpus_row": 210688,
+    "name": "CategoryTheory.Functor.IsPreFibered",
+    "vector_sha256": "552232ec0acf69980ad022a88565728413174912753b4ead637f7f73ef641d88"
+  },
+  {
+    "compact_row": 435,
+    "corpus_row": 210718,
+    "name": "CategoryTheory.Functor.PreservesInjectiveObjects",
+    "vector_sha256": "91ae1e56f913e559a5f35295d8ebb485877fea8d23184aded9671e5e2e62a9e7"
+  },
+  {
+    "compact_row": 436,
+    "corpus_row": 210734,
+    "name": "CategoryTheory.Functor.PreservesZeroMorphisms",
+    "vector_sha256": "5ce23f6f91579e7ddb49cc7491b8f00960369f70a1acbcc26298cc1d1906078c"
+  },
+  {
+    "compact_row": 437,
+    "corpus_row": 213101,
+    "name": "CategoryTheory.GlueData'.U",
+    "vector_sha256": "ef9a587a13a2937085e07fdb022939f79376f0ae73ae483bcd815c27d24b1a49"
+  },
+  {
+    "compact_row": 438,
+    "corpus_row": 213145,
+    "name": "CategoryTheory.GradedObject.TriangleIndexData",
+    "vector_sha256": "96d07bec89a6557534df051eab7e0b6b47b84713c2840e0d04fdc866dde7c58c"
+  },
+  {
+    "compact_row": 439,
+    "corpus_row": 213485,
+    "name": "CategoryTheory.GrothendieckTopology.OneHypercover",
+    "vector_sha256": "b335b25ad61ee1b4561da8fe603c2112042cdec1dacb862dfa26afa3367a5a08"
+  },
+  {
+    "compact_row": 440,
+    "corpus_row": 213487,
+    "name": "CategoryTheory.GrothendieckTopology.Point",
+    "vector_sha256": "39cdff497088699219cb8b018c03249956f6a4727d8242a7eb8d64b8040c1383"
+  },
+  {
+    "compact_row": 441,
+    "corpus_row": 214530,
+    "name": "CategoryTheory.IndParallelPairPresentation.F₁",
+    "vector_sha256": "a130489bf117220174cb2dbece0d535dbc2965b0e4779cd790826183c3f681a7"
+  },
+  {
+    "compact_row": 442,
+    "corpus_row": 214645,
+    "name": "CategoryTheory.InjectivePresentation.J",
+    "vector_sha256": "19983e6283d6daabd0360bdd3f65e2378f28a843a7d3aadbe0e073e9b92dbef2"
+  },
+  {
+    "compact_row": 443,
+    "corpus_row": 214648,
+    "name": "CategoryTheory.InjectivePresentation.f",
+    "vector_sha256": "33ae1ef27f6254800740a6e389683808ab6cc7068f25e8dffb7bdba418a4e9fc"
+  },
+  {
+    "compact_row": 444,
+    "corpus_row": 214651,
+    "name": "CategoryTheory.InjectivePresentation.mono",
+    "vector_sha256": "ff1ada5a13c08d3f3c6e301016c9e3f59bc80336f3161db4529f1e84e7cf1b97"
+  },
+  {
+    "compact_row": 445,
+    "corpus_row": 214712,
+    "name": "CategoryTheory.InjectiveResolution.hasHomology",
+    "vector_sha256": "db5458a2c6759b758f2bb95dac3f35c918101811f56d242106bcb6b8a5dd51dc"
+  },
+  {
+    "compact_row": 446,
+    "corpus_row": 214718,
+    "name": "CategoryTheory.InjectiveResolution.injective",
+    "vector_sha256": "2902e41517c44da578f3a74315335399c209295e7d45ff0d54fda99177d2a242"
+  },
+  {
+    "compact_row": 447,
+    "corpus_row": 214757,
+    "name": "CategoryTheory.InjectiveResolution.quasiIso",
+    "vector_sha256": "26bbec31b6a130857f4c781e597bdfb39ebc33a6616d695350cbfc93b95202d3"
+  },
+  {
+    "compact_row": 448,
+    "corpus_row": 214772,
+    "name": "CategoryTheory.InjectiveResolution.ι",
+    "vector_sha256": "62f8ad90c9b88e2206b6b273f0452fbffefb660ccc4670ff5ae4b39cbe86f134"
+  },
+  {
+    "compact_row": 449,
+    "corpus_row": 215119,
+    "name": "CategoryTheory.IsIdempotentComplete.idempotents_split",
+    "vector_sha256": "e4e01ff1845bf458d6bcee69fab74e231fd6b14a568467959a690a7b5c47f426"
+  },
+  {
+    "compact_row": 450,
+    "corpus_row": 215518,
+    "name": "CategoryTheory.IsSkeletonOf.mk",
+    "vector_sha256": "1e35147c48bc2ee0abe625a206bb066570c4f7bebf2c6c808afbb80b852b8c09"
+  },
+  {
+    "compact_row": 451,
+    "corpus_row": 216266,
+    "name": "CategoryTheory.LeftRigidCategory.leftDual",
+    "vector_sha256": "535d4524cab646d581e0419e59bfa63131bf5bb6b3531bf0c335497396ae7b0d"
+  },
+  {
+    "compact_row": 452,
+    "corpus_row": 216324,
+    "name": "CategoryTheory.Limits.Bicone",
+    "vector_sha256": "447c068dad8ce21ba3a561058f8e0a034e827a21ebea077bf1df3f7c3b448fec"
+  },
+  {
+    "compact_row": 453,
+    "corpus_row": 216338,
+    "name": "CategoryTheory.Limits.Cocone",
+    "vector_sha256": "e0210926d0d2d0d028d0671fcd2e587df80c62f62c2cec23eca471cb3245e099"
+  },
+  {
+    "compact_row": 454,
+    "corpus_row": 216344,
+    "name": "CategoryTheory.Limits.ColimitCocone",
+    "vector_sha256": "b07ed7537cce653b0f6106928676a27a3e5162ff854557776cccdd788c3cdfb8"
+  },
+  {
+    "compact_row": 455,
+    "corpus_row": 216352,
+    "name": "CategoryTheory.Limits.CreatesFiniteColimits",
+    "vector_sha256": "ff89331266927e24575dad7011807b56cfe03bb747c80fe4b768d02b0249ac10"
+  },
+  {
+    "compact_row": 456,
+    "corpus_row": 216353,
+    "name": "CategoryTheory.Limits.CreatesFiniteCoproducts",
+    "vector_sha256": "0bc2ade4c9dec79af327fe6f51c3ed8466d6c69a04b92d048b3ba37b036f044f"
+  },
+  {
+    "compact_row": 457,
+    "corpus_row": 216354,
+    "name": "CategoryTheory.Limits.CreatesFiniteLimits",
+    "vector_sha256": "ff26e034136bcf5fa242aaf9ad2907e91deb7440f0337404288dc64267e85ffd"
+  },
+  {
+    "compact_row": 458,
+    "corpus_row": 216441,
+    "name": "CategoryTheory.Limits.IndObjectPresentation",
+    "vector_sha256": "eca4b35cab9490f0f4c3edcee8c53d594e54ef7b1982e9530730070e30babfd5"
+  },
+  {
+    "compact_row": 459,
+    "corpus_row": 216443,
+    "name": "CategoryTheory.Limits.IsColimit",
+    "vector_sha256": "0e8346ae54da84c4ded88cbf31b10f3f17fc3f64828427667b0ec89b658fddd9"
+  },
+  {
+    "compact_row": 460,
+    "corpus_row": 216452,
+    "name": "CategoryTheory.Limits.LimitBicone",
+    "vector_sha256": "44d08593494e08b9c1861403c2ae945c2b39f67713915bbef9b94b9941efd08a"
+  },
+  {
+    "compact_row": 461,
+    "corpus_row": 216481,
+    "name": "CategoryTheory.Limits.PreservesFiniteProducts",
+    "vector_sha256": "7a8631f8b70db321d3bcf77fff20242d4a9936c7e1324b6cadf6734cfdc07797"
+  },
+  {
+    "compact_row": 462,
+    "corpus_row": 216498,
+    "name": "CategoryTheory.Limits.ReflectsFiniteColimits",
+    "vector_sha256": "34aff0364f5a36f4b718a23f7e0bbf5e4b93ae504c01e514055db55fa1780165"
+  },
+  {
+    "compact_row": 463,
+    "corpus_row": 219093,
+    "name": "CategoryTheory.Localization.Lifting₂",
+    "vector_sha256": "2bffdcf6354cc55c321bb246f94d1b707410a83e27fa3502311bc72cdcb4bc6e"
+  },
+  {
+    "compact_row": 464,
+    "corpus_row": 219351,
+    "name": "CategoryTheory.LocallyDiscrete.mk",
+    "vector_sha256": "a6f34a0cb71e9c3fa13b3adde016c17359cf6ef2c14aadb3952414380b3dba0f"
+  },
+  {
+    "compact_row": 465,
+    "corpus_row": 219441,
+    "name": "CategoryTheory.Mat_.mk",
+    "vector_sha256": "5647339ed77c71dce47409ee32d85f6b23ba5071d5051fe6aa6e700ff1a0c882"
+  },
+  {
+    "compact_row": 466,
+    "corpus_row": 219678,
+    "name": "CategoryTheory.MonObj.one",
+    "vector_sha256": "309cff702e808d64df604a4adc7ec5cacd454bac5f8306363fb83579f9f102de"
+  },
+  {
+    "compact_row": 467,
+    "corpus_row": 220023,
+    "name": "CategoryTheory.Monoidal.InducingFunctorData",
+    "vector_sha256": "20b7019914aff816108c7b1d60ad5c62ca81c01f7206f0f4197fe3a74a134ada"
+  },
+  {
+    "compact_row": 468,
+    "corpus_row": 220131,
+    "name": "CategoryTheory.MonoidalCategory.associator_naturality",
+    "vector_sha256": "db7e6c57f422616786ee288285ffd021ef7318859e2c9ab640a19cb158eead63"
+  },
+  {
+    "compact_row": 469,
+    "corpus_row": 220780,
+    "name": "CategoryTheory.MorphismProperty.HasLocalization",
+    "vector_sha256": "9b9a094f8d7836758aa53bdc199bb33afc6711543abbe045b3a061a128d4e629"
+  },
+  {
+    "compact_row": 470,
+    "corpus_row": 220785,
+    "name": "CategoryTheory.MorphismProperty.HasQuotient",
+    "vector_sha256": "5d2846c9e168f5725d6e97ac14e98f4963871e571a76d6cb246cb30a69d456d0"
+  },
+  {
+    "compact_row": 471,
+    "corpus_row": 220815,
+    "name": "CategoryTheory.MorphismProperty.IsStableUnderTransfiniteCompositionOfShape",
+    "vector_sha256": "b03d1cbe39d87b21174952e9c8e069e457c370fa0150d1c09a92beb2a3bb20a4"
+  },
+  {
+    "compact_row": 472,
+    "corpus_row": 221554,
+    "name": "CategoryTheory.Noetherian.mk",
+    "vector_sha256": "544c9e0d9e476f593bcf8748816f2e19bb31ab4fad16945206bff7e82a30dc02"
+  },
+  {
+    "compact_row": 473,
+    "corpus_row": 221699,
+    "name": "CategoryTheory.ObjectProperty.IsTriangulatedClosed₃",
+    "vector_sha256": "d0ee7a37e76b5a0fa9908f52d60aa994afaae28f2c16fc8e475379282bb7afc5"
+  },
+  {
+    "compact_row": 474,
+    "corpus_row": 222867,
+    "name": "CategoryTheory.PreGaloisCategory.FiberFunctor",
+    "vector_sha256": "28287ff3a619c69e6a0d3fb83e455b3a555695c1a02d98a16a628fa1fba72e2a"
+  },
+  {
+    "compact_row": 475,
+    "corpus_row": 223041,
+    "name": "CategoryTheory.PreOneHypercover.Homotopy",
+    "vector_sha256": "e97a39074ab1dbed6af6158463813c9d20afb1ade589d8c99531140e88a9ea62"
+  },
+  {
+    "compact_row": 476,
+    "corpus_row": 223156,
+    "name": "CategoryTheory.PreZeroHypercover.Hom",
+    "vector_sha256": "eb93ab59971f327b4794f53da9d9ae2c87b1ab497dcdf233a0adcc49d9e6c1b9"
+  },
+  {
+    "compact_row": 477,
+    "corpus_row": 223614,
+    "name": "CategoryTheory.Presheaf.IsLocallyInjective",
+    "vector_sha256": "d27e725b74e0d0f4bd2fa6b9f5b931d70ead97ffafe890f747a5015d8d576d3b"
+  },
+  {
+    "compact_row": 478,
+    "corpus_row": 223615,
+    "name": "CategoryTheory.Presheaf.IsLocallySurjective",
+    "vector_sha256": "6033dba9a1a9ee5c482113c8f4b6baec5d563c709e43ea63a3ac431fd63f61d4"
+  },
+  {
+    "compact_row": 479,
+    "corpus_row": 224451,
+    "name": "CategoryTheory.Pseudofunctor.IsStackFor",
+    "vector_sha256": "1ea5be16e0d89d1cb60e7658ea1b6e537096fda178bc47bcf10554511f25bd4a"
+  },
+  {
+    "compact_row": 480,
+    "corpus_row": 224954,
+    "name": "CategoryTheory.RepresentablyCoflat.mk",
+    "vector_sha256": "91621bcf76bcc180c382faead923e8e808c7e1b8979d6d522a8abf06ae715fdc"
+  },
+  {
+    "compact_row": 481,
+    "corpus_row": 225075,
+    "name": "CategoryTheory.RigidCategory.toRightRigidCategory",
+    "vector_sha256": "9bc465a5ebdbc39140f13754c6667f924ecbf3b2f9e5dba6e095beb019d6ae5f"
+  },
+  {
+    "compact_row": 482,
+    "corpus_row": 226285,
+    "name": "CategoryTheory.Sieve.downward_closed",
+    "vector_sha256": "e84228cc1b427c93469bb3d4cd78bdb65c435fe4b59d5aea2ff07e0fdb077040"
+  },
+  {
+    "compact_row": 483,
+    "corpus_row": 226677,
+    "name": "CategoryTheory.SmallCategoryOfSet.assoc",
+    "vector_sha256": "38cf6b49deccaba59dad607563e80ac51ba01d39615edbd332dae8699e630473"
+  },
+  {
+    "compact_row": 484,
+    "corpus_row": 226865,
+    "name": "CategoryTheory.SplitMonoCategory.mk",
+    "vector_sha256": "44b8af6382cce1fb0daf1dd0ec64ffab8545a46cf35847d4d77858cd61367d2e"
+  },
+  {
+    "compact_row": 485,
+    "corpus_row": 227147,
+    "name": "CategoryTheory.StrictlyUnitaryLaxFunctorCore.mapComp",
+    "vector_sha256": "1a0bd012626fa62016a06048a1e690a80ee681f64391d61b5866713900150507"
+  },
+  {
+    "compact_row": 486,
+    "corpus_row": 227203,
+    "name": "CategoryTheory.StrictlyUnitaryPseudofunctorCore.map",
+    "vector_sha256": "29c4b1af62c5add3e2a2014485aff5d6eac385f82f3d194d5b42afca9d59b6b5"
+  },
+  {
+    "compact_row": 487,
+    "corpus_row": 227212,
+    "name": "CategoryTheory.StrictlyUnitaryPseudofunctorCore.map₂_whisker_left",
+    "vector_sha256": "5b91e54326324fc1f3ea1dd1e6ce0653526433957bee4f166720a499e020f227"
+  },
+  {
+    "compact_row": 488,
+    "corpus_row": 229335,
+    "name": "Coalgebra.Repr.eq",
+    "vector_sha256": "af8df2a46a5297c09eb1131c744754ed39df8f80985e630f3ccbbe6d694af3ba"
+  },
+  {
+    "compact_row": 489,
+    "corpus_row": 230742,
+    "name": "Congr!.Config.etaExpand",
+    "vector_sha256": "0f7e5eb82981b91c5eeea0f10cf3a9ca78975150282c599ea8afbce2d4191827"
+  },
+  {
+    "compact_row": 490,
+    "corpus_row": 231152,
+    "name": "ContinuousMap.Homotopy.toContinuousMap",
+    "vector_sha256": "877db453b292a89d6df73b7d9dec417794a3a1cde4ed5c04ad9cd760c93ff21f"
+  },
+  {
+    "compact_row": 491,
+    "corpus_row": 231191,
+    "name": "ContinuousMap.HomotopyLike.map_zero_left",
+    "vector_sha256": "69b119c34e1191fac8f2fd685e20659bf9d19c5fbdf9e419ff461010fde443e8"
+  },
+  {
+    "compact_row": 492,
+    "corpus_row": 231809,
+    "name": "DirectSum.GdistribMulAction.smul_add",
+    "vector_sha256": "591e0ff1a991fd022f6f1cb6af979d6b4b0cb9c531dee10b1af93f2b7ee94947"
+  },
+  {
+    "compact_row": 493,
+    "corpus_row": 232034,
+    "name": "DividedPowers.DPMorphism.toRingHom",
+    "vector_sha256": "4ec622d17e9ef5b57c02f5e87cb245c0f8613d654301f1c826442cd544a3d669"
+  },
+  {
+    "compact_row": 494,
+    "corpus_row": 233005,
+    "name": "EuclideanGeometry.Concyclic.Coplanar",
+    "vector_sha256": "b3a0a5954e3704968d9e1a58ca6ab14e4ca65d56ec0588ed9cd6049384b439f5"
+  },
+  {
+    "compact_row": 495,
+    "corpus_row": 233006,
+    "name": "EuclideanGeometry.Concyclic.Cospherical",
+    "vector_sha256": "4bfcfeeab33b133dd242948dd489b91443c26c86d9fdd1c3d63f88d12420bf37"
+  },
+  {
+    "compact_row": 496,
+    "corpus_row": 233008,
+    "name": "EuclideanGeometry.Concyclic.mk",
+    "vector_sha256": "7f54bfe10b99daa0eb7f71eb1ed7f541a40334644996ce0518e0e71f27ba163b"
+  },
+  {
+    "compact_row": 497,
+    "corpus_row": 233023,
+    "name": "EuclideanGeometry.Sphere.IsIntTangentAt",
+    "vector_sha256": "f5aaa26a22290fdf6feb633e1133788cd58fa8223e4e1ef203ad9489b0d45af9"
+  },
+  {
+    "compact_row": 498,
+    "corpus_row": 233025,
+    "name": "EuclideanGeometry.Sphere.IsTangentAt",
+    "vector_sha256": "de6355eece02b05a3f81cb3f1626996f24974a01d7930e4faa6eb43ba51a26b7"
+  },
+  {
+    "compact_row": 499,
+    "corpus_row": 234133,
+    "name": "Filter.HasCountableBasis.toHasBasis",
+    "vector_sha256": "c431dd706be3486acec1836c5f29b66b4c82cdd7a77c4fc62430a235e05a1e76"
+  },
+  {
+    "compact_row": 500,
+    "corpus_row": 234221,
+    "name": "Filter.IsIncreasingApproximateUnit.toIsApproximateUnit",
+    "vector_sha256": "36e1067eb37c54dbdf4783b4fe6a05c703e4c6b8cd4d536a3c1d8e3bc80615ce"
+  },
+  {
+    "compact_row": 501,
+    "corpus_row": 235545,
+    "name": "FirstOrder.Language.IsFraisseLimit",
+    "vector_sha256": "f20f831579f494b2577c8f02564578e1379967f46c3a9ec757c7328d75838c14"
+  },
+  {
+    "compact_row": 502,
+    "corpus_row": 235559,
+    "name": "FirstOrder.Language.Substructure",
+    "vector_sha256": "f303dcb120713242e6cb4e80de1ca9df61887b55b61a7071454be180564caa4c"
+  },
+  {
+    "compact_row": 503,
+    "corpus_row": 235752,
+    "name": "FirstOrder.Ring.CompatibleRing",
+    "vector_sha256": "fc19f1632af49cae5d61e393ba0476cef6d11146292aeeef78dc1f572078e9cb"
+  },
+  {
+    "compact_row": 504,
+    "corpus_row": 237992,
+    "name": "HahnEmbedding.IsPartial.truncLT_mem_range",
+    "vector_sha256": "c63ae57a36ca4aefd1881210a13e9614bb1e956d2a0192fa03abde2c025a7552"
+  },
+  {
+    "compact_row": 505,
+    "corpus_row": 238138,
+    "name": "HahnSeries.SummableFamily.mk",
+    "vector_sha256": "59b3900e0db6a03f321a2a7326d507d841aebbfe4a92500f126a6d09fc26264f"
+  },
+  {
+    "compact_row": 506,
+    "corpus_row": 238467,
+    "name": "HomogeneousLocalization.NumDenSameDeg.mk",
+    "vector_sha256": "2fae576c61a38134c436d47eb2388c30feaca638f1751dfc3859f0489e0fcfa1"
+  },
+  {
+    "compact_row": 507,
+    "corpus_row": 239304,
+    "name": "HomotopicalAlgebra.RelativeCellComplex.attachCells",
+    "vector_sha256": "0d5e0f0455a544ff50415ac65a7168836cd218e51f44aa0f2a8ec6804b220203"
+  },
+  {
+    "compact_row": 508,
+    "corpus_row": 239564,
+    "name": "Ideal.IsOka.mk",
+    "vector_sha256": "31b6c6b70e26c225d479121b8345d8bbb1b6dfb50a604a318517c101001a6654"
+  },
+  {
+    "compact_row": 509,
+    "corpus_row": 240723,
+    "name": "IsTopologicalAddGroup.addNegClosureNhd.isOpen",
+    "vector_sha256": "15570e21ec2cf0d9906ecf26aff40664e6d7dcd7b53f3a49d8f16144257c3dc6"
+  },
+  {
+    "compact_row": 510,
+    "corpus_row": 240982,
+    "name": "Lean.Export.Alloc",
+    "vector_sha256": "50cdc2bc8a669ff507319b65725d23ad412f8ac4e6847113b677b3dea538e23d"
+  },
+  {
+    "compact_row": 511,
+    "corpus_row": 240984,
+    "name": "Lean.Export.OfState",
+    "vector_sha256": "58082eeac5021fd533dc2803a0ee713dda64b937059c77168d45555243b81020"
+  },
+  {
+    "compact_row": 512,
+    "corpus_row": 241100,
+    "name": "Lean.Meta.RefinedDiscrTree",
+    "vector_sha256": "2f84760d69621569ed242847b931e1298ccb5db76e3e653bec3db8a6f10abe52"
+  },
+  {
+    "compact_row": 513,
+    "corpus_row": 242239,
+    "name": "LinearMap.IsProj.map_id",
+    "vector_sha256": "f39e54624db9567e2e3d01482102e30e8dcf57eab4973932a84b793c9d6a1e07"
+  },
+  {
+    "compact_row": 514,
+    "corpus_row": 243649,
+    "name": "Mathlib.Explode.Entries",
+    "vector_sha256": "f22edfd7f5711c8c71e39dc9678e65cb3ee01dc7fdc9c9c1a2ddd7d88fa2f5a1"
+  },
+  {
+    "compact_row": 515,
+    "corpus_row": 245127,
+    "name": "Matroid.RankPos.mk",
+    "vector_sha256": "6071ff81a2aa47059411c3c74f941cd7cd0f3e005110874d611e47d5e6d6a562"
+  },
+  {
+    "compact_row": 516,
+    "corpus_row": 245269,
+    "name": "MeasurableSpace.SeparatesPoints.mk",
+    "vector_sha256": "ed1abd9e26d9349c526d2a2a725e1a63219fd0b66c8d4ed71922d4dbb4ce9df3"
+  },
+  {
+    "compact_row": 517,
+    "corpus_row": 245722,
+    "name": "MeasureTheory.ComplexMeasure.HaveLebesgueDecomposition",
+    "vector_sha256": "75343115771a98c1ad6e213e1a332457a6ec53c44e5db0c3201acbe3ef436775"
+  },
+  {
+    "compact_row": 518,
+    "corpus_row": 245749,
+    "name": "MeasureTheory.Conservative.mk",
+    "vector_sha256": "f0b40eba0e75efb03b18f8528cdf189bc4b3bbe422513a67799f1b4576f58146"
+  },
+  {
+    "compact_row": 519,
+    "corpus_row": 247164,
+    "name": "MeasureTheory.Measure.HaveLebesgueDecomposition",
+    "vector_sha256": "797f1bf29e0c2db1dbc99514c4905916cbcde3a9a7ed400157759c8d7d9fbe0f"
+  },
+  {
+    "compact_row": 520,
+    "corpus_row": 247174,
+    "name": "MeasureTheory.Measure.IsAddHaarMeasure",
+    "vector_sha256": "9352b7ce16a2daba7add93395863c6648ba822b3ba06e329ddffd66ee30689aa"
+  },
+  {
+    "compact_row": 521,
+    "corpus_row": 247175,
+    "name": "MeasureTheory.Measure.IsAddLeftInvariant",
+    "vector_sha256": "b25518a4f0fbdff9f2e3c783fe0e3b1c0fdc9416994a53fd641b612a8f32a0c2"
+  },
+  {
+    "compact_row": 522,
+    "corpus_row": 247177,
+    "name": "MeasureTheory.Measure.IsComplete",
+    "vector_sha256": "50a7a424c4c2b4c5d8c5dfc8cce63c1f5a9cfbd3c472f43762aa6dc6ffc5ee7c"
+  },
+  {
+    "compact_row": 523,
+    "corpus_row": 247186,
+    "name": "MeasureTheory.Measure.MeasureDense",
+    "vector_sha256": "1ba012b9c8bec52d05d693ccd8ecb053a28df8b3d6c2378d2ece929c12954922"
+  },
+  {
+    "compact_row": 524,
+    "corpus_row": 247188,
+    "name": "MeasureTheory.Measure.OuterRegular",
+    "vector_sha256": "1b57495c4539398924229d930bf938305f5b79b5b522444e2a25c4b697801279"
+  },
+  {
+    "compact_row": 525,
+    "corpus_row": 247189,
+    "name": "MeasureTheory.Measure.QuasiMeasurePreserving",
+    "vector_sha256": "a35127143c8358ff5ce99367c0673d93b566bbd5c33d9c6cc989e7fa6e9d509d"
+  },
+  {
+    "compact_row": 526,
+    "corpus_row": 249099,
+    "name": "MeasureTheory.SignedMeasure.HaveLebesgueDecomposition",
+    "vector_sha256": "d8fe7f302fe662938dbbba236d184deacff0c7df5a613ec3758825302d832594"
+  },
+  {
+    "compact_row": 527,
+    "corpus_row": 255296,
+    "name": "Ordnode.Valid'.ord",
+    "vector_sha256": "ee762c382f0c057098fb531c8c2c67130f79f7acfb6678c50f5282be57636827"
+  },
+  {
+    "compact_row": 528,
+    "corpus_row": 255454,
+    "name": "PFunctor.MIntl.approx",
+    "vector_sha256": "bb919fb6e2b80f7818250da9d037d14442f8fb9ecfc0613058e72865596e07f0"
+  },
+  {
+    "compact_row": 529,
+    "corpus_row": 256411,
+    "name": "Polynomial.IsEisensteinAt.mem",
+    "vector_sha256": "81d1f6e917105ac8b8c0e0eadcb212538c4be7fde05d9d442fa8168a42054b4c"
+  },
+  {
+    "compact_row": 530,
+    "corpus_row": 256908,
+    "name": "PowerSeries.IsWeierstrassDivisionAt.degree_lt",
+    "vector_sha256": "25bd1a28911284c3421e4afe3009590fc97a3f68857def53a316f3336109bb04"
+  },
+  {
+    "compact_row": 531,
+    "corpus_row": 257034,
+    "name": "Prefunctor.MapReverse.map_reverse'",
+    "vector_sha256": "9ca9a2c8349be793844c85a8ccc2f6f54683b4ded45ba23c35f8d0ac1582e7a3"
+  },
+  {
+    "compact_row": 532,
+    "corpus_row": 257052,
+    "name": "Preord.Hom.hom'",
+    "vector_sha256": "e2f6a07a37229647b29fc4accec886c7190a2c4e839ce72408c02b0541541f1b"
+  },
+  {
+    "compact_row": 533,
+    "corpus_row": 257267,
+    "name": "ProbabilityTheory.HasLaw.aemeasurable",
+    "vector_sha256": "944f10ff0175b6000f782fc3d8c3b48aec796b5d37a4f0862fb393f17634fa2b"
+  },
+  {
+    "compact_row": 534,
+    "corpus_row": 257597,
+    "name": "ProbabilityTheory.IsRatCondKernelCDFAux.tendsto_integral_of_antitone",
+    "vector_sha256": "dfa2a2ebe2fc829e30f7c7ee9c149f416fce4267bc93904e59d928963baf3d03"
+  },
+  {
+    "compact_row": 535,
+    "corpus_row": 258898,
+    "name": "QuadraticMap.Isometry.map_app'",
+    "vector_sha256": "b26bef4d15614fb0892b3dfebf87811e17157dedaf2ef90fd68d00f9f6d43a07"
+  },
+  {
+    "compact_row": 536,
+    "corpus_row": 260038,
+    "name": "Representation.IsIntertwiningMap.mk",
+    "vector_sha256": "289f42ee27adac8cf05ffeb473d4dfc99eebd50e8bc62d6465281f85d65b72db"
+  },
+  {
+    "compact_row": 537,
+    "corpus_row": 260223,
+    "name": "RingFilterBasis.SubmodulesBasis.smul",
+    "vector_sha256": "bda1c38624d53c08a0d964ab0f767d07eb6e851710a51976e0aebf36bce8d3f7"
+  },
+  {
+    "compact_row": 538,
+    "corpus_row": 260467,
+    "name": "RingPreordering.HasIdealSupport.smul_mem_support",
+    "vector_sha256": "6bc204ff8a36badf7d6ad125b61cf1cfd662887ab885d9c40eddd0be2f563c8f"
+  },
+  {
+    "compact_row": 539,
+    "corpus_row": 260924,
+    "name": "RootPairing.IsReduced.mk",
+    "vector_sha256": "358bef10ff4b0dde96f79bb630381307ecc57ca230058bcebb642b401ba31b8e"
+  },
+  {
+    "compact_row": 540,
+    "corpus_row": 261159,
+    "name": "SSet.RelativeMorphism.Homotopy",
+    "vector_sha256": "63cb20e455115c44b117583e70de00c2cf14187f8c985476e4001716b5e4d25d"
+  },
+  {
+    "compact_row": 541,
+    "corpus_row": 261177,
+    "name": "SSet.RelativeMorphism.mk",
+    "vector_sha256": "6b9189eace76eedc95f1863799dc577c80cb607dcacb0b6786cbd74bee40c98f"
+  },
+  {
+    "compact_row": 542,
+    "corpus_row": 261257,
+    "name": "SSet.StrictSegalCore.injective",
+    "vector_sha256": "e53bcf01a45e3cda266109ee2556f1c4e000a04320c790fc8129e2bbabaecc76"
+  },
+  {
+    "compact_row": 543,
+    "corpus_row": 261602,
+    "name": "Sat.Clause.reify",
+    "vector_sha256": "6b7f5a65304d7f25ba15b5527145fb1a10f0964a51770846ca6634dd4079ff08"
+  },
+  {
+    "compact_row": 544,
+    "corpus_row": 262324,
+    "name": "Set.FiniteExhaustion.toFun",
+    "vector_sha256": "852aef713f5e7cad44821c18c0d03fc27cad435434ef105e1a32b80991cbb80c"
+  },
+  {
+    "compact_row": 545,
+    "corpus_row": 263208,
+    "name": "SetLike.GradedOne.one_mem",
+    "vector_sha256": "92f59f4454ade1ef026454b98137ea2b852133f2628aebd3667b14a11569458d"
+  },
+  {
+    "compact_row": 546,
+    "corpus_row": 264870,
+    "name": "SimpleGraph.Subgraph.Preconnected",
+    "vector_sha256": "99d6ebecf7bf3ea20b261561ef268ca233917c2a71beb7b1760b97751528ed34"
+  },
+  {
+    "compact_row": 547,
+    "corpus_row": 265151,
+    "name": "SimpleGraph.Walk.IsCircuit",
+    "vector_sha256": "c6455f462ff1169ae248dd3cdb38d179028311bef9e60b0f395d3893a315d078"
+  },
+  {
+    "compact_row": 548,
+    "corpus_row": 265152,
+    "name": "SimpleGraph.Walk.IsCycle",
+    "vector_sha256": "6eec51997d3a81e2c6384a4da6b53ffd3d9cf02654f8e5969f86f7c25bc61750"
+  },
+  {
+    "compact_row": 549,
+    "corpus_row": 265156,
+    "name": "SimpleGraph.Walk.IsPath",
+    "vector_sha256": "b70526b53cfe82115437f6a3a12df120f6dfbfbb23882b85fb9d0263d78d9769"
+  },
+  {
+    "compact_row": 550,
+    "corpus_row": 265766,
+    "name": "SimplicialObject.Split.Hom",
+    "vector_sha256": "e47fd9eb2427e497cb5a3255aaa28f0f931dc2cc91efb112add443ec6ec2a264"
+  },
+  {
+    "compact_row": 551,
+    "corpus_row": 266912,
+    "name": "Subgroup.Normal.mk",
+    "vector_sha256": "70f8c68e76791c089cf5c5f3f881733a287cf3cc4e54067221824478b4364256"
+  },
+  {
+    "compact_row": 552,
+    "corpus_row": 267281,
+    "name": "Submonoid.IsLocalizationMap.mk",
+    "vector_sha256": "2ebe270ecc0c6303412f3047cccabc6c1a8c4dbb73ef961b6fb51a15ac4554f2"
+  },
+  {
+    "compact_row": 553,
+    "corpus_row": 269572,
+    "name": "Topology.IsLawson.topology_eq_lawson",
+    "vector_sha256": "3cfa52f4d7761f5285a6aeb0b791351ede0f2c3e697ba5c7663d14ef54facb29"
+  },
+  {
+    "compact_row": 554,
+    "corpus_row": 269666,
+    "name": "Topology.IsOpenEmbedding.mk",
+    "vector_sha256": "af719017e00a20dc8ed6ad42c38885bc2cceea51a89e8ef04151a83970a80372"
+  },
+  {
+    "compact_row": 555,
+    "corpus_row": 269738,
+    "name": "Topology.IsQuotientMap.mk",
+    "vector_sha256": "4bd973802961c5843201fffec9340eeb08c8072a01e3612e6ed2bf537484ce6a"
+  },
+  {
+    "compact_row": 556,
+    "corpus_row": 270381,
+    "name": "Turing.TM0.Cfg",
+    "vector_sha256": "32c22a052fd289c472fc9c85d211a12c352465f00349e2535d16b39e8329a26e"
+  },
+  {
+    "compact_row": 557,
+    "corpus_row": 270397,
+    "name": "Turing.TM1.Cfg",
+    "vector_sha256": "57e298dbca1c54550c23945ad70383a33dc1e9f0a09a4cdbb3755cc4392a6287"
+  },
+  {
+    "compact_row": 558,
+    "corpus_row": 270447,
+    "name": "Turing.TM2.Cfg",
+    "vector_sha256": "3a92a9c4a61150fe79e8a4fb0efebc4cb02237f9af75b9de73276ef347b55035"
+  },
+  {
+    "compact_row": 559,
+    "corpus_row": 271305,
+    "name": "VectorBundleCore.IsContMDiff.contMDiffOn_coordChange",
+    "vector_sha256": "e5187abb86bfc012d1bd7935d24acf7233883a27bcdedbb35cd65e28615525b4"
+  },
+  {
+    "compact_row": 560,
+    "corpus_row": 271306,
+    "name": "VectorBundleCore.IsContMDiff.mk",
+    "vector_sha256": "43d5a19f1e38a9475a6a33ab3043d43b245914e10d4154f6a2d2cc33f441c8f1"
+  },
+  {
+    "compact_row": 561,
+    "corpus_row": 271498,
+    "name": "WeierstrassCurve.IsCharNeTwoNF.a₁",
+    "vector_sha256": "222dd676376ca5e27d08153b073388298a2b7ea46b4b051b97d1813c603a6a42"
+  },
+  {
+    "compact_row": 562,
+    "corpus_row": 271499,
+    "name": "WeierstrassCurve.IsCharNeTwoNF.a₃",
+    "vector_sha256": "dd4145da153f4b88a338521b2155d6936b908f037f770a1624e003f12ba71a8a"
+  },
+  {
+    "compact_row": 563,
+    "corpus_row": 271501,
+    "name": "WeierstrassCurve.IsCharNeTwoNF.mk",
+    "vector_sha256": "549396a877f1a062bd776c581996d3ef1e1a93feb7e7ea2a0939ae4c48976942"
+  },
+  {
+    "compact_row": 564,
+    "corpus_row": 271516,
+    "name": "WeierstrassCurve.IsCharTwoJEqZeroNF.a₁",
+    "vector_sha256": "69d03d1d47506a08a05208fe27cb566ea89aa21af937fe4e0c7926305a108526"
+  },
+  {
+    "compact_row": 565,
+    "corpus_row": 271519,
+    "name": "WeierstrassCurve.IsCharTwoJEqZeroNF.mk",
+    "vector_sha256": "a080df57314ad86f3cedcdcda877c473fe6d02cd4e1d93555cf423556a65917f"
+  },
+  {
+    "compact_row": 566,
+    "corpus_row": 271555,
+    "name": "WeierstrassCurve.IsShortNF.a₁",
+    "vector_sha256": "6c9c5d86cba3849b8e628f6614d0e29fe4be57bf775b1e6f053cea170a37e30f"
+  },
+  {
+    "compact_row": 567,
+    "corpus_row": 271557,
+    "name": "WeierstrassCurve.IsShortNF.a₃",
+    "vector_sha256": "0bc1cb1817c5b1534d7cae7af45fe9d028c1994814bb79070ae581667be27c9b"
+  },
+  {
+    "compact_row": 568,
+    "corpus_row": 271559,
+    "name": "WeierstrassCurve.IsShortNF.mk",
+    "vector_sha256": "8a184eab34eed1ae9b440df82513fa7f4e539453996e546f290d625df39d96b3"
+  },
+  {
+    "compact_row": 569,
+    "corpus_row": 272086,
+    "name": "WeierstrassCurve.VariableChange.s",
+    "vector_sha256": "d029a886ce75cfde7a456c846f800b45a87b718de7a2a00332f6029aff8cf40f"
+  },
+  {
+    "compact_row": 570,
+    "corpus_row": 272183,
+    "name": "WittVector.IsPoly.mk'",
+    "vector_sha256": "18f1e06a35c6c4e7ef35a6494492efb65d268581c7c2f77aceacedb5febba32d"
+  },
+  {
+    "compact_row": 571,
+    "corpus_row": 272993,
+    "name": "AlgebraicGeometry.AffineTargetMorphismProperty.IsLocal.of_basicOpenCover",
+    "vector_sha256": "e69bba0a07a1bebafbc6c21c648714ab30d0b0be0934ae21193aa390d591793f"
+  },
+  {
+    "compact_row": 572,
+    "corpus_row": 273363,
+    "name": "AlgebraicGeometry.Scheme.Cover.LocallyDirected",
+    "vector_sha256": "44a4d6f0d4e1455598b7bc244edb521801b0a5c07af838a721f76377c3fb6882"
+  },
+  {
+    "compact_row": 573,
+    "corpus_row": 273365,
+    "name": "AlgebraicGeometry.Scheme.Cover.RelativeGluingData",
+    "vector_sha256": "c18ebbfe378354771a08f1eddb5463aa1f8d55c5e70e64c4a7a1dc226b23fe7d"
+  },
+  {
+    "compact_row": 574,
+    "corpus_row": 273959,
+    "name": "AlgebraicGeometry.Scheme.IdealSheafData.mk",
+    "vector_sha256": "a0a26d211379a0fdde50f005da751a8df8ae6ade0cc956583df4121eef607f6a"
+  },
+  {
+    "compact_row": 575,
+    "corpus_row": 274605,
+    "name": "AlgebraicTopology.DoldKan.MorphComponents.mk",
+    "vector_sha256": "a9ac435fca531aad49e46e668631397b495cefe8186f7cb44fb8f737f3df0d9e"
+  },
+  {
+    "compact_row": 576,
+    "corpus_row": 274695,
+    "name": "BoxIntegral.IntegrationParams.MemBaseSet.distortion_le",
+    "vector_sha256": "ee34f2af20c4719b20eabebe10765907397af57ad97ee658675a306827a4bf5f"
+  },
+  {
+    "compact_row": 577,
+    "corpus_row": 274954,
+    "name": "CategoryTheory.Abelian.LeftResolution.π",
+    "vector_sha256": "5b59bfd3620f05d1eb368462548c9863ffe6b9bfb133ed043d488a2061c0ee5b"
+  },
+  {
+    "compact_row": 578,
+    "corpus_row": 275082,
+    "name": "CategoryTheory.Adjunction.CoreUnitCounit.counit",
+    "vector_sha256": "9f721c9c983a37e28043724b8a15ac04ea03bfe7557b2d9a899ba7ae9d8277e6"
+  },
+  {
+    "compact_row": 579,
+    "corpus_row": 276066,
+    "name": "CategoryTheory.CommSq.LiftStruct.fac_left",
+    "vector_sha256": "362f8f0b54caf1b5065ebb0c80da1779a42ae56a248239e56c7f99ccbf222711"
+  },
+  {
+    "compact_row": 580,
+    "corpus_row": 276067,
+    "name": "CategoryTheory.CommSq.LiftStruct.fac_right",
+    "vector_sha256": "f49190384697f79f3abd535a9b49882623cd225f5210786a04159b3e391df017"
+  },
+  {
+    "compact_row": 581,
+    "corpus_row": 276068,
+    "name": "CategoryTheory.CommSq.LiftStruct.l",
+    "vector_sha256": "b3e37d6610687e0748adc7381d62e191726be7d2fd25f21e4279dbade81f2ba2"
+  },
+  {
+    "compact_row": 582,
+    "corpus_row": 276069,
+    "name": "CategoryTheory.CommSq.LiftStruct.mk",
+    "vector_sha256": "e6031c2e115f9c07e4261ac51657361de3e1bf339164292ee837f12ee7f7cb69"
+  },
+  {
+    "compact_row": 583,
+    "corpus_row": 276957,
+    "name": "CategoryTheory.Functor.CoconeTypes.IsColimit",
+    "vector_sha256": "9a4aeb6ec487f4635fd63f20d0b9c98f8e1b8d085c0a8a0fa55d466330f5524a"
+  },
+  {
+    "compact_row": 584,
+    "corpus_row": 277143,
+    "name": "CategoryTheory.Functor.Faithful.map_injective",
+    "vector_sha256": "2b1ac6d34a7ec1a029d09b77af2914d03fa2c56933b90f978ee8b6c9dbd297dc"
+  },
+  {
+    "compact_row": 585,
+    "corpus_row": 277238,
+    "name": "CategoryTheory.Functor.Full.mk",
+    "vector_sha256": "36845a5e2c0c3417e87f1e4768d2263b9c164f11f09dc6cf1cff1eda020044dd"
+  },
+  {
+    "compact_row": 586,
+    "corpus_row": 277438,
+    "name": "CategoryTheory.Functor.IsAccessible.exists_cardinal",
+    "vector_sha256": "b5e0891a21e68eb3723c03d3d9b869cf475e676aed117c4a596935fbc3e05ba5"
+  },
+  {
+    "compact_row": 587,
+    "corpus_row": 277536,
+    "name": "CategoryTheory.Functor.IsDense.mk",
+    "vector_sha256": "d1a9b8b4cde5b22a1375594cf119791aea4be7aff806f429abac8906c1e8b1eb"
+  },
+  {
+    "compact_row": 588,
+    "corpus_row": 278560,
+    "name": "CategoryTheory.Functor.WellOrderInductionData.mk",
+    "vector_sha256": "a957bb68b16f95efcf7a5a9a241a3dd9254852182e84093cf29cd67537652dea"
+  },
+  {
+    "compact_row": 589,
+    "corpus_row": 278793,
+    "name": "CategoryTheory.GradedObject.BifunctorComp₂₃IndexData.mk",
+    "vector_sha256": "57ae3f42baf730145e964da1a64e5aa48749ad4aa3fa0a3c9bd206e4978c2d3d"
+  },
+  {
+    "compact_row": 590,
+    "corpus_row": 279011,
+    "name": "CategoryTheory.GrothendieckTopology.OneHypercover.IsPreservedBy",
+    "vector_sha256": "bc7c1ee2b04e9981ee72fc38bd7ef8f4d4032fed832c42eda531cebe41ceefa0"
+  },
+  {
+    "compact_row": 591,
+    "corpus_row": 279199,
+    "name": "CategoryTheory.HasLiftingProperty.transfiniteComposition.SqStruct",
+    "vector_sha256": "9976e9076a2e04294bb6c72872fa9fb8c62aaf3b18b212c6545b7d39b486313b"
+  },
+  {
+    "compact_row": 592,
+    "corpus_row": 279635,
+    "name": "CategoryTheory.Lax.StrongTrans.naturality_id",
+    "vector_sha256": "110701eacec67e242e2fa5cc278e20edd56b39dfeed2a1a41d2509d7b3fef440"
+  },
+  {
+    "compact_row": 593,
+    "corpus_row": 280442,
+    "name": "CategoryTheory.Limits.ColimitCocone.cocone",
+    "vector_sha256": "843a83fe698713f8b213b9320ec2827d04d3fcd1fbf8447e2874791754d2e654"
+  },
+  {
+    "compact_row": 594,
+    "corpus_row": 280444,
+    "name": "CategoryTheory.Limits.ColimitCocone.isColimit",
+    "vector_sha256": "d61258333a22d6cb4e294c63811101ab1cb8deb6bafc1d415c1c9b8e2d6aa1ae"
+  },
+  {
+    "compact_row": 595,
+    "corpus_row": 280445,
+    "name": "CategoryTheory.Limits.ColimitCocone.mk",
+    "vector_sha256": "c59016ba78b53aade9c22c9cb637254815b3cf1855b33dd6d0ccd21e0f08b9b1"
+  },
+  {
+    "compact_row": 596,
+    "corpus_row": 280464,
+    "name": "CategoryTheory.Limits.ColimitPresentation.diag",
+    "vector_sha256": "0c86f4b1d7b5e29de0cb7cf67a6547cd217d0889c4f3d1a0e62600bb29c94e5c"
+  },
+  {
+    "compact_row": 597,
+    "corpus_row": 280725,
+    "name": "CategoryTheory.Limits.CoproductDisjoint.nonempty_isInitial_of_ne",
+    "vector_sha256": "27f0e78ec53578eaeddef23aeb0c49e14c8cff3e6d92e2e2465be3d4c289ef83"
+  },
+  {
+    "compact_row": 598,
+    "corpus_row": 280793,
+    "name": "CategoryTheory.Limits.CreatesFiniteCoproducts.mk",
+    "vector_sha256": "659fcaf1508d96a01c396050102109b8bffea1d223caa2d0ff0df99fa2babd4f"
+  },
+  {
+    "compact_row": 599,
+    "corpus_row": 280801,
+    "name": "CategoryTheory.Limits.CreatesFiniteLimits.mk",
+    "vector_sha256": "ea6e516de9559510fb80957215390d514f0394f60beda673a70aff3ec725e80c"
+  },
+  {
+    "compact_row": 600,
+    "corpus_row": 280821,
+    "name": "CategoryTheory.Limits.DiagramOfCocones.comp",
+    "vector_sha256": "6868a1b69cc1eead183cd313d21de4f5d75667567368c7d7c6e62531f565daa7"
+  },
+  {
+    "compact_row": 601,
+    "corpus_row": 280823,
+    "name": "CategoryTheory.Limits.DiagramOfCocones.id",
+    "vector_sha256": "a82dfbc640c38dd469269c1dd06ed524939b1fadd21aec5c0dd241a072c51659"
+  },
+  {
+    "compact_row": 602,
+    "corpus_row": 281408,
+    "name": "CategoryTheory.Limits.IndObjectPresentation.isColimit",
+    "vector_sha256": "aba28819d9a7b2c86f12431ddfdaa9872f8385d95df292b94a02feb830c8c3d0"
+  },
+  {
+    "compact_row": 603,
+    "corpus_row": 281506,
+    "name": "CategoryTheory.Limits.IsColimit.mk",
+    "vector_sha256": "95b64543e5900ab89df4673e8c243f48ddefd917736a7b50275d6324ed4433af"
+  },
+  {
+    "compact_row": 604,
+    "corpus_row": 282207,
+    "name": "CategoryTheory.Limits.MultispanShape.fst",
+    "vector_sha256": "57340faa25d4880ffbbafaf6e90b25368ae93debcc37dfb94c3cc39a94ea316b"
+  },
+  {
+    "compact_row": 605,
+    "corpus_row": 282682,
+    "name": "CategoryTheory.Limits.ReflectsFiniteColimits.mk",
+    "vector_sha256": "d32a8099a6d12e92a9ce31e3ca8e752117365db4781f9bdbdbacdd5ce596e484"
+  },
+  {
+    "compact_row": 606,
+    "corpus_row": 282713,
+    "name": "CategoryTheory.Limits.ReflectsLimitsOfSize.mk",
+    "vector_sha256": "a2f1b6e398660060662e3e792d17219ccd71da161f677e192cf8639e2cf045a4"
+  },
+  {
+    "compact_row": 607,
+    "corpus_row": 284155,
+    "name": "CategoryTheory.Localization.Construction.LocQuiver",
+    "vector_sha256": "e29bfa3960a453beffe203c76bfd5f5ec5ab30e68465d87a4e1ed22716ba481b"
+  },
+  {
+    "compact_row": 608,
+    "corpus_row": 284441,
+    "name": "CategoryTheory.LocalizerMorphism.IsLeftDerivabilityStructure.guitartExact'",
+    "vector_sha256": "be2e19693be370b8c8fc4c45721a0f5acfd78ed7e9e9381906612ebf3e1087b3"
+  },
+  {
+    "compact_row": 609,
+    "corpus_row": 284912,
+    "name": "CategoryTheory.MonoidalCategory.DayConvolutionInternalHom.isLimitWedge",
+    "vector_sha256": "452b46b8d73592d5a9a07878f981cb33a0a9f73f9f3b0080fdc94fc218341092"
+  },
+  {
+    "compact_row": 610,
+    "corpus_row": 284969,
+    "name": "CategoryTheory.MonoidalCategory.DayFunctor.functor",
+    "vector_sha256": "d013e9d83cc9fc54484a67a5d336864b8617d570ade83e40da29e812978225a8"
+  },
+  {
+    "compact_row": 611,
+    "corpus_row": 285124,
+    "name": "CategoryTheory.MonoidalCategory.MonoidalLeftAction.associator_actionHom",
+    "vector_sha256": "b7f1169e7d8644dc2f3d5b83bbcc605245ce0025e40be45b8f68f2198c1814f1"
+  },
+  {
+    "compact_row": 612,
+    "corpus_row": 285539,
+    "name": "CategoryTheory.MorphismProperty.FunctorialFactorizationData.Z",
+    "vector_sha256": "a6bd56971cac04a242b5794aa5d9a4073deecdf72c7c1393c705588c44c8c71d"
+  },
+  {
+    "compact_row": 613,
+    "corpus_row": 285590,
+    "name": "CategoryTheory.MorphismProperty.HasLeftCalculusOfFractions.mk",
+    "vector_sha256": "cce986055aeceb8658eab3723b79505d92de29fcb8ea4d14ccde929d50abe0c8"
+  },
+  {
+    "compact_row": 614,
+    "corpus_row": 285692,
+    "name": "CategoryTheory.MorphismProperty.IsLocalAtSource.comp",
+    "vector_sha256": "1f054249ce4712694e065d9859002b211c1aaf1642311e3811c24d1008143889"
+  },
+  {
+    "compact_row": 615,
+    "corpus_row": 285698,
+    "name": "CategoryTheory.MorphismProperty.IsLocalAtSource.of_zeroHypercover",
+    "vector_sha256": "d5056aa4dfbb468bdb37ded9e13558c119286784571d8e375762613f70f4f318"
+  },
+  {
+    "compact_row": 616,
+    "corpus_row": 285711,
+    "name": "CategoryTheory.MorphismProperty.IsLocalAtTarget.of_zeroHypercover",
+    "vector_sha256": "e85cbea945eddda87ede6096ec93e7c65f517a59e137526226f5d3097ef1ef8c"
+  },
+  {
+    "compact_row": 617,
+    "corpus_row": 285789,
+    "name": "CategoryTheory.MorphismProperty.IsStableUnderComposition.comp_mem",
+    "vector_sha256": "cf158d25d1c19952d5cfcf1bd6b9a9435b3283b0ebfaca8c217d463187d47aeb"
+  },
+  {
+    "compact_row": 618,
+    "corpus_row": 286113,
+    "name": "CategoryTheory.MorphismProperty.RightFraction₂.f'",
+    "vector_sha256": "c28b2fe0d931f44a47858470387835cdb4a2a87eb4d0526045aed741b0ae7324"
+  },
+  {
+    "compact_row": 619,
+    "corpus_row": 286362,
+    "name": "CategoryTheory.ObjectProperty.InheritedFromSource.of_hom_of_source",
+    "vector_sha256": "c405c1cc3baf672cb1a5f1016a67c6643bd3b37ed918e539ac189973310b69ce"
+  },
+  {
+    "compact_row": 620,
+    "corpus_row": 286636,
+    "name": "CategoryTheory.Oplax.OplaxTrans.app",
+    "vector_sha256": "1ee95f26161a0f410fc987b10eee8af4e0281a7bc490aad7da0e037b9f352161"
+  },
+  {
+    "compact_row": 621,
+    "corpus_row": 286833,
+    "name": "CategoryTheory.OverPresheafAux.MakesOverArrow.app",
+    "vector_sha256": "6411cf8354765249f5a49117d7f3a99d649490c6c8e5a9ec946cefb9fda8ab00"
+  },
+  {
+    "compact_row": 622,
+    "corpus_row": 287032,
+    "name": "CategoryTheory.PreOneHypercover.Homotopy.H",
+    "vector_sha256": "7779b71a2936feb86ea2600508471bcf30b3f46e7b1f74f7dcfa3673e9731003"
+  },
+  {
+    "compact_row": 623,
+    "corpus_row": 287033,
+    "name": "CategoryTheory.PreOneHypercover.Homotopy.a",
+    "vector_sha256": "2e3ed341fee1bc285e47111b46a21649dd52e0a4c6c1eb05db0e3cdd3e4a64cf"
+  },
+  {
+    "compact_row": 624,
+    "corpus_row": 287038,
+    "name": "CategoryTheory.PreOneHypercover.Homotopy.mk",
+    "vector_sha256": "3c466eed4b6812d526bfad7988d6fd368272f29842658dee5ab598d30fe05752"
+  },
+  {
+    "compact_row": 625,
+    "corpus_row": 287043,
+    "name": "CategoryTheory.PreOneHypercover.Homotopy.wl",
+    "vector_sha256": "ff6c5d8f00cd10adfc4b4f95cca4e412865ff1718bef6c491eab5691f29a297c"
+  },
+  {
+    "compact_row": 626,
+    "corpus_row": 287045,
+    "name": "CategoryTheory.PreOneHypercover.Homotopy.wr",
+    "vector_sha256": "108a55aa74f4365b32dc5ba9f52d54c2f457cbca3e450c21a64493588e5654d2"
+  },
+  {
+    "compact_row": 627,
+    "corpus_row": 287649,
+    "name": "CategoryTheory.Pretriangulated.TriangleMorphism.comm₂",
+    "vector_sha256": "a26b587c9fc8d46f3a0ec97b0c1e1e0bb12af3dc6cb98b13782e0d4499753808"
+  },
+  {
+    "compact_row": 628,
+    "corpus_row": 287798,
+    "name": "CategoryTheory.Pseudofunctor.DescentData.hom",
+    "vector_sha256": "3a40ea6f03097893dac972d837c476b16f976ea52766cbe056b46b7ac0a80154"
+  },
+  {
+    "compact_row": 629,
+    "corpus_row": 288298,
+    "name": "CategoryTheory.ShortComplex.Hom.τ₂",
+    "vector_sha256": "4434eda7b2b5ac242a01350b6245ee5326c7ea81e3f93a2b0194b28dd7c89286"
+  },
+  {
+    "compact_row": 630,
+    "corpus_row": 288488,
+    "name": "CategoryTheory.ShortComplex.Homotopy.mk",
+    "vector_sha256": "6405f9e7670c099c0492001954c2cdee47c105c183ae9267c2bf84b95137b7db"
+  },
+  {
+    "compact_row": 631,
+    "corpus_row": 288573,
+    "name": "CategoryTheory.ShortComplex.LeftHomologyData.H",
+    "vector_sha256": "65a8d8e13038370de4f28fb46732006823e41504b8529caaf2d13f3bcb6e9f3c"
+  },
+  {
+    "compact_row": 632,
+    "corpus_row": 289140,
+    "name": "CategoryTheory.ShortComplex.SnakeInput.L₁_exact",
+    "vector_sha256": "f47885df347235fc78fa8df220d04a32d16d8db6b32f6e99304fef3425a25e67"
+  },
+  {
+    "compact_row": 633,
+    "corpus_row": 289210,
+    "name": "CategoryTheory.ShortComplex.SnakeInput.h₀",
+    "vector_sha256": "d3b3ae22b8cc99226f4f3d56d8a646443d5b45580c3f42978272c78eaf227bb7"
+  },
+  {
+    "compact_row": 634,
+    "corpus_row": 290030,
+    "name": "CategoryTheory.Triangulated.TStructure.ge_shift",
+    "vector_sha256": "9f7c927c8e26f9ef22ecc740dfe5a0b832da43a40c04b7d40c92e7c3b11a3f5c"
+  },
+  {
+    "compact_row": 635,
+    "corpus_row": 291014,
+    "name": "EuclideanGeometry.Sphere.IsDiameter.midpoint_eq_center",
+    "vector_sha256": "8cb95d931170582d31ef25506de4d433df82ca806e17e79853c555042624ee45"
+  },
+  {
+    "compact_row": 636,
+    "corpus_row": 291059,
+    "name": "EuclideanGeometry.Sphere.IsTangentAt.mem_space",
+    "vector_sha256": "5cc6930c231d4e750bb9d773492e4536e0cc00f78010241d79a44b69a52ee3b5"
+  },
+  {
+    "compact_row": 637,
+    "corpus_row": 291982,
+    "name": "FirstOrder.Language.Structure.FG",
+    "vector_sha256": "bbbd24091799c74e62ca364205ec6d850cd9fb365a308d6f18a2436e61213c47"
+  },
+  {
+    "compact_row": 638,
+    "corpus_row": 292250,
+    "name": "FirstOrder.Language.Theory.Model",
+    "vector_sha256": "fbe3cae23144e0cd27d6bf6c97893b916cd879471741402833724fa2c93ed0c3"
+  },
+  {
+    "compact_row": 639,
+    "corpus_row": 293072,
+    "name": "Lean.Export.OfState.modify",
+    "vector_sha256": "2ab289b5cb3f5efad46680227a23481427e1dd31b6eabec99bed9828d3bcbbbc"
+  },
+  {
+    "compact_row": 640,
+    "corpus_row": 293685,
+    "name": "Mathlib.Meta.NormNum.IsInt",
+    "vector_sha256": "91ed378efec22e2b546ee2afa764e1e0c0c29c7edf5a0795141b44d137470f72"
+  },
+  {
+    "compact_row": 641,
+    "corpus_row": 294337,
+    "name": "Mathlib.Tactic.AtomM.State",
+    "vector_sha256": "5aadd49b2e41741323f3e07e4e995995ca1ca5f9462e0bdebe2f0f5e94a005c1"
+  },
+  {
+    "compact_row": 642,
+    "corpus_row": 294867,
+    "name": "Mathlib.Tactic.GuessName.GuessNameData",
+    "vector_sha256": "2d89bba2fcd84a7e426f62eadf6d865ca72ebb2ab3cc224677da2a23b1a5b8a0"
+  },
+  {
+    "compact_row": 643,
+    "corpus_row": 295378,
+    "name": "Mathlib.Tactic.Ring.CSLift",
+    "vector_sha256": "4d5a7877aa309ecbdc159b8aa68e7aee6937e1674ca08407ec1bbb7fe409ef48"
+  },
+  {
+    "compact_row": 644,
+    "corpus_row": 295578,
+    "name": "Mathlib.Tactic.Superscript.Mapping",
+    "vector_sha256": "19eaa7ee8eacadc937a6c0f7be91657c7ca29e2961d1a2f88249732adcbbd00c"
+  },
+  {
+    "compact_row": 645,
+    "corpus_row": 295599,
+    "name": "Mathlib.Tactic.Tauto.Config",
+    "vector_sha256": "f2cbee03f2f86fd4b26583bf14cf2a6f8c46b15942e7c96f379b20510c3c54ca"
+  },
+  {
+    "compact_row": 646,
+    "corpus_row": 295795,
+    "name": "Mathlib.TacticAnalysis.Pass.opt",
+    "vector_sha256": "9f5d527dbd6cd38ce8ad1759a96f69b61ae76e2e303591a17e12081c09919f51"
+  },
+  {
+    "compact_row": 647,
+    "corpus_row": 296149,
+    "name": "MeasureTheory.Measure.HaveLebesgueDecomposition.lebesgue_decomposition",
+    "vector_sha256": "91e570575f015e0938f39275c954b46a390e9179a2aeaff24fbf76629bfbbf3e"
+  },
+  {
+    "compact_row": 648,
+    "corpus_row": 296249,
+    "name": "MeasureTheory.Measure.IsCondKernel.mk",
+    "vector_sha256": "d665b5c79df5adc94424fd89aec340902e4a93e911801c78592cdd5304761bc4"
+  },
+  {
+    "compact_row": 649,
+    "corpus_row": 296406,
+    "name": "MeasureTheory.Measure.QuasiMeasurePreserving.measurable",
+    "vector_sha256": "3e5a3e3538ac1bd7a3b40d250f9b7f5a5ee95e97320801e0fd063218dc598000"
+  },
+  {
+    "compact_row": 650,
+    "corpus_row": 298830,
+    "name": "SSet.Subcomplex.Pairing.IsInner",
+    "vector_sha256": "722655f0289fc80a53174a96e0acdaaa3b1111a8199b5075e969a82bb1f3e57c"
+  },
+  {
+    "compact_row": 651,
+    "corpus_row": 298832,
+    "name": "SSet.Subcomplex.Pairing.IsRegular",
+    "vector_sha256": "d6bff9e6a706fe9457c28a602e157c83a464011fd33e67061440e25d5e134922"
+  },
+  {
+    "compact_row": 652,
+    "corpus_row": 298868,
+    "name": "SSet.Subcomplex.PairingCore.IsRegular",
+    "vector_sha256": "c26f5f17eb515fc26d57615674acde17d5731eb4ece2657f2ed3567bd1b9ca67"
+  },
+  {
+    "compact_row": 653,
+    "corpus_row": 298889,
+    "name": "SSet.Subcomplex.PairingCore.nonDegenerate₁",
+    "vector_sha256": "db3b4e538c48329ac50b250df116a5825fcf59e4b093ec5b321ddd624435fd2c"
+  },
+  {
+    "compact_row": 654,
+    "corpus_row": 299465,
+    "name": "SheafOfModules.Presentation.IsFinite.finite_relations",
+    "vector_sha256": "77479802db73a57876376a4d016464972851f9f46a181bcc69e9ed1a8f839b31"
+  },
+  {
+    "compact_row": 655,
+    "corpus_row": 299530,
+    "name": "SimpleGraph.Subgraph.Connected.coe",
+    "vector_sha256": "5994dc3de4a466050b1bf3c8d25e7cf376aa2ad5869d127a81738351124ca758"
+  },
+  {
+    "compact_row": 656,
+    "corpus_row": 299535,
+    "name": "SimpleGraph.Subgraph.Connected.mk",
+    "vector_sha256": "4a4c8b5436e0285a6eaddf00d27340c168e6de885f39eb8509c8b1da56824c49"
+  },
+  {
+    "compact_row": 657,
+    "corpus_row": 299575,
+    "name": "SimpleGraph.Subgraph.Preconnected.coe",
+    "vector_sha256": "d5a202c92697f52642177f666dbab9966fe6b3fe74d9f5b76d102ac39fe60c83"
+  },
+  {
+    "compact_row": 658,
+    "corpus_row": 299631,
+    "name": "SimpleGraph.Walk.IsCircuit.isTrail",
+    "vector_sha256": "f2f679dd7f186c98bc15813e247e81bc29a7f624d0265cab941260f028286e30"
+  },
+  {
+    "compact_row": 659,
+    "corpus_row": 299648,
+    "name": "SimpleGraph.Walk.IsCycle.isCircuit",
+    "vector_sha256": "6a6bcdb52e9fe6d4f9e67593479ab9e1c0ed031240da85685e26040ded703218"
+  },
+  {
+    "compact_row": 660,
+    "corpus_row": 299668,
+    "name": "SimpleGraph.Walk.IsCycle.support_nodup",
+    "vector_sha256": "d743373a91e9aff2c03218d9ecde0984b62fb91d623881b0fbc7cb452f88c2f1"
+  },
+  {
+    "compact_row": 661,
+    "corpus_row": 299721,
+    "name": "SimpleGraph.Walk.IsPath.isTrail",
+    "vector_sha256": "a4ab91c84d12aeeeae4a26b413931d83f1e811d9ea6c10d91ba1216765f4f8b3"
+  },
+  {
+    "compact_row": 662,
+    "corpus_row": 300005,
+    "name": "Tactic.NormNum.NotPowerCertificate.mk",
+    "vector_sha256": "22f39737c44bcadacad141b0b3d822b887e046cc463140919baf9610660da9da"
+  },
+  {
+    "compact_row": 663,
+    "corpus_row": 301407,
+    "name": "CategoryTheory.Bicategory.Lan.CommuteWith.mk",
+    "vector_sha256": "3de282a50fd0a031f04ce5b059f30813209d9b35843c0bae42117c1354c38349"
+  },
+  {
+    "compact_row": 664,
+    "corpus_row": 302085,
+    "name": "CategoryTheory.Functor.WellOrderInductionData.Extension.map_succ",
+    "vector_sha256": "446b06976e677821676c06c0c3c45a88e955bd2bef1e455c5f03106001c5b8f7"
+  },
+  {
+    "compact_row": 665,
+    "corpus_row": 302240,
+    "name": "CategoryTheory.GrothendieckTopology.Point.Hom.hom",
+    "vector_sha256": "8ab38f954060fe2e97d569a35a958877b97332f5fbf6854da2439335093e5634"
+  },
+  {
+    "compact_row": 666,
+    "corpus_row": 303347,
+    "name": "CategoryTheory.Monad.Algebra.Hom.f",
+    "vector_sha256": "a4bc0e3f51a0fcf6b09ae51e54b75332a77b590153861b7406a0478acec800f0"
+  },
+  {
+    "compact_row": 667,
+    "corpus_row": 303705,
+    "name": "CategoryTheory.Precoverage.ZeroHypercover.Small.exists_restrictIndex_mem",
+    "vector_sha256": "0663d86fde61f2c72925bded5c94a7bca4c694eca04e8ca0a0dc180076005d45"
+  },
+  {
+    "compact_row": 668,
+    "corpus_row": 303707,
+    "name": "CategoryTheory.Precoverage.ZeroHypercover.Small.mk",
+    "vector_sha256": "0002b0f62f199d8fa0df81bec4ecbd322e92adc0164cf42239fbc1250d29140b"
+  },
+  {
+    "compact_row": 669,
+    "corpus_row": 304526,
+    "name": "FirstOrder.Language.Structure.FG.mk",
+    "vector_sha256": "6b9a0bc0b2c0f5c23dbab11aa794feaec1f77faa0488d378e958cad0a6c38b28"
+  },
+  {
+    "compact_row": 670,
+    "corpus_row": 304528,
+    "name": "FirstOrder.Language.Structure.FG.out",
+    "vector_sha256": "2b5bac3291dab3784c164287789004eaaa47949669ca49af69d13bc1431154da"
+  },
+  {
+    "compact_row": 671,
+    "corpus_row": 304667,
+    "name": "FirstOrder.Language.Theory.ModelType.struc",
+    "vector_sha256": "bea8faeb9d6a9f7020ad31fe01f8ea053e0926e4a08db11d7a181d5ce5dbf718"
+  },
+  {
+    "compact_row": 672,
+    "corpus_row": 304802,
+    "name": "Lean.Meta.RefinedDiscrTree.LazyEntry.mk",
+    "vector_sha256": "8c47ad901e5e6c7a6788f588a2307c88a58f6dba4199413f185d7c493a10618f"
+  },
+  {
+    "compact_row": 673,
+    "corpus_row": 304812,
+    "name": "Lean.Meta.RefinedDiscrTree.MatchResult.elts",
+    "vector_sha256": "61eda64098a8e4be101d330b8fcf716194efe0df3fa1bf21c5c88c080e05dbaf"
+  },
+  {
+    "compact_row": 674,
+    "corpus_row": 304838,
+    "name": "Lean.Meta.RefinedDiscrTree.PreDiscrTree.root",
+    "vector_sha256": "7c3da43ec084fa41a93dd156c73cbfba23edf4a0280c7160bb62a1a7cd4f6037"
+  },
+  {
+    "compact_row": 675,
+    "corpus_row": 304992,
+    "name": "Mathlib.Meta.FunProp.Config.mk",
+    "vector_sha256": "abde7ae52be9869c233e23f170eb4a0ca4c7dd512b8b9c563f4a866bf4bf219b"
+  },
+  {
+    "compact_row": 676,
+    "corpus_row": 305599,
+    "name": "Mathlib.Tactic.AtomM.State.mk",
+    "vector_sha256": "a0bcb5c40f39c242141ec380ea40b024806538c29938c1795386b9f94a6eabfb"
+  },
+  {
+    "compact_row": 677,
+    "corpus_row": 305733,
+    "name": "Mathlib.Tactic.BicategoryLike.MkEval.mkEvalMonoidalComp",
+    "vector_sha256": "65c0d091555c1f3fae1e9388e392f2f44128f63d32657af56007769745eb2d76"
+  },
+  {
+    "compact_row": 678,
+    "corpus_row": 305774,
+    "name": "Mathlib.Tactic.BicategoryLike.MkEvalWhiskerLeft.mkEvalWhiskerLeftId",
+    "vector_sha256": "73b59c5dfab69882011fab1cfde2236acfa6922c47e404b8fc3108ab193c30d1"
+  },
+  {
+    "compact_row": 679,
+    "corpus_row": 305805,
+    "name": "Mathlib.Tactic.BicategoryLike.MkMor₂.mk",
+    "vector_sha256": "de5bbe018d81690f4dcd845bbfb3a374ee9558ad262f8125394505adf6a0c7f7"
+  },
+  {
+    "compact_row": 680,
+    "corpus_row": 305845,
+    "name": "Mathlib.Tactic.BicategoryLike.MonadMor₂.id₂M",
+    "vector_sha256": "3f4cf5a7aa2e27d03393fa034bf53c8cd7f23929887ef7806a6ed0ea491b55b0"
+  },
+  {
+    "compact_row": 681,
+    "corpus_row": 306288,
+    "name": "Mathlib.Tactic.CC.CCNormalizer.mk",
+    "vector_sha256": "d7fe8e480e3659f0a8ce8a7d000f9c522cda108bd2d0b267e10706365f23dc18"
+  },
+  {
+    "compact_row": 682,
+    "corpus_row": 306312,
+    "name": "Mathlib.Tactic.CC.CCState.entries",
+    "vector_sha256": "5deff7498628b422827fc7a0f796a599132e59ed9ddd2ec735c4f73e1fd1f37c"
+  },
+  {
+    "compact_row": 683,
+    "corpus_row": 306360,
+    "name": "Mathlib.Tactic.CC.CCState.symmCongruences",
+    "vector_sha256": "f94a259a17ac1d698ad0851d055dbe7e7535e26776be8b39b0244975febf551d"
+  },
+  {
+    "compact_row": 684,
+    "corpus_row": 306402,
+    "name": "Mathlib.Tactic.CC.Entry.cgRoot",
+    "vector_sha256": "3ad3fd5e436223eb2cbc1e56a913db5d58774db9a788a8b94f28d31c9d2d80b0"
+  },
+  {
+    "compact_row": 685,
+    "corpus_row": 306469,
+    "name": "Mathlib.Tactic.Choose.ChooseArg.mk",
+    "vector_sha256": "956d226c354045e5b9f307484ac8e0c28dc496dba04b31803c1c2c02cf2496f2"
+  },
+  {
+    "compact_row": 686,
+    "corpus_row": 306856,
+    "name": "Mathlib.Tactic.LibraryRewrite.RewriteLemma.mk",
+    "vector_sha256": "ceb97019f00c4c0f1df5499e87ea947b4761750cb589666bdbf8286acbaf7686"
+  },
+  {
+    "compact_row": 687,
+    "corpus_row": 306997,
+    "name": "Mathlib.Tactic.Linarith.PreprocessorBase.name",
+    "vector_sha256": "bb5ba802eff585bd0d0630f55e4bd07804ae053f3713ca99fdc7e87b853dccb7"
+  },
+  {
+    "compact_row": 688,
+    "corpus_row": 307007,
+    "name": "Mathlib.Tactic.Linarith.SimplexAlgorithm.UsableInSimplexAlgorithm",
+    "vector_sha256": "2939c95eff84e0ebd982c057bc420e9abaedf261ca359ddc8403527ca2e325a5"
+  },
+  {
+    "compact_row": 689,
+    "corpus_row": 307108,
+    "name": "Mathlib.Tactic.Monoidal.Context.mk",
+    "vector_sha256": "bb7db9f582a0a14a23df93df159f22c2f80b6b30859346f14870ac0d988ae00e"
+  },
+  {
+    "compact_row": 690,
+    "corpus_row": 307980,
+    "name": "SSet.Subcomplex.Pairing.IsRegular.mk",
+    "vector_sha256": "90a77e5cbb40e5bf024455ef4581d0585e2ec5f7cdbbca95c7ea68021e3eadf0"
+  },
+  {
+    "compact_row": 691,
+    "corpus_row": 307983,
+    "name": "SSet.Subcomplex.Pairing.IsRegular.toIsProper",
+    "vector_sha256": "02dfc8155dacc90d292ff0277c92958e4f8277733d13fd6bd33382478cc89b96"
+  },
+  {
+    "compact_row": 692,
+    "corpus_row": 307988,
+    "name": "SSet.Subcomplex.Pairing.RankFunction.lt",
+    "vector_sha256": "62cb70ad738d119893595fc88029ba0251df75eeea3e05cfa6804f6571831e52"
+  },
+  {
+    "compact_row": 693,
+    "corpus_row": 308025,
+    "name": "SSet.Subcomplex.PairingCore.IsRegular.mk",
+    "vector_sha256": "ece4c113bc7e1479735fd971722b74cfb249f5da7850723d1fd78e21481f9dd5"
+  },
+  {
+    "compact_row": 694,
+    "corpus_row": 309161,
+    "name": "Mathlib.Meta.FunProp.Mor.App.coe",
+    "vector_sha256": "6852f9484005a9d13696fc742748405f3ed6146fa8b07a86cf79bb7e219ca4c4"
+  },
+  {
+    "compact_row": 695,
+    "corpus_row": 309356,
+    "name": "Mathlib.Tactic.AtomM.Recurse.Config.zetaDelta",
+    "vector_sha256": "3acd423b553d89fcd93d5e382d538ce36e0877c751def48d4ac1345852fc7692"
+  }
+]

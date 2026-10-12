@@ -1,0 +1,21 @@
+{
+  "schema": "frozen-vector-cache-v1",
+  "role": "queries",
+  "shape": [
+    946,
+    4096
+  ],
+  "dtype": "float32",
+  "encoder_id": "edd10041a67d7645983b9e537bd8925b1d3a55a3b5e538e5f9d2e5def9f8d21e",
+  "representation_id": "public-MathlibQR-946-frozen-query-cache",
+  "files": {
+    "vectors.npy": {
+      "path": "vectors.npy",
+      "sha256": "a9e2b50d03357e7a41b89e0e518fa6f20d644cfdff4fdbc54b099b9745c70b17"
+    },
+    "items.json": {
+      "path": "items.json",
+      "sha256": "a9994b23fd58c0231e6734d713ada2e85f9930fbb2f2145f06ad371d9b317b8c"
+    }
+  }
+}

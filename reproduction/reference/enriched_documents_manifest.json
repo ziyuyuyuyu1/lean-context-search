@@ -1,0 +1,21 @@
+{
+  "schema": "frozen-vector-cache-v1",
+  "role": "documents",
+  "shape": [
+    310579,
+    4096
+  ],
+  "dtype": "float32",
+  "encoder_id": "edd10041a67d7645983b9e537bd8925b1d3a55a3b5e538e5f9d2e5def9f8d21e",
+  "representation_id": "C:4a0e184ca64af35038d88bc1c8fa640ab9dd0944a06b63d86433fb38869d48e0",
+  "files": {
+    "vectors.npy": {
+      "path": "vectors.npy",
+      "sha256": "5f1d74bc0fce31055b1daf2d2cc322bc64740dbe550da2f24887b01f1c9abf00"
+    },
+    "items.json": {
+      "path": "items.json",
+      "sha256": "267094727b3a4c473e28d414105aad746b51b007fe7075c685e91d4c3ac1f00d"
+    }
+  }
+}

@@ -11,4 +11,5 @@ recursive-include results *.json *.jsonl *.md
 recursive-include scripts *.py
 recursive-include site *.html *.svg
 recursive-include tests *.py
+recursive-include reproduction *.py *.md *.json *.jsonl *.npy
 global-exclude __pycache__ *.pyc *.pyo .DS_Store

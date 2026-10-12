@@ -4,7 +4,7 @@ Find Lean declarations using checked interface context, a learned embedding head
 
 **Search pipeline:** enrich text → retrieve 200 candidates with the embedding head → rerank to 100 with Qwen.
 
-[Method](#method) · [Results](#results) · [Hyperbolic study](#hyperbolic-structure-study) · [Quickstart](#quickstart)
+[Method](#method) · [Results](#results) · [Hyperbolic study](#hyperbolic-structure-study) · [Quickstart](#quickstart) · [Reproduction](#reproduction)
 
 ## Method
 
@@ -86,6 +86,17 @@ lean-context-search replay --evidence results/public_per_query.jsonl \
 ```
 
 Real retrieval needs compatible cached vectors and head assets; fresh queries also need local Qwen model files and the `inference` extra. Run `lean-context-search search --help` and `lean-context-search rerank --help` for their inputs. Fresh search defaults to 200 candidates; its `--output` JSONL can supply both `--pools` and `--query-file` for reranking.
+
+## Reproduction
+
+[Reproduction guide](reproduction/README.md): train the embedding head on CPU using the included 88 queries and exact frozen training vectors, rebuild the enriched corpus, and run all four benchmark pipelines. The scripts use fixed configurations and write separate outputs.
+
+```bash
+python reproduction/train_embedding_head.py --check-only
+python reproduction/train_embedding_head.py --output work/retrained-head
+```
+
+Training inputs occupy about 13 MB. Full benchmark reproduction requires the separately downloaded corpus and Qwen models; the guide provides pinned downloads and commands.
 
 ## Data and attribution
 

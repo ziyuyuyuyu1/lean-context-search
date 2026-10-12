@@ -1,0 +1,95 @@
+{
+  "schema": "embedding-reproduction-data-v1",
+  "files": {
+    "configs/assets.json": {
+      "sha256": "eefe445507c9b2df1dfa7aec94b33633d9259a392072d8ff311dd227e98122c0",
+      "bytes": 13262
+    },
+    "configs/corpus.json": {
+      "sha256": "dacc0fee2910d0602b56c707296a31928f30a4b572a9f8be155a3392c5954e14",
+      "bytes": 1100
+    },
+    "configs/embedding_head.json": {
+      "sha256": "3a0c95a5d628efa62117ba025758981c8e34ef749d3183273481316b4c59b86f",
+      "bytes": 217
+    },
+    "data/benchmark_exclusions.json": {
+      "sha256": "3289eb21698771eb9acaee64a9498bbbf1a3e97a53d15dedeb5dc8fb747de86e",
+      "bytes": 25211
+    },
+    "data/development.jsonl": {
+      "sha256": "9b6cd27672bde2c4afbdf542cd5118b919d13a025d6d185b72d0f7f90c9f711a",
+      "bytes": 71531
+    },
+    "data/document_rows.json": {
+      "sha256": "b590f951cd76e1cd792960e39b426a0e118d04e1ca26ef21e8e9f9a15ead31e0",
+      "bytes": 132958
+    },
+    "data/documents/items.json": {
+      "sha256": "16aa737bae7c53b8cef8bf3e908d4f0aa6f651c4c3dde26f26a2ad68deeb00cf",
+      "bytes": 24342
+    },
+    "data/documents/manifest.json": {
+      "sha256": "a5d6d95a90f3148617c7c8faa8a4c2a1fbdda2f1915b6c172d141a0ceb83f41a",
+      "bytes": 727
+    },
+    "data/documents/vectors.npy": {
+      "sha256": "094461f152f73e7b0057ce3843223f724ddcd3ae2a8490bc131929c83b725308",
+      "bytes": 11403392
+    },
+    "data/family_policy.json": {
+      "sha256": "d4d03163305b92df4bba77f55009f393396b095d2f057f4c8e5bd21efcf4ae58",
+      "bytes": 165117
+    },
+    "data/queries/items.json": {
+      "sha256": "e86b01855edf761660eaf434d34535b4320af7cfcfba447c7429732671962fe6",
+      "bytes": 13775
+    },
+    "data/queries/manifest.json": {
+      "sha256": "f677f9947254983ff44107e193565f2f21a5142c0d605c3da8cdfee49716df61",
+      "bytes": 591
+    },
+    "data/queries/vectors.npy": {
+      "sha256": "4b5585c9056e5c260189dfd738e7e58b3a5a6195bb712c58c8de005740f1d5cb",
+      "bytes": 1441920
+    },
+    "data/train.jsonl": {
+      "sha256": "8bea1d6ea2c1df6ec4dc45d770e96b6f47d6cc0e9e877c2a4159b1b208072545",
+      "bytes": 177067
+    },
+    "reference/benchmark_queries_manifest.json": {
+      "sha256": "0c19fc38965249f8d1434bf429950ad23ff246684577916064af2e078a7a75aa",
+      "bytes": 565
+    },
+    "reference/enriched_documents_manifest.json": {
+      "sha256": "6b4ab52981621965f7743ed75c86cab8327165b99536456e70bb44162708d296",
+      "bytes": 597
+    }
+  },
+  "counts": {
+    "training_queries": 88,
+    "matched_pairs": 44,
+    "source_families": 43,
+    "positive_names": 44,
+    "negative_names": 655,
+    "gradient_documents": 696,
+    "development_queries": 87
+  },
+  "label_provenance": "Existing Codex-agent LLM-only provisional review; no new annotation or human adjudication.",
+  "source": {
+    "training_records_sha256": "8bea1d6ea2c1df6ec4dc45d770e96b6f47d6cc0e9e877c2a4159b1b208072545",
+    "development_records_sha256": "f9ea06f47aa6a33790f3bcc1a4f12bfd0baf25d6d2ac42d3f22baf60ce97b6f2",
+    "family_policy_sha256": "2ad74ead2939736ffc3a82a1b72bd2850e74f36fbe4587425965821cfb65b211",
+    "full_documents_manifest_sha256": "6b4ab52981621965f7743ed75c86cab8327165b99536456e70bb44162708d296",
+    "full_documents_vectors_sha256": "5f1d74bc0fce31055b1daf2d2cc322bc64740dbe550da2f24887b01f1c9abf00",
+    "source_training_run_sha256": "bd5d74be7b9469f7e6647e5f0057b6276b428d4809e395db531b21a8fe9d86e4",
+    "original_head_sha256": "d2cbc75546284bb6f9297c21aea0be536494e7bc07baf9e64cc8ec5a975a6700",
+    "original_trainer_sha256": {
+      "train_updates.py": "d5cd473ada11023f7bd643626e9b4c25414a16487ebd2f03d9c4bc73ac4f80c9",
+      "reference_train_small_head.py": "ea6dd086ac676d8b7e9d37c209af32c202e3c7771d6bb3d7383620ba4d8fd181"
+    }
+  },
+  "scope": "Exact recorded relevance inputs. Document vectors are lossless row slices of the original full cache; masked-only documents contribute no gradients and need no vectors.",
+  "confirmation_content_included": false,
+  "development_export": "Positive-label evaluation view: identical 87 query texts/source owners/accepted positives; candidate negative and masked review packets omitted."
+}
