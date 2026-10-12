@@ -67,7 +67,7 @@ A small exploration of fitting known interface relationships with cones, separat
 
 The checked relationships fit. **Generalization failed in the exploratory tests.** Fitting known interfaces does not establish an improvement in general search.
 
-[Interactive study](site/index.html)
+[Interactive study](https://ziyuyuyuyu1.github.io/lean-context-search/)
 
 ## Quickstart
 
