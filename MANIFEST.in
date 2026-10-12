@@ -1,0 +1,14 @@
+include .gitignore README.md THIRD_PARTY_NOTICES.md
+recursive-include .github *.yml
+include src/lean_context_search/runtime_assets.json
+recursive-include configs *.json
+recursive-include examples *.md
+recursive-include heads *.json *.npz
+recursive-include lean *.lean
+recursive-include notices *.txt
+recursive-include studies *.py *.cjs *.html *.json *.jsonl *.txt *.js *.md
+recursive-include results *.json *.jsonl *.md
+recursive-include scripts *.py
+recursive-include site *.html *.svg
+recursive-include tests *.py
+global-exclude __pycache__ *.pyc *.pyo .DS_Store

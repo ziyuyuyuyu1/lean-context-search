@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="1200" height="450" role="img" aria-labelledby="title description" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" fill="#203248">
+  <title id="title">Two weighted cosine paths retrieve the top 200</title>
+  <desc id="description">A frozen Qwen3-Embedding-8B encodes the query and all 310579 enriched corpus passages. Query and document vectors feed base cosine at weight 70 percent and a shared 128-dimensional head cosine at weight 30 percent. Their sum scores the full corpus and selects the top 200.</desc>
+  <defs>
+    <marker id="arrow-203248" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#203248" />
+    </marker>
+    <marker id="arrow-576777" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#576777" />
+    </marker>
+    <marker id="arrow-235f9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#235f9b" />
+    </marker>
+    <marker id="arrow-317b6c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#317b6c" />
+    </marker>
+    <marker id="arrow-b86c13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#b86c13" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="450" rx="18" fill="#f7f8fa" stroke="none" stroke-width="1.6" />
+  <rect x="35" y="79" width="168" height="72" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="119" y="124" font-size="28" font-weight="600" fill="#203248" text-anchor="middle">Query</text>
+  <rect x="35" y="288" width="168" height="91" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="119" y="327" font-size="28" font-weight="600" fill="#203248" text-anchor="middle">310,579</text>
+  <text x="119" y="359" font-size="24" font-weight="400" fill="#576777" text-anchor="middle">passages</text>
+  <path d="M 205 115 L 217 115 Q 227 115 227 125 L 227 198 Q 227 208 237 208 L 253 208" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-235f9b)" />
+  <path d="M 205 333 L 217 333 Q 227 333 227 323 L 227 280 Q 227 270 237 270 L 253 270" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-235f9b)" />
+  <rect x="263" y="157" width="236" height="168" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="381" y="201" font-size="30" font-weight="600" fill="#203248" text-anchor="middle">Qwen3</text>
+  <text x="381" y="244" font-size="26" font-weight="600" fill="#203248" text-anchor="middle">Embedding-8B</text>
+  <path d="M 334 286 V 280 A 6 6 0 0 1 346 280 V 286" fill="none" stroke="#576777" stroke-width="2" />
+  <rect x="330" y="285" width="20" height="17" rx="3" fill="#edf1f5" stroke="#576777" stroke-width="1.5" />
+  <text x="361" y="301" font-size="24" font-weight="400" fill="#576777" text-anchor="start">Frozen</text>
+  <path d="M 501 241 L 548 241" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="549" y="213" font-size="24" font-weight="400" fill="#576777" text-anchor="middle">q, d</text>
+  <circle cx="550" cy="241" r="4" fill="#235f9b" stroke="none" stroke-width="1.6" />
+  <path d="M 550 241 L 558 241 Q 566 241 566 233 L 566 136.5 Q 566 129 573.5 129 L 581 129" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-235f9b)" />
+  <path d="M 550 241 L 558 241 Q 566 241 566 249 L 566 338.5 Q 566 346 573.5 346 L 581 346" fill="none" stroke="#317b6c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-317b6c)" />
+  <rect x="591" y="65" width="260" height="126" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="721" y="111" font-size="27" font-weight="600" fill="#235f9b" text-anchor="middle">Base cosine</text>
+  <text x="721" y="159" font-size="39" font-weight="600" fill="#235f9b" text-anchor="middle">70%</text>
+  <rect x="591" y="282" width="260" height="126" rx="12" fill="#e6f1ed" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="721" y="327" font-size="27" font-weight="600" fill="#317b6c" text-anchor="middle">128-D head</text>
+  <text x="721" y="373" font-size="29" font-weight="400" fill="#317b6c" text-anchor="middle">Cosine · 30%</text>
+  <path d="M 853 129 L 886 129 Q 896 129 896 139 L 896 219 Q 896 229 906 229 L 923 229" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-235f9b)" />
+  <path d="M 853 346 L 886 346 Q 896 346 896 336 L 896 268 Q 896 258 906 258 L 923 258" fill="none" stroke="#317b6c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-317b6c)" />
+  <circle cx="951" cy="244" r="26" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="951" y="255" font-size="35" font-weight="400" fill="#203248" text-anchor="middle">+</text>
+  <path d="M 978 244 L 1014 244" fill="none" stroke="#b86c13" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b86c13)" />
+  <rect x="1025" y="185" width="140" height="123" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="1095" y="224" font-size="27" font-weight="400" fill="#576777" text-anchor="middle">Top</text>
+  <text x="1095" y="277" font-size="45" font-weight="600" fill="#b86c13" text-anchor="middle">200</text>
+</svg>

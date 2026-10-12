@@ -1,0 +1,30 @@
+{
+  "schema": "cone-structure-fit-v1",
+  "dataset": "D1",
+  "kind": "head",
+  "geometry": "hyperbolic",
+  "loss": "normalized",
+  "seed": 20261001,
+  "updates_cap": 1000,
+  "seconds_cap": 180.0,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "full_balanced_train_pairs": 16,
+  "nodes": 11,
+  "diagnostic_pairs": 4,
+  "K": 0.1,
+  "radius_bounds": [
+    0.4,
+    2.0
+  ],
+  "normalized_margin": 0.1,
+  "old_raw_margin": null,
+  "C_manifest_sha256": "6b4ab52981621965f7743ed75c86cab8327165b99536456e70bb44162708d296",
+  "E0_manifest_sha256": "1f0d1cddc05c4d7c57d042ff3e41ddefc899471a260684a5ffc0052f661cf661",
+  "node_file_sha256": "0c2a1b083dfb802e50de63a23a9b8f31b7a6884b563c39a6e2c9f034254d442a",
+  "train_file_sha256": "418293896f8368976046f011a1f911097c117a46b114cb05d0c1eabcf62b96d3",
+  "diagnostic_file_sha256": "8d2cb67b5375ef335ca9077da93de238d62835fe945e4c32345c519e70cf1d96",
+  "source_code_sha256": "78562f3d18a2749e40564ea9175e183ad4126f40ef382b47599e9a5c860da2a1",
+  "confirmation_content_read": false
+}

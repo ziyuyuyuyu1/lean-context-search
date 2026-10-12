@@ -1,0 +1,80 @@
+{
+  "D0": {
+    "nodes": 181,
+    "direct_maps": 143,
+    "train_positive": 201,
+    "train_strict_reverse": 201,
+    "held_composed_positive": 11,
+    "held_strict_reverse": 11,
+    "final_positive_inside": 212,
+    "final_negative_inside": 0,
+    "catalogue_other_pairs": 32156,
+    "final_catalogue_extra_inside": 601,
+    "catalogue_precision": 0.2607626076260763
+  },
+  "D1": {
+    "nodes": 11,
+    "train_positive": 8,
+    "train_checked_negative": 8,
+    "held_positive": 2,
+    "held_checked_negative": 2,
+    "final_positive_inside": 10,
+    "final_negative_inside": 0,
+    "unknown_pairs": 90,
+    "final_unknown_inside": 1
+  },
+  "geometry": {
+    "dimension": 128,
+    "curvature": -1,
+    "K": 0.1,
+    "rho_bounds": [
+      0.4,
+      2.0
+    ],
+    "normalized_margin": 0.1,
+    "saved_updates": [
+      0,
+      100,
+      300,
+      1000
+    ]
+  },
+  "known_catalogue_bridge": {
+    "exact_graph": {
+      "old_nodes": 181,
+      "direct_maps": 143,
+      "checked_paths": 214,
+      "distinct_strict_positive_pairs": 212,
+      "task_candidates": 109,
+      "task_requirements": 72,
+      "task_positives": 162
+    },
+    "runnable_common_posterior": "softmax(unit(Cq)\u00b7unit(Crequirement)/0.02) then posterior@compatibility.T",
+    "old_primary_development_ndcg10": {
+      "C": 0.834191,
+      "E0": 0.790757,
+      "exact_graph": 1.0,
+      "H_rank180_signed": 1.0,
+      "flat_rank180_signed": 1.0
+    },
+    "new_16_text_eight_candidate_top1": {
+      "C": 13,
+      "exact_graph": 15,
+      "H_rank180_distance": 11,
+      "flat_rank180_distance": 12
+    },
+    "native_principal_random_noextra_H_distance_MRR": {
+      "principal32": 0.770833,
+      "random32": 0.71875,
+      "noextra": 0.671875
+    },
+    "language_principal_random_noextra_H_distance_MRR": {
+      "principal32": 0.848958,
+      "random32": 0.69375,
+      "noextra": 0.90625
+    },
+    "scope": "Known catalogue and tiny exposed native/language packets; hard implication recall weak; no hyperbolic-specific or fresh-generalization claim."
+  },
+  "no_hyperbolic_retrieval_or_OOD_advantage_established": true,
+  "flat_heads_also_fit": true
+}

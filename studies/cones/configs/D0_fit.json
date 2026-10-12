@@ -1,0 +1,30 @@
+{
+  "schema": "cone-structure-fit-v1",
+  "dataset": "D0",
+  "kind": "head",
+  "geometry": "hyperbolic",
+  "loss": "normalized",
+  "seed": 20261001,
+  "updates_cap": 1000,
+  "seconds_cap": 180.0,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "full_balanced_train_pairs": 402,
+  "nodes": 181,
+  "diagnostic_pairs": 22,
+  "K": 0.1,
+  "radius_bounds": [
+    0.4,
+    2.0
+  ],
+  "normalized_margin": 0.1,
+  "old_raw_margin": null,
+  "C_manifest_sha256": "6b4ab52981621965f7743ed75c86cab8327165b99536456e70bb44162708d296",
+  "E0_manifest_sha256": "1f0d1cddc05c4d7c57d042ff3e41ddefc899471a260684a5ffc0052f661cf661",
+  "node_file_sha256": "1ad77f38bc2f61108f1c4452bc8b931122f9c1932868f5705d87043690dab6c9",
+  "train_file_sha256": "83f2d2ea3456e66d3b71ada6d2193b610999d9fc66dd984a64a432c531653d39",
+  "diagnostic_file_sha256": "341095e30f352475edbe30f96fbf86a5c8df68e103349cc14118e222f32bab04",
+  "source_code_sha256": "78562f3d18a2749e40564ea9175e183ad4126f40ef382b47599e9a5c860da2a1",
+  "confirmation_content_read": false
+}

@@ -1,0 +1,37 @@
+{
+  "feature_contract_id": "f82112f61b7bd554e14dfde8ed8e586f8073508628c2bf1771f346918fc23984",
+  "feature_contract": {
+    "model_index_sha256": "8a22e7ffd6001796256c0be7c73594835b6f907eec442fde691301ebf35087d9",
+    "model_shards_sha256": {
+      "model-00001-of-00005.safetensors": "22cdfea4a13b7b3e866573800eeeb638fc38962940adf631d06dc03befed047a",
+      "model-00002-of-00005.safetensors": "d2163b74137e35b4614bd2aa5bf27bcb07de4ca61c6962495feb968385eb0df8",
+      "model-00003-of-00005.safetensors": "a5038caa78c817e8acce6806104869675938a33fd4e60ed038e9931d390d6989",
+      "model-00004-of-00005.safetensors": "247f85538c5996d4c296291b0e4004f618c9b17ca8cdc25d1fc726567eb15803",
+      "model-00005-of-00005.safetensors": "8ba41b93c2e4ec8339ad16b000bc977fde196aeac054956cbfc8c0186ee6d4cf"
+    },
+    "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "pipeline_sha256": "2e3cb2e7159ba0e0e0541e5a39af0288c905aa8502a8b52e9cd05d7d92e17180",
+    "original_passages_sha256": "b0fc635291154389dbdb1df9cc49b06f1d398a0963452f84d23016c7d12a32e8",
+    "prefix_sha256": "b09144c543bfe3e0dcde88b2bf54986c50060c9f31d9fe98916e1b7f1ad3b80b",
+    "suffix_sha256": "5ca215121bd0820099042d7d3949d5b77533e17ad13bb8e6104d37029e7ea54d",
+    "instruction_sha256": "bf9599888044e9bcae31d3f20ee02a18031deb2f35fb7e1958ad4a8057b8571a",
+    "yes_id": 9693,
+    "no_id": 2152,
+    "max_length": 8192,
+    "body_max_length": 8144,
+    "padding": "left",
+    "truncation": "longest_first",
+    "model_dtype": "torch.bfloat16",
+    "attention": "sdpa",
+    "use_cache": false,
+    "feature": "final-normalized-decoder-hidden-at-final-assistant-position",
+    "output_head": "frozen-lm-head-on-final-hidden"
+  },
+  "prompt": {
+    "instruction": "Retrieve the informal + formal representation of items in Mathlib4 that is mathematically relevant to the query. If the query ask for theorem or lemma, you shall try to find the entry that starts with theorem. If the query ask for a definition, you shall try to find the entry that starts with either definition or instance.",
+    "prefix": "<|im_start|>system\nJudge whether the Document meets the requirements based on the Query and the Instruct provided. Note that the answer can only be \"yes\" or \"no\".<|im_end|>\n<|im_start|>user\n",
+    "suffix": "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "prefix_tokens": 39,
+    "suffix_tokens": 9
+  }
+}

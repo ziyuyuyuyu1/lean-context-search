@@ -1,0 +1,26 @@
+{
+  "schema": "frozen-bf16-encoder-contract-v1",
+  "model_file_hashes": {
+    "config.json": "dcccf7c7890c8debc4af8dace8d6acd8dd50bd56d50d4d8b60529381ba3de3d7",
+    "tokenizer.json": "83cdf8c3a34f68862319cb1810ee7b1e2c0a44e0864ae930194ddb76bb7feb8d",
+    "tokenizer_config.json": "2f58f4bbd7bbce15d683f525954ef3a92cd82f5e06415a9c513859bf8ab72436",
+    "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "model.safetensors.index.json": "ceaf1429bfa18eecc75d079737e8d1fe8dc0627f5ec7e6a985514626d1ac6a77",
+    "model-00001-of-00004.safetensors": "99b343597fe840706146144699a8b9188dd3387e43eb61faf0231b70b249d451",
+    "model-00002-of-00004.safetensors": "dff635b0f6dbbaad2a2d633ef037ec0a39bc165cc1806c712fbd6fcbcb4526c0",
+    "model-00003-of-00004.safetensors": "30b1d4c53d84eb018f642cad7b373f0aabf79699872d8702c1f38577c0a59a2f",
+    "model-00004-of-00004.safetensors": "36cbc9c60375693629f25743c1e77ebb1724af58e671b2376463193c7fd21ef6"
+  },
+  "tokenizer_and_model_revision": "local released files with listed SHA-256; external revision not attested",
+  "query_instruction": "Retrieve the informal + formal representation of items in Mathlib4 that is mathematically relevant to the query. If the query ask for theorem or lemma, you shall try to find the entry that starts with theorem. If the query ask for a definition, you shall try to find the entry that starts with either definition or instance.",
+  "query_format": "Instruction: {instruction}. Query: {text}",
+  "document_instruction": null,
+  "pooling": "SentenceTransformer last-token Pooling then Normalize",
+  "final_normalization": "float32 L2 after BF16 encoder output",
+  "model_precision": "torch.bfloat16",
+  "embedding_limit_tokens": 40960,
+  "dimension": 4096,
+  "candidate_mathlib_commit": "5352afccd6866369be9de43f5b7ec47203555f44",
+  "corpus_source_commit": null,
+  "source_contract_sha256": "edd10041a67d7645983b9e537bd8925b1d3a55a3b5e538e5f9d2e5def9f8d21e"
+}

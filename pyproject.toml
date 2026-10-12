@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lean-context-search"
+version = "0.1.0rc1"
+description = "Typed-context Lean retrieval with an embedding head and frozen Qwen reranking"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3"]
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.optional-dependencies]
+inference = ["torch>=2.6,<3", "sentence-transformers==5.2.2", "transformers==4.57.6", "tokenizers==0.22.2"]
+visualization = ["matplotlib>=3.9,<4"]
+
+[project.scripts]
+lean-context-search = "lean_context_search.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+lean_context_search = ["export_structure_context.lean", "encoder_contract.json", "qwen_feature_contract.json", "qwen_enriched_feature_contract.json", "runtime_assets.json"]

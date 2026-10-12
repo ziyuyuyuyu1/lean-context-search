@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" width="1200" height="450" role="img" aria-labelledby="title description" font-family="Arial, Helvetica, DejaVu Sans, sans-serif" fill="#203248">
+  <title id="title">Rerank enriched passages with the frozen Qwen margin</title>
+  <desc id="description">The same 200 candidates from embedding retrieval enter frozen Qwen3-Reranker-8B with the query and enriched passages. The efficient yes-minus-no margin directly orders the candidates, with no added reranker head. The top 100 are returned from the same pool. Colored row motifs are schematic and do not encode measured example ranks. The historical figure filename is retained for link compatibility.</desc>
+  <defs>
+    <marker id="arrow-203248" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#203248" />
+    </marker>
+    <marker id="arrow-576777" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#576777" />
+    </marker>
+    <marker id="arrow-235f9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#235f9b" />
+    </marker>
+    <marker id="arrow-317b6c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#317b6c" />
+    </marker>
+    <marker id="arrow-b86c13" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#b86c13" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="450" rx="18" fill="#f7f8fa" stroke="none" stroke-width="1.6" />
+  <rect x="35" y="134" width="225" height="238" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="147" y="181" font-size="40" font-weight="600" fill="#235f9b" text-anchor="middle">200</text>
+  <text x="147" y="216" font-size="26" font-weight="400" fill="#203248" text-anchor="middle">candidates</text>
+  <rect x="73" y="240" width="13" height="13" rx="3" fill="#235f9b" stroke="none" stroke-width="1.6" />
+  <path d="M 98 246.5 L 219 246.5" fill="none" stroke="#235f9b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="73" y="276" width="13" height="13" rx="3" fill="#317b6c" stroke="none" stroke-width="1.6" />
+  <path d="M 98 282.5 L 219 282.5" fill="none" stroke="#317b6c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="73" y="312" width="13" height="13" rx="3" fill="#b86c13" stroke="none" stroke-width="1.6" />
+  <path d="M 98 318.5 L 219 318.5" fill="none" stroke="#b86c13" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="147" y="349" font-size="26" font-weight="600" fill="#317b6c" text-anchor="middle">Enriched text</text>
+  <path d="M 262 241 L 292 241" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-235f9b)" />
+  <rect x="323" y="45" width="218" height="64" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="432" y="87" font-size="28" font-weight="600" fill="#203248" text-anchor="middle">Query</text>
+  <path d="M 432 111 L 432 148" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-235f9b)" />
+  <rect x="302" y="157" width="260" height="168" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="432" y="201" font-size="30" font-weight="600" fill="#203248" text-anchor="middle">Qwen3</text>
+  <text x="432" y="244" font-size="28" font-weight="600" fill="#203248" text-anchor="middle">Reranker-8B</text>
+  <path d="M 385 286 V 280 A 6 6 0 0 1 397 280 V 286" fill="none" stroke="#576777" stroke-width="2" />
+  <rect x="381" y="285" width="20" height="17" rx="3" fill="#edf1f5" stroke="#576777" stroke-width="1.5" />
+  <text x="412" y="301" font-size="24" font-weight="400" fill="#576777" text-anchor="start">Frozen</text>
+  <path d="M 564 241 L 616 241" fill="none" stroke="#235f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-235f9b)" />
+  <rect x="626" y="164" width="272" height="154" rx="12" fill="#e6f1ed" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="762" y="207" font-size="28" font-weight="600" fill="#317b6c" text-anchor="middle">Pair score</text>
+  <text x="762" y="252" font-size="36" font-weight="600" fill="#317b6c" text-anchor="middle">yes − no</text>
+  <text x="762" y="293" font-size="25" font-weight="400" fill="#317b6c" text-anchor="middle">Efficient margin</text>
+  <path d="M 900 241 L 971 241" fill="none" stroke="#b86c13" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b86c13)" />
+  <rect x="981" y="146" width="185" height="206" rx="12" fill="#ffffff" stroke="#dce3e9" stroke-width="1.6" />
+  <text x="1073" y="189" font-size="30" font-weight="600" fill="#b86c13" text-anchor="middle">Top 100</text>
+  <rect x="1010" y="216" width="13" height="13" rx="3" fill="#317b6c" stroke="none" stroke-width="1.6" />
+  <path d="M 1035 222.5 L 1132 222.5" fill="none" stroke="#317b6c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1010" y="252" width="13" height="13" rx="3" fill="#235f9b" stroke="none" stroke-width="1.6" />
+  <path d="M 1035 258.5 L 1132 258.5" fill="none" stroke="#235f9b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1010" y="288" width="13" height="13" rx="3" fill="#b86c13" stroke="none" stroke-width="1.6" />
+  <path d="M 1035 294.5 L 1132 294.5" fill="none" stroke="#b86c13" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="1073" y="329" font-size="25" font-weight="400" fill="#576777" text-anchor="middle">Same pool</text>
+  <text x="600" y="418" font-size="25" font-weight="400" fill="#576777" text-anchor="middle">Score each query–passage pair, then reorder the same 200 candidates</text>
+</svg>

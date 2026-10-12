@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A small exploration of hyperbolic cones | Lean Context Search</title>
+<meta name="description" content="An exploration of fitting hyperbolic cones to known Lean interface relationships, with guided examples and generalization limits.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231b3552'/%3E%3Cpath d='M7 16L25 7V25Z' fill='%235cafab' fill-opacity='.28' stroke='%23b5e0dc'/%3E%3Ccircle cx='7' cy='16' r='2' fill='white'/%3E%3Ccircle cx='20' cy='15' r='2' fill='white'/%3E%3C/svg%3E">
+<style>
+:root { color-scheme:light; --background:#ffffff; --surface:#ffffff; --foreground:#1f2328; --muted-foreground:#59636e; --border:#d8dee4; --soft:#f6f8fa; --blue:#0969da; --orange:#9a6700; --green:#1a7f64; --red:#cf222e; --cone:#e2f3eb; --popover:#ffffff; --brand:#1f2328; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:100px; }
+body { margin:0; background:var(--background); color:var(--foreground); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; font-size:17px; line-height:1.65; }
+a { color:var(--blue); text-underline-offset:4px; }
+button,select,input { font:inherit; }
+button,a,summary,select { -webkit-tap-highlight-color:transparent; }
+:focus-visible { outline:3px solid var(--blue); outline-offset:4px; }
+button { cursor:pointer; }
+main { max-width:1200px; padding:0 32px; margin:auto; }
+h1,h2,h3,p { margin:0; }
+h1 { font-size:clamp(42px,4.8vw,62px); line-height:1.08; letter-spacing:-2.4px; font-weight:720; }
+h2 { font-size:32px; line-height:1.22; letter-spacing:-.8px; font-weight:650; }
+h3 { font-size:21px; line-height:1.35; font-weight:620; letter-spacing:-.25px; }
+p+p { margin-top:12px; }
+strong { font-weight:650; }
+.quiet,.caption { color:var(--muted-foreground); }
+.caption { font-size:15px; line-height:1.6; }
+.tabular { font-variant-numeric:tabular-nums; }
+.skip-link { position:absolute; left:16px; top:-100px; background:var(--surface); padding:12px; z-index:50; }
+.skip-link:focus { top:12px; }
+.site-header { position:sticky; top:0; z-index:20; background:var(--surface); border-bottom:1px solid var(--border); }
+.site-nav { max-width:1200px; margin:auto; padding:19px 32px; display:flex; justify-content:space-between; align-items:center; gap:24px; }
+.wordmark { color:var(--foreground); text-decoration:none; font-size:18px; font-weight:650; display:flex; align-items:center; gap:10px; white-space:nowrap; }
+.brand-mark { width:29px; height:29px; flex-shrink:0; }
+.nav-links { display:flex; align-items:center; gap:27px; font-size:15px; }
+.nav-links a { color:var(--muted-foreground); text-decoration:none; }
+.nav-links a:hover { color:var(--blue); }
+.eyebrow { color:var(--blue); font-size:14px; font-weight:650; letter-spacing:1.3px; text-transform:uppercase; margin:0 0 20px; }
+.hero { padding:76px 0 68px; display:grid; grid-template-columns:1.18fr 1fr; gap:48px; align-items:center; }
+.hero .lead { margin-top:25px; font-size:20px; color:var(--muted-foreground); max-width:36ch; }
+.scope-note { margin-top:22px; padding:16px 18px; border:1px solid #f2b8b5; border-left:5px solid var(--red); border-radius:6px; background:#fff1f0; color:#a40e26; font-size:18px; line-height:1.6; }
+.scope-note strong { display:block; font-weight:700; }
+.scope-note a { color:#a40e26; white-space:nowrap; text-underline-offset:3px; }
+.hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
+.site-button { display:inline-flex; justify-content:center; align-items:center; gap:8px; border:1px solid var(--border); border-radius:7px; background:var(--surface); color:var(--foreground); padding:10px 16px; min-height:44px; font-size:15px; font-weight:550; text-decoration:none; line-height:1.5; }
+.site-button:hover:not(:disabled) { background:var(--soft); border-color:#8c959f; }
+.site-button.primary { color:#fff; background:var(--blue); border-color:var(--blue); }
+.site-button.primary:hover { background:#0550ae; }
+.site-button:disabled { opacity:.5; cursor:default; }
+.hero-figure { margin:0; padding:22px 20px 20px; background:var(--soft); border:1px solid var(--border); border-radius:14px; }
+.hero-figure svg { display:block; width:100%; height:auto; }
+.hero-figure figcaption { border-top:1px solid var(--border); margin-top:10px; padding:16px 8px 0; font-size:16px; color:var(--muted-foreground); }
+.hero-figure strong { color:var(--foreground); }
+.section { padding-top:36px; margin-top:42px; border-top:1px solid var(--border); scroll-margin-top:95px; }
+.section-head { display:flex; gap:13px; align-items:center; margin-bottom:18px; }
+.step { color:var(--muted-foreground); font-size:15px; font-weight:650; letter-spacing:.5px; flex-shrink:0; }
+.section > p.quiet { max-width:80ch; font-size:17px; margin-bottom:22px; }
+.findings { padding:34px 0 42px; border-top:1px solid var(--border); }
+.findings > h2 { margin-bottom:28px; }
+.finding-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
+.finding { padding-right:24px; border-right:1px solid var(--border); }
+.finding:last-child { border-right:0; padding-right:0; }
+.finding .finding-value { display:block; margin-bottom:10px; font-size:36px; line-height:1.2; font-weight:680; letter-spacing:-1px; font-variant-numeric:tabular-nums; }
+.finding h3 { font-size:18px; margin-bottom:10px; }
+.finding p { font-size:16px; color:var(--muted-foreground); }
+.finding a { font-size:15px; display:inline-block; margin-top:12px; }
+.study-results { margin-top:10px; padding:34px; border:1px solid var(--border); border-radius:12px; background:var(--soft); display:grid; grid-template-columns:1fr 1.12fr; gap:40px; }
+.study-results h2 { font-size:27px; margin-bottom:16px; }
+.study-results p { font-size:16px; color:var(--muted-foreground); }
+.result-table { border-collapse:collapse; width:100%; font-size:16px; }
+.result-table caption { text-align:left; font-size:15px; color:var(--muted-foreground); margin-bottom:12px; }
+.result-table th,.result-table td { padding:12px 0; border-bottom:1px solid var(--border); text-align:left; }
+.result-table th { font-size:14px; font-weight:600; color:var(--muted-foreground); padding-top:0; }
+.result-table td:last-child,.result-table th:last-child { text-align:right; font-variant-numeric:tabular-nums; }
+.result-table tbody tr:last-child td { border-bottom:0; }
+.result-table .best td { font-weight:650; }
+.explorer-start { margin-top:72px; padding-top:42px; border-top:1px solid var(--border); scroll-margin-top:90px; }
+.explorer-start > .eyebrow { margin-bottom:14px; }
+.explorer-start > p.quiet { margin:14px 0 26px; max-width:70ch; }
+.case-picker { display:grid; grid-template-columns:1fr auto; gap:16px 30px; align-items:end; padding:24px; background:var(--soft); border:1px solid var(--border); border-radius:10px; }
+.case-control { min-width:0; }
+label { display:block; font-size:15px; font-weight:550; }
+.case-control label { margin-bottom:8px; }
+.dataset-note { display:block; margin-top:8px; color:var(--muted-foreground); font-size:14px; font-weight:400; }
+select { width:100%; min-width:0; color:var(--foreground); background:var(--surface); border:1px solid var(--border); border-radius:7px; padding:11px 30px 11px 12px; font-size:16px; }
+select:disabled { opacity:.7; }
+.mode-line { margin-top:12px; color:var(--muted-foreground); font-size:14px; }
+.mode-line::before { content:""; display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--green); margin-right:8px; }
+.mode-line[data-mode="static"]::before { background:var(--orange); }
+.case-intuition { color:var(--muted-foreground); font-size:17px; margin-top:18px; max-width:78ch; }
+details { margin-top:20px; }
+summary { cursor:pointer; color:var(--muted-foreground); font-size:15px; padding:7px 0; width:fit-content; }
+details[open] > summary { margin-bottom:10px; }
+.search-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:12px; }
+.search-row input { display:block; width:100%; min-width:0; margin-top:8px; padding:11px; border:1px solid var(--border); border-radius:7px; background:var(--surface); color:var(--foreground); font-size:16px; }
+.custom { display:grid; grid-template-columns:190px 1fr 1fr; gap:16px; padding-top:16px; }
+.custom select { margin-top:8px; }
+.reference-panel { background:var(--soft); border:1px solid var(--border); border-radius:10px; padding:25px 28px; }
+.chain { display:flex; flex-wrap:wrap; align-items:flex-end; gap:18px; margin:0 0 20px; }
+.chain-node { max-width:360px; overflow-wrap:anywhere; }
+.chain-node strong { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:19px; font-weight:550; }
+.chain-node .node-role { display:block; color:var(--muted-foreground); font-size:14px; margin-bottom:5px; }
+.chain-arrow { width:35px; height:20px; flex:0 0 35px; margin-bottom:6px; stroke:var(--blue); stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+.chain-arrow.rejected { stroke:var(--red); }
+.chain-arrow.unknown { stroke:var(--muted-foreground); }
+.chain-arrow.unknown .arrow-shaft { stroke-dasharray:4 4; }
+#relation-status { font-size:16px; max-width:90ch; }
+.context { overflow-wrap:anywhere; margin-top:12px; }
+.pair-table { border-collapse:collapse; width:100%; font-size:14px; margin:10px 0 14px; table-layout:fixed; }
+.pair-table th,.pair-table td { border-top:1px solid var(--border); padding:9px 8px; text-align:left; overflow-wrap:anywhere; }
+.pair-table th { font-weight:550; color:var(--muted-foreground); }
+.control-strip { display:flex; flex-wrap:wrap; gap:15px; align-items:end; padding:0 0 22px; }
+.control-strip label { min-width:175px; font-weight:400; }
+.control-strip select { margin-top:7px; }
+.panels { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.panel { min-width:0; background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:23px 20px 18px; }
+.panel-head { display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; }
+.panel-head h3 { font-size:20px; }
+.panel-stat { color:var(--muted-foreground); font-size:16px; margin:12px 0 4px; }
+.panel-stat[data-contained="true"] { color:var(--green); }
+.cone-plot,.matrix-plot { width:100%; display:block; overflow:visible; }
+main[data-ready="static"] .cone-plot,main[data-ready="static"] .matrix-plot { height:auto; }
+svg text { font-family:inherit; font-size:14px; fill:var(--foreground); }
+.hero-figure svg text { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:27px; }
+.hero-figure svg .diagram-label { font-family:inherit; font-size:19px; fill:var(--muted-foreground); }
+.axis text { fill:var(--muted-foreground); font-size:12px; }
+.axis path,.axis line { stroke:var(--border); }
+.axis-title { font-size:13px; }
+.frame { fill:none; stroke:var(--border); stroke-width:1; }
+.legend { display:flex; flex-wrap:wrap; gap:10px 21px; margin:0 0 22px; font-size:14px; }
+.legend span { display:inline-flex; gap:7px; align-items:center; }
+.legend svg { width:18px; height:18px; flex:0 0 18px; }
+.interpretation { padding:18px 22px; background:var(--soft); border-left:3px solid var(--blue); margin-top:24px; font-size:17px; }
+.angle-readout { display:flex; gap:8px 18px; flex-wrap:wrap; margin:8px 0; font-size:15px; }
+.window-details { margin-top:10px; }
+.window-details summary { font-size:14px; }
+.audit-line { font-size:15px; margin:16px 0; color:var(--muted-foreground); }
+.matrix-detail { min-height:44px; font-size:15px; overflow-wrap:anywhere; color:var(--muted-foreground); margin-top:18px; }
+.summary-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; padding:16px 0; }
+.summary-card strong { display:block; font-size:28px; font-variant-numeric:tabular-nums; }
+.summary-card span { display:block; font-size:15px; color:var(--muted-foreground); margin-top:5px; }
+#map-interpretation { font-size:16px; max-width:85ch; margin-top:16px; }
+.footer { border-top:1px solid var(--border); padding:36px 0 26px; margin-top:60px; scroll-margin-top:95px; }
+.footer-heading { font-size:27px; margin-bottom:16px; }
+.methods-grid { display:grid; grid-template-columns:1.3fr 1fr; gap:48px; }
+.methods-grid p { font-size:16px; color:var(--muted-foreground); }
+.methods-grid dl { display:grid; grid-template-columns:1fr 1fr; gap:9px 16px; margin:0; font-size:15px; }
+.methods-grid dt { color:var(--muted-foreground); }
+.methods-grid dd { margin:0; font-variant-numeric:tabular-nums; }
+.footer-line { display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; padding-top:28px; margin-top:25px; border-top:1px solid var(--border); font-size:14px; color:var(--muted-foreground); }
+.technical { overflow-wrap:anywhere; font-size:14px; }
+.tooltip { position:absolute; max-width:330px; pointer-events:none; background:var(--popover); border:1px solid var(--border); border-radius:6px; color:var(--foreground); padding:10px 12px; font-size:14px; z-index:30; overflow-wrap:anywhere; }
+.tooltip[hidden] { display:none; }
+@media(max-width:1000px) { .hero { gap:28px; } .hero h1 { font-size:48px; } .nav-links { gap:18px; } }
+@media(max-width:800px) { .hero { grid-template-columns:1fr; padding:48px 0; gap:36px; } .hero h1 { max-width:17ch; font-size:48px; } .hero .lead { max-width:52ch; } .hero-figure { max-width:580px; } .hero-figure svg { max-height:310px; } .finding-grid { grid-template-columns:1fr; gap:24px; } .finding { border-right:0; padding:0 0 24px; border-bottom:1px solid var(--border); display:grid; grid-template-columns:150px 1fr; column-gap:20px; } .finding:last-child { border-bottom:0; padding-bottom:0; } .finding .finding-value { grid-row:1/4; font-size:29px; } .finding h3,.finding p,.finding a { grid-column:2; } .study-results,.methods-grid { grid-template-columns:1fr; gap:24px; } .panels { grid-template-columns:1fr; } .custom { grid-template-columns:1fr; } .case-picker { grid-template-columns:1fr; } .case-picker > .site-button { justify-self:start; } .nav-links a:nth-child(3) { display:none; } }
+@media(max-width:560px) { main { padding:0 20px; } .site-nav { padding:14px 20px; gap:16px; } .wordmark { font-size:16px; } .nav-links { gap:15px; font-size:14px; } .nav-links a:first-child { display:none; } .hero h1 { font-size:42px; letter-spacing:-1.6px; } .hero .lead { font-size:18px; } .hero-figure { padding:14px; } .hero-figure figcaption { font-size:15px; } h2 { font-size:27px; } .finding { grid-template-columns:125px 1fr; gap:4px 14px; } .finding .finding-value { font-size:27px; letter-spacing:-.8px; } .study-results { padding:24px 20px; } .case-picker { padding:20px 16px; } .reference-panel { padding:22px 18px; } .chain { gap:14px; } .chain-node strong { font-size:17px; } .panel { padding:20px 10px 16px; } .panel-head { padding:0 6px; } .panel-stat { margin-left:6px; } .control-strip label { flex:1 1 190px; } .search-row { grid-template-columns:1fr; } .summary-cards { grid-template-columns:1fr; gap:20px; } .footer-line { display:block; } .footer-line span { display:block; margin-top:6px; } .eyebrow { font-size:13px; } }
+@media(max-width:370px) { main { padding:0 14px; } .site-nav { padding:14px; } .wordmark { font-size:15px; gap:6px; } .brand-mark { width:23px; } .nav-links { gap:10px; } .hero h1 { font-size:38px; } .finding { display:block; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print { .site-header,.hero-actions,.case-picker,details,.control-strip,#save-html { display:none; } .hero { padding:25px 0; } .section { break-inside:avoid; } }
+
+/* A short reading path; the full research explorer remains available on demand. */
+.example-tabs { display:flex; flex-wrap:wrap; gap:8px; margin:26px 0 22px; }
+.example-button { min-height:46px; border:1px solid var(--border); border-radius:7px; padding:10px 18px; background:var(--surface); color:var(--muted-foreground); font-size:16px; font-weight:550; }
+.example-button:hover:not(:disabled) { border-color:var(--blue); color:var(--blue); }
+.example-button[aria-pressed="true"] { background:var(--blue); border-color:var(--blue); color:#fff; }
+.example-button:disabled { cursor:default; }
+.reference-panel .chain { margin-bottom:14px; }
+.reference-panel .case-intuition { margin:0; font-size:16px; }
+.geometry { margin-top:24px; }
+.plot-key { margin-top:14px; color:var(--muted-foreground); font-size:15px; }
+.advanced { margin-top:48px; border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+.advanced > summary { width:100%; padding:23px 0; font-size:18px; font-weight:550; color:var(--foreground); }
+.advanced > summary span { font-size:15px; font-weight:400; color:var(--muted-foreground); margin-left:16px; }
+.advanced[open] > summary { margin:0; }
+.advanced-content { padding:10px 0 32px; }
+.advanced-controls { padding:24px; border:1px solid var(--border); background:var(--soft); border-radius:10px; }
+.advanced-controls .case-control { max-width:580px; }
+.advanced-controls .control-strip { padding:24px 0 0; }
+.advanced h3 + p { margin-top:12px; }
+.advanced .legend { margin:22px 0; }
+.compact-footer { border:0; margin:0; padding:28px 0; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:18px; color:var(--muted-foreground); font-size:15px; }
+@media(max-width:560px) { .example-tabs { gap:7px; } .example-button { padding:9px 12px; font-size:15px; } .advanced > summary span { display:block; margin:5px 0 0 20px; } .advanced-controls { padding:20px 16px; } .reference-panel .chain { flex-direction:column; align-items:flex-start; gap:10px; } .reference-panel .chain-arrow { transform:rotate(90deg); margin:0 0 0 8px; height:28px; flex-basis:28px; } }
+@media print { .example-tabs,.advanced,.compact-footer button { display:none; } }
+/* Readable workbench: large pair controls followed immediately by the figure. */
+[hidden] { display:none !important; }
+body { font-size:18px; }
+.example-button { font-size:17px; }
+.caption,.finding p,.study-results p,.result-table,.result-table caption,.result-table th,.site-button,.plot-key,.case-intuition,.reference-panel .case-intuition { font-size:17px; }
+.chain-node .node-role { font-size:17px; }
+.panel-stat { font-size:18px; }
+.advanced > summary { font-size:22px; padding:24px 0; }
+.workspace { padding:0 0 32px; }
+.workspace-tabs { display:flex; gap:8px; border-bottom:1px solid var(--border); padding-bottom:20px; margin-bottom:26px; }
+.workspace button { font-size:18px; }
+.workspace-tabs button,.dataset-buttons button,.step-buttons button,.scale-buttons button,.more-examples button { border:1px solid var(--border); background:var(--surface); color:var(--foreground); border-radius:8px; padding:12px 20px; min-height:52px; line-height:1.3; }
+.workspace button:hover:not(:disabled) { border-color:var(--blue); }
+.workspace button[aria-pressed="true"] { color:var(--blue); background:#ddf4ff; border-color:var(--blue); }
+.workspace-tabs button[aria-pressed="true"] { color:#fff; background:var(--blue); }
+.workspace-settings { border:1px solid var(--border); border-radius:12px; background:var(--soft); padding:28px; margin-bottom:26px; }
+.dataset-buttons { display:flex; gap:12px; margin-bottom:28px; }
+.dataset-buttons button { flex:1; font-weight:600; }
+.pair-builder { display:grid; grid-template-columns:minmax(0,1fr) 56px minmax(0,1fr); gap:18px; align-items:center; margin-bottom:26px; }
+.picker-field { min-width:0; }
+.picker-field > label { font-size:18px; font-weight:600; margin-bottom:10px; }
+.node-picker { position:relative; margin:0; }
+.node-picker > summary { display:flex; justify-content:space-between; align-items:center; gap:16px; width:100%; min-height:82px; padding:18px 20px; border:1px solid #8c959f; border-radius:9px; background:var(--surface); color:var(--foreground); list-style:none; }
+.node-picker > summary::-webkit-details-marker { display:none; }
+.node-picker > summary > span:first-child { font:500 21px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; overflow-wrap:anywhere; }
+.picker-chevron { color:var(--blue); font-size:28px; flex-shrink:0; }
+.node-picker[open] > summary { border-color:var(--blue); margin:0; outline:2px solid #ddf4ff; }
+.picker-menu { position:absolute; top:calc(100% + 8px); left:0; right:0; z-index:10; background:var(--surface); border:1px solid var(--blue); border-radius:9px; padding:12px; box-shadow:0 12px 28px #1f232821; }
+.picker-menu input { width:100%; min-width:0; min-height:52px; padding:12px; border:1px solid var(--border); border-radius:6px; font-size:18px; }
+.node-options { display:flex; flex-direction:column; max-height:280px; overflow-y:auto; overscroll-behavior:contain; margin-top:10px; gap:4px; }
+.node-options button { width:100%; min-height:50px; flex-shrink:0; text-align:left; border:1px solid transparent; border-radius:5px; background:var(--surface); color:var(--foreground); font:17px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; padding:12px; overflow-wrap:anywhere; }
+.node-options button[aria-current="true"] { background:#ddf4ff; color:var(--blue); }
+.empty-state { padding:16px 4px; font-size:18px; }
+.swap-button { align-self:center; margin-top:35px; width:56px; min-height:56px; border:1px solid var(--border); border-radius:50%; background:var(--surface); color:var(--blue); font-size:32px !important; }
+.fit-controls { display:flex; flex-wrap:wrap; align-items:start; gap:24px 38px; }
+.fit-controls fieldset { margin:0; padding:0; border:0; min-width:0; }
+.fit-controls legend { padding:0; font-size:18px; font-weight:600; margin-bottom:12px; }
+.step-buttons,.scale-buttons { display:flex; flex-wrap:wrap; gap:8px; }
+.step-buttons button,.scale-buttons button { padding:12px 16px; }
+#advanced-preview-slot .reference-panel { border:0; background:var(--surface); padding:0 0 8px; }
+#advanced-preview-slot .geometry { margin-top:20px; }
+.evidence-cards { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:28px; }
+.evidence-cards > div { border:1px solid var(--border); border-radius:9px; padding:20px 24px; }
+.evidence-cards span { display:block; font-size:18px; color:var(--muted-foreground); margin-bottom:8px; }
+.evidence-cards strong { display:block; font-size:23px; }
+.evidence-cards strong[data-kind="positive"] { color:var(--green); }
+.evidence-cards strong[data-kind="negative"] { color:var(--red); }
+.evidence-cards strong[data-kind="unknown"] { color:var(--orange); }
+.pair-actions { display:flex; justify-content:space-between; align-items:start; gap:24px; margin:20px 0; }
+.pair-actions > details { flex:1; margin:0; }
+.pair-actions summary { font-size:18px; }
+.evidence-body { font-size:18px; line-height:1.65; padding:18px 0; overflow-wrap:anywhere; max-width:85ch; }
+#relation-status { font-size:18px; }
+#pair-evidence p { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:16px; margin-top:16px; }
+.more-examples { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:24px; }
+.more-examples > span { font-size:18px; margin-right:6px; color:var(--muted-foreground); }
+.more-examples button { font-size:17px; min-height:48px; padding:10px 14px; }
+.map-counts { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin:28px 0; }
+.map-counts > div { border-left:3px solid var(--blue); padding:4px 20px; }
+.map-counts strong { display:block; font-size:36px; letter-spacing:-.6px; }
+.map-counts span { display:block; font-size:18px; color:var(--muted-foreground); }
+.map-legend { display:flex; flex-wrap:wrap; gap:24px; font-size:18px; margin-bottom:20px; }
+.map-legend > span { display:inline-flex; align-items:center; gap:9px; }
+.legend-dot { display:inline-block; width:14px; height:14px; border-radius:2px; }
+.legend-dot.checked { background:var(--blue); }.legend-dot.unjudged { background:var(--orange); }.legend-dot.rejected { background:var(--red); }
+.matrix-detail,.map-scope { font-size:18px; margin-top:20px; color:var(--muted-foreground); overflow-wrap:anywhere; }
+.study-notes-grid { display:grid; grid-template-columns:1fr 1fr; gap:36px 46px; margin-top:30px; }
+.study-notes-grid p { margin-top:14px; font-size:18px; }
+.study-notes-grid a { display:inline-block; font-size:18px; margin-top:16px; }
+.study-notes-grid .result-table { margin-top:24px; font-size:18px; }
+.study-notes-grid .result-table th { font-size:17px; }
+.study-notes-grid .result-table th,.study-notes-grid .result-table td { padding-right:12px; }
+.study-notes-grid .result-table td:last-child,.study-notes-grid .result-table th:last-child { padding-right:0; }
+#runtime-status { padding:18px; background:var(--soft); border:1px solid var(--border); border-radius:8px; font-size:18px; }
+.tooltip { font-size:16px; }
+svg text { font-size:16px; }.axis text { font-size:14px; }.axis-title { font-size:15px; }
+@media(max-width:800px) { .pair-builder { grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr); gap:12px; } .workspace-settings { padding:22px; } .swap-button { width:48px; min-height:48px; } .node-picker > summary { padding:14px; } .node-picker > summary > span:first-child { font-size:19px; } .study-notes-grid { grid-template-columns:1fr; } }
+@media(max-width:560px) { .workspace-tabs { gap:7px; flex-wrap:wrap; } .workspace-tabs button { flex:1 1 100px; padding:12px 10px; font-size:17px; } .workspace-settings { padding:18px 14px; } .dataset-buttons { flex-direction:column; gap:8px; margin-bottom:24px; } .pair-builder { grid-template-columns:1fr; gap:12px; } .swap-button { margin:0; justify-self:center; transform:rotate(90deg); } .node-picker > summary { min-height:76px; } .node-picker > summary > span:first-child { font-size:20px; } .fit-controls { gap:22px; } .step-buttons { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); } .step-buttons button { font-size:17px; padding:12px; } .fit-controls fieldset { width:100%; } .scale-buttons button { flex:1; font-size:17px; padding:12px 10px; } .evidence-cards,.map-counts { grid-template-columns:1fr; } .pair-actions { flex-direction:column; } .more-examples > span { flex-basis:100%; } .map-counts strong { font-size:32px; } .plot-key,.reference-panel .case-intuition { font-size:17px; } }
+
+/* Guided examples and the explorer are separate, with compact local controls. */
+.guide-toolbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+.guide-toolbar .example-tabs { margin-bottom:20px; }
+.scope-badge { display:inline-block; padding:5px 12px; border:1px solid var(--border); border-radius:20px; font-size:16px; color:var(--muted-foreground); background:var(--soft); }
+.workspace-settings { padding:20px; }
+.dataset-buttons { gap:8px; margin-bottom:18px; }
+.dataset-buttons button { flex:none; min-height:44px; padding:9px 15px; font-size:16px; }
+.pair-builder { grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr); gap:12px; margin-bottom:20px; }
+.picker-field > label { font-size:16px; margin-bottom:7px; }
+.node-picker > summary { min-height:48px; padding:9px 12px; border-radius:7px; gap:12px; }
+.node-picker > summary > span:first-child { font-size:18px; line-height:1.4; }
+.picker-chevron { font-size:22px; }
+.swap-button { width:40px; min-height:40px; margin-top:28px; font-size:25px !important; }
+.fit-controls { gap:18px 32px; }
+.fit-controls legend { font-size:16px; margin-bottom:9px; }
+.step-buttons button,.scale-buttons button { min-height:42px; padding:9px 13px; font-size:16px; }
+.node-options { max-height:240px; }
+.node-options button { min-height:44px; padding:9px 11px; font-size:16px; }
+.picker-menu input { min-height:44px; padding:9px 11px; font-size:17px; }
+.study-notes { border-top:1px solid var(--border); border-bottom:1px solid var(--border); margin-top:40px; padding:32px 0; }
+.study-source { color:var(--muted-foreground); font-size:17px; margin-top:28px; }
+.generalization { padding:36px 0 12px; scroll-margin-top:95px; }
+.transfer-result { display:grid; grid-template-columns:auto minmax(0,1fr); gap:28px; align-items:center; margin:24px 0 30px; padding:24px 28px; border:1px solid var(--border); border-left:4px solid var(--red); border-radius:8px; background:var(--soft); }
+.transfer-result > strong { font-size:44px; line-height:1.2; color:var(--red); white-space:nowrap; font-variant-numeric:tabular-nums; }
+.transfer-result p { margin-top:8px; font-size:18px; }
+.failure-intuition { margin:30px 0; }
+.failure-intuition > p { font-size:18px; max-width:82ch; margin-top:14px; }
+.typed-example { display:flex; align-items:center; flex-wrap:wrap; gap:16px; margin:20px 0 10px; padding:18px 22px; border:1px solid var(--border); border-radius:8px; background:var(--soft); font-size:19px; }
+.typed-example > span { color:var(--blue); font-size:26px; }
+.map-selection { display:flex; align-items:center; gap:20px; margin-top:22px; }
+.map-selection p { flex:1; margin:0; min-width:0; }
+.map-selection button { flex-shrink:0; }
+#advanced-preview-slot .reference-panel { padding:0 0 8px; }
+@media(max-width:800px) { .workspace-settings { padding:18px; } }
+@media(max-width:560px) {
+  .guide-toolbar { display:block; margin-bottom:20px; }
+  .guide-toolbar .example-tabs { margin-bottom:12px; }
+  .dataset-buttons { flex-direction:row; flex-wrap:wrap; }
+  .dataset-buttons button { flex:1 1 115px; font-size:16px; padding:9px; }
+  .workspace-settings { padding:16px 12px; }
+  .pair-builder { grid-template-columns:1fr; gap:8px; }
+  .swap-button { margin:0; width:36px; min-height:36px; }
+  .node-picker > summary { min-height:48px; }
+  .node-picker > summary > span:first-child { font-size:18px; }
+  .fit-controls legend { font-size:16px; }
+  .step-buttons { display:flex; gap:6px; }
+  .step-buttons button { flex:1; min-width:44px; font-size:16px; padding:9px 8px; }
+  .scale-buttons button { font-size:16px; min-height:42px; padding:9px 12px; }
+  .map-selection { flex-direction:column; align-items:start; }
+  .transfer-result { grid-template-columns:1fr; gap:12px; padding:20px; }
+  .typed-example { flex-direction:column; align-items:center; gap:8px; }
+  .typed-example > span { transform:rotate(90deg); }
+}
+
+/* Guided detail keeps the main comparison on its shared scale. */
+.cone-detail { width:min(940px,calc(100vw - 32px)); max-height:90vh; padding:24px; border:1px solid var(--border); border-radius:12px; background:var(--surface); color:var(--foreground); overflow:auto; }
+.cone-detail::backdrop { background:rgb(0 0 0 / .55); }
+.cone-detail .panel-head { align-items:center; }
+.cone-detail h3 { font-size:24px; }
+.cone-detail-pair { margin:16px 0 0; font-size:18px; overflow-wrap:anywhere; }
+.cone-detail .plot-key { font-size:17px; }
+body:has(.cone-detail[open]) { overflow:hidden; }
+@media(max-width:560px) { .cone-detail { padding:18px 12px; } .cone-detail h3 { font-size:21px; } }
+@media print { #guided-zoom,.cone-detail { display:none; } }
+.map-intro { margin-top:16px; font-size:18px; max-width:75ch; color:var(--muted-foreground); }
+.relation-kind { margin-top:22px; }
+.relation-kind h4,.reason-grid h4 { font-size:19px; font-weight:600; }
+.relation-kind p { margin-top:8px; }
+.reason-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; margin:26px 0; }
+.reason-grid article { border-top:2px solid var(--border); padding-top:16px; }
+.reason-grid p { font-size:18px; margin-top:10px; }
+@media(max-width:800px) { .reason-grid { grid-template-columns:1fr; gap:20px; } }
+</style>
+<template id="d3-license">__D3_LICENSE__</template>
+<script>__LOCAL_D3__</script>
+</head>
+<body>
+<a class="skip-link" href="#explorer">Skip to the interactive explorer</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Study navigation">
+    <a class="wordmark" href="#overview"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16L27 5V27Z" fill="var(--cone)" stroke="var(--green)"/><circle cx="5" cy="16" r="2.5" fill="var(--foreground)"/><circle cx="21" cy="14" r="2" fill="var(--blue)"/></svg>Lean Context Search</a>
+    <div class="nav-links"><a href="#findings">The fit</a><a href="#explorer">Examples</a><a href="#advanced">Explore</a></div>
+  </nav>
+</header>
+<main id="real-cone-view">
+  <header id="overview" class="hero">
+    <div>
+      <p class="eyebrow">Notes on structure and search</p>
+      <h1>A small exploration<br>of hyperbolic cones.</h1>
+      <p class="lead">We fit cone containment to checked relationships between known Lean interfaces.</p>
+      <p class="scope-note" role="note"><strong>Generalization failed in our tests.</strong> <a href="#generalization">Details below ↓</a></p>
+      <div class="hero-actions"><a class="site-button primary" href="#explorer">Explore the fit <span aria-hidden="true">↓</span></a><a class="site-button" href="#findings">Fit summary</a></div>
+    </div>
+    <figure class="hero-figure">
+      <svg viewBox="0 0 470 335" role="img" aria-labelledby="hero-diagram-title hero-diagram-desc">
+        <title id="hero-diagram-title">A checked chain of Lean interfaces</title><desc id="hero-diagram-desc">AddAction supplies AddSemigroupAction, which supplies VAdd. The composed relationship is held out of direct pair supervision while its nodes and component maps remain known.</desc>
+        <defs><marker id="hero-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10" fill="#0969da"/></marker></defs>
+        <text x="235" y="27" text-anchor="middle" class="diagram-label">A checked Lean path</text>
+        <rect x="37" y="52" width="396" height="64" rx="8" fill="#fff" stroke="#afb8c1"/>
+        <text x="235" y="94" text-anchor="middle">AddAction</text>
+        <path d="M235 117V146" fill="none" stroke="#0969da" stroke-width="2" marker-end="url(#hero-arrow)"/>
+        <rect x="37" y="153" width="396" height="64" rx="8" fill="#fff" stroke="#afb8c1"/>
+        <text x="235" y="195" text-anchor="middle">AddSemigroupAction</text>
+        <path d="M235 218V247" fill="none" stroke="#0969da" stroke-width="2" marker-end="url(#hero-arrow)"/>
+        <rect x="37" y="254" width="396" height="64" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+        <text x="235" y="296" text-anchor="middle">VAdd</text>
+      </svg>
+      <figcaption>An action carries the interfaces beneath it.</figcaption>
+    </figure>
+  </header>
+
+  <section id="findings" class="findings" aria-labelledby="findings-heading">
+    <h2 id="findings-heading">Fitting known relationships</h2>
+    <div class="finding-grid">
+      <article class="finding"><span class="finding-value">212 / 212</span><h3>Checked paths inside</h3><p>All recorded ancestry pairs lie inside their source cones.</p></article>
+      <article class="finding"><span class="finding-value">212 / 212</span><h3>Reverse checks outside</h3><p>Each tested reverse direction stays outside the source cone.</p></article>
+    </div>
+  </section>
+
+  <section id="explorer" class="explorer-start" aria-labelledby="explorer-heading">
+    <h2 id="explorer-heading">Guided examples</h2>
+    <div class="guide-toolbar"><div class="example-tabs" role="group" aria-label="Choose a guided example">
+      <button class="example-button" type="button" data-guide="composed" aria-pressed="true" disabled>Composition</button>
+      <button class="example-button" type="button" data-guide="reverse" aria-pressed="false" disabled>Reverse parent path</button>
+      <button class="example-button" type="button" data-guide="countermodel" aria-pressed="false" disabled>Does not imply</button>
+    </div><span id="guided-domain" class="scope-badge">Parent interfaces</span></div>
+  </section>
+  <div id="guided-preview"><div id="guided-figures">
+    <div id="reference" class="reference-panel">
+      <div id="real-chain" class="chain"></div>
+      <p id="case-intuition" class="case-intuition">This composed pair was withheld from direct supervision; its two steps were known.</p>
+    </div>
+  <section id="geometry" class="geometry" aria-label="Before and after fitting">
+    <div class="panels" id="cone-panels">
+      <div class="panel">
+        <div class="panel-head"><h3>Before fitting</h3></div>
+        <p id="before-verdict" class="panel-stat tabular"></p>
+        <svg id="before-cone" class="cone-plot" role="img" aria-label="Initial source-focused Poincare cone"></svg>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3 id="after-heading">After fitting</h3><button id="guided-zoom" class="site-button" type="button" aria-haspopup="dialog" aria-controls="guided-detail" disabled>Zoom in</button></div>
+        <p id="after-verdict" class="panel-stat tabular"></p>
+        <svg id="after-cone" class="cone-plot" role="img" aria-label="Fitted source-focused Poincare cone"></svg>
+      </div>
+    </div>
+    <p id="fit-interpretation" class="interpretation">The fitted cone recovers the checked relationship.</p>
+    <p class="plot-key">A is the source; B is the result. Green marks A’s cone. Both panels use the same scale.</p>
+  </section>
+</div></div>
+  <dialog id="guided-detail" class="cone-detail" aria-labelledby="guided-detail-title" aria-describedby="guided-detail-pair guided-detail-scale">
+    <div class="panel-head"><h3 id="guided-detail-title">After fitting · detail</h3><button id="guided-detail-close" class="site-button" type="button" autofocus>Close</button></div>
+    <p id="guided-detail-pair" class="cone-detail-pair"></p>
+    <p id="guided-detail-verdict" class="panel-stat tabular"></p>
+    <svg id="guided-detail-cone" class="cone-plot" role="img" aria-label="Zoomed fitted source-focused Poincare cone"></svg>
+    <p id="guided-detail-scale" class="plot-key tabular"></p>
+  </dialog>
+  <details id="advanced" class="advanced">
+    <summary>Advanced explorer</summary>
+    <div class="workspace">
+      <div class="workspace-tabs" role="group" aria-label="Explorer view">
+        <button type="button" data-view="pair" aria-pressed="true" disabled>Compare a pair</button>
+        <button type="button" data-view="map" aria-pressed="false" disabled>Relation map</button>
+      </div>
+
+      <div id="workspace-settings" class="workspace-settings">
+        <div class="dataset-buttons" role="group" aria-label="Relationship type">
+          <button type="button" data-dataset="D0" aria-pressed="true" disabled>Parent interfaces</button>
+          <button type="button" data-dataset="D1" aria-pressed="false" disabled>Property implications</button>
+        </div>
+        <div id="pair-builder" class="pair-builder">
+          <div class="picker-field">
+            <label id="source-label">Source A</label>
+            <details id="source-picker" class="node-picker">
+              <summary aria-labelledby="source-label source-name"><span id="source-name">AddAction</span><span class="picker-chevron" aria-hidden="true">⌄</span></summary>
+              <div class="picker-menu">
+                <input id="source-search" type="search" aria-label="Search source interfaces" placeholder="Search an interface…" autocomplete="off" disabled>
+                <div id="source-options" class="node-options" role="group" aria-label="Source choices"></div>
+                <p id="source-empty" class="empty-state" hidden>No matching interface.</p>
+              </div>
+            </details>
+          </div>
+          <button id="swap-pair" class="swap-button" type="button" aria-label="Swap source and result" title="Swap source and result" disabled>⇄</button>
+          <div class="picker-field">
+            <label id="result-label">Result B</label>
+            <details id="result-picker" class="node-picker">
+              <summary aria-labelledby="result-label result-name"><span id="result-name">VAdd</span><span class="picker-chevron" aria-hidden="true">⌄</span></summary>
+              <div class="picker-menu">
+                <input id="result-search" type="search" aria-label="Search result interfaces" placeholder="Search an interface…" autocomplete="off" disabled>
+                <div id="result-options" class="node-options" role="group" aria-label="Result choices"></div>
+                <p id="result-empty" class="empty-state" hidden>No matching interface.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="fit-controls">
+          <fieldset id="checkpoint-controls"><legend>Training steps</legend>
+            <div class="step-buttons"><button type="button" data-checkpoint="0" aria-pressed="false" disabled>Start</button><button type="button" data-checkpoint="100" aria-pressed="false" disabled>100</button><button type="button" data-checkpoint="300" aria-pressed="false" disabled>300</button><button type="button" data-checkpoint="1000" aria-pressed="true" disabled>1,000</button></div>
+          </fieldset>
+          <fieldset id="scale-controls"><legend>Plot scale</legend>
+            <div class="scale-buttons"><button type="button" data-extent="common" aria-pressed="true" disabled>Same scale</button><button type="button" data-extent="independent" aria-pressed="false" disabled>Zoom each</button></div>
+          </fieldset>
+        </div>
+      </div>
+
+      <section id="pair-workspace" aria-label="Pair comparison">
+        <div id="advanced-preview-slot">
+    <div id="advanced-reference" class="reference-panel">
+      <div id="advanced-real-chain" class="chain"></div>
+      <p id="advanced-case-intuition" class="case-intuition">This composed pair was withheld from direct supervision; its two steps were known.</p>
+    </div>
+  <section id="advanced-geometry" class="geometry" aria-label="Before and after fitting">
+    <div class="panels" id="advanced-cone-panels">
+      <div class="panel">
+        <div class="panel-head"><h3>Before fitting</h3></div>
+        <p id="advanced-before-verdict" class="panel-stat tabular"></p>
+        <svg id="advanced-before-cone" class="cone-plot" role="img" aria-label="Initial source-focused Poincare cone"></svg>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3 id="advanced-after-heading">After fitting</h3></div>
+        <p id="advanced-after-verdict" class="panel-stat tabular"></p>
+        <svg id="advanced-after-cone" class="cone-plot" role="img" aria-label="Fitted source-focused Poincare cone"></svg>
+      </div>
+    </div>
+    <p id="advanced-fit-interpretation" class="interpretation">The fitted cone recovers the checked relationship.</p>
+    <p class="plot-key">A is the source; B is the result. Green marks A’s cone.</p>
+  </section>
+</div>
+        <div class="evidence-cards">
+          <div><span>Lean evidence</span><strong id="pair-label">Checked implication</strong></div>
+          <div><span>Cone prediction</span><strong id="pair-decision">Inside</strong></div>
+        </div>
+        <div class="pair-actions">
+          <details id="evidence-details"><summary>View Lean evidence</summary><div class="evidence-body"><p id="relation-status"></p><p id="relation-context" class="context"></p><div id="pair-evidence"></div></div></details>
+          <button id="export-svg" class="site-button" type="button" disabled>Save figure ↓</button>
+        </div>
+      </section>
+
+      <section id="map-workspace" aria-labelledby="map-heading" hidden>
+        <div id="atlas">
+          <h2 id="map-heading">Checked relations and cone predictions</h2>
+          <p class="map-intro">Each square is a source → result pair. The left map shows checked positive relations; the right shows what the cones predict.</p>
+          <div class="map-counts" id="summary-cards"><div><strong id="summary-positive">212 / 212</strong><span id="summary-positive-label">Checked paths inside</span></div><div><strong id="summary-negative">212 / 212</strong><span id="summary-negative-label">Reverse paths outside</span></div></div>
+          <div class="map-legend"><span><i class="legend-dot checked"></i>Checked</span><span><i class="legend-dot unjudged"></i>Unjudged</span><span><i class="legend-dot rejected"></i>Tested negative</span></div>
+          <div class="panels">
+            <div class="panel"><h3 id="known-title">Checked parent ancestry</h3><svg id="known-matrix" class="matrix-plot" role="img" aria-label="Recorded positive relation matrix"></svg></div>
+            <div class="panel"><h3 id="learned-title">Learned containment</h3><svg id="learned-matrix" class="matrix-plot" role="img" aria-label="Real final cone-containment matrix"></svg></div>
+          </div>
+          <div class="map-selection"><p id="matrix-detail" class="matrix-detail">Select a square to inspect a pair.</p><button id="inspect-map-pair" class="site-button" type="button" disabled>Inspect pair →</button></div>
+          <p class="map-scope">A blank square on the left does not always mean false: many implications are unknown. Diagonal pairs are excluded.</p>
+        </div>
+      </section>
+
+      <p id="runtime-status" role="status" hidden>Interactive view unavailable.</p>
+    </div>
+  </details>
+
+  <section id="study-notes" class="study-notes" aria-labelledby="notes-heading">
+      <div id="notes-workspace">
+        <div id="methods">
+          <h2 id="notes-heading">Study notes</h2>
+          <div class="study-notes-grid">
+            <article>
+              <h3>Two kinds of relations</h3>
+              <div class="relation-kind"><h4>Parent interfaces</h4><p>A structure supplies a parent through a Lean projection. Example: <code>AddAction → VAdd</code>.</p></div>
+              <div class="relation-kind"><h4>Property implications</h4><p>One property implies another for the same object or map. Example: <code>IsIso f → Mono f</code>.</p></div>
+              <p>181 interfaces and 11 properties.</p>
+            </article>
+            <article id="scope-heading">
+              <h3>1.00 within a fixed catalogue</h3>
+              <p>The hyperbolic head was trained on the catalogue’s structural relations. Separate development queries then tested retrieval among 109 candidate interfaces and 72 requirements.</p>
+              <table class="result-table"><thead><tr><th>Method</th><th>Queries</th><th>nDCG@10</th></tr></thead><tbody><tr><td>Exact graph</td><td>48</td><td>1.00</td></tr><tr><td>Hyperbolic head</td><td>32</td><td>1.00</td></tr></tbody></table>
+              <p>This tests finding suppliers among familiar interfaces. It does not test new interfaces or the full Lean search corpus.</p>
+              <p>Scores are group averages on overlapping development sets. Both methods use the same query-to-requirement predictions.</p>
+            </article>
+          </div>
+          <p class="study-source">Lean checks use a candidate Mathlib snapshot; the index’s exact revision is unresolved.</p>
+        </div>
+      </div>
+  </section>
+
+  <section id="generalization" class="generalization" aria-labelledby="generalization-heading">
+    <h2 id="generalization-heading">Generalization failure</h2>
+    <div class="transfer-result" role="note">
+      <strong>0 / 6</strong>
+      <div><h3>No hyperbolic run passed the transfer check</h3><p>Two architectures × three seeds, tested on 12 development pairs across two groups. Synthetic transfer was also unstable across seeds.</p></div>
+    </div>
+    <div class="failure-intuition">
+      <h3>Possible reasons</h3>
+      <p>A learned vector summarizes a declaration. The relation we want is stricter: can its fields and laws actually supply another interface, with the right types and parameters?</p>
+      <div class="typed-example" aria-label="Traversable t supplies Functor t through a checked parent projection"><code>Traversable t</code><span aria-hidden="true">→</span><code>Functor t</code></div>
+      <p>This arrow needs a valid <code>toFunctor</code> map and the same <code>t</code> on both sides. The hyperbolic model missed it in a saved development example.</p>
+      <div class="reason-grid">
+        <article><h4>Details can disappear</h4><p>Language embeddings summarize descriptions; the structural features summarize fields and types. Either summary can lose distinctions that matter to the Lean map.</p></article>
+        <article><h4>A fit can learn positions</h4><p>Training can arrange familiar interfaces into the right cones without learning a rule that places a new interface correctly.</p></article>
+        <article><h4>Geometry does not check types</h4><p>The cone tests position and angle. It does not construct a projection or verify its parameter substitutions.</p></article>
+      </div>
+      <p class="quiet">These are possible explanations; the cause is not yet isolated. Some tested feature encodings gave distinct interfaces identical inputs.</p>
+    </div>
+    <section id="retrieval-results" class="study-results" aria-labelledby="retrieval-heading">
+      <div><h2 id="retrieval-heading">No retrieval gain</h2><p>The hyperbolic branch did not improve the mean score. This development study is separate from the release’s public benchmark.</p></div>
+      <div><table class="result-table"><caption>87 development queries · three-seed mean</caption><thead><tr><th scope="col">Method</th><th scope="col">nDCG@10 ↑</th></tr></thead><tbody><tr class="best"><td>Ordinary embedding head</td><td>0.69105</td></tr><tr><td>Hyperbolic cone branch</td><td>0.68797</td></tr></tbody></table></div>
+    </section>
+  </section>
+
+  <footer class="footer compact-footer">
+    <span>Lean Context Search · Structural study</span>
+    <button id="save-html" class="site-button" type="button" disabled>Download this view <span aria-hidden="true">↓</span></button>
+  </footer>
+  <div id="view-tooltip" class="tooltip" role="tooltip" hidden></div>
+  <noscript><p class="caption">You are viewing the saved real-data figures. Interactive exploration is unavailable in this preview.</p></noscript>
+</main>
+<script id="real-data" type="application/json">__REAL_DATA__</script>
+<script id="site-controller">
+(function () {
+  "use strict";
+  const root = document.getElementById("real-cone-view");
+  try {
+  if (!window.d3) throw new Error("The embedded chart library did not initialize");
+  const data = JSON.parse(document.getElementById("real-data").textContent);
+  const $ = id => document.getElementById(id);
+  const fmt = d3.formatLocale({decimal:".",thousands:",",grouping:[3],currency:["$",""],minus:"-"}).format;
+  const num = fmt(".3f"), deg = fmt(".2f"), integer = fmt(",d");
+  const tooltip = $("view-tooltip");
+  const examples = {
+    composed: {d:"D0", a:"AddAction", b:"VAdd", text:"This composed pair was withheld from direct supervision; its two steps were known."},
+    reverse: {d:"D0", a:"VAdd", b:"AddAction", text:"AddAction supplies VAdd through its parents. The reverse direction has no declared parent path."},
+    extra: {d:"D0", a:"AlgebraicGeometry.IsArtinianScheme", b:"AddHom", text:"The cone contains this pair, although the declared parent graph has no connecting path."},
+    semantic: {d:"D1", a:"CategoryTheory.IsIso", b:"CategoryTheory.Mono", text:"For the same morphism, an isomorphism supplies a split monomorphism, then a monomorphism."},
+    countermodel: {d:"D1", a:"CategoryTheory.IsSplitMono", b:"CategoryTheory.Epi", text:"The map Unit → Bool sending its only element to false is split mono but not epi. So split mono does not imply epi."},
+    unknown: {d:"D1", a:"CategoryTheory.Mono", b:"CategoryTheory.IsSplitMono", text:"This pair has no certified label in the packet. The cone cannot establish a theorem."}
+  };
+  let selection = {d:"D0", s:0, t:0};
+  let checkpointUpdate = 1000, extentMode = "common";
+  let exampleKey="composed", workspaceView="pair", guidedExample="composed";
+  const pairMemory={};
+  const packetName = key => key === "D0" ? "Parent interfaces" : "Property implications";
+  const prepared = {};
+  function decodeFloat(encoded) {
+    const binary = atob(encoded), buffer = new ArrayBuffer(binary.length), view = new DataView(buffer);
+    for (let i=0; i<binary.length; i++) view.setUint8(i,binary.charCodeAt(i));
+    const result = new Float64Array(binary.length/4);
+    for (let i=0; i<result.length; i++) result[i]=view.getFloat32(i*4,true);
+    return result;
+  }
+  Object.entries(data.datasets).forEach(([key,d]) => {
+    const n = d.nodes.length, labels = new Uint8Array(n*n), pairIndex = new Map();
+    d.pairs.forEach(p => { labels[p.s*n+p.t]=p.label==="positive"?1:2; pairIndex.set(p.s*n+p.t,p); });
+    const states = d.states.map(st => {
+      const u=decodeFloat(st.directions), rho=decodeFloat(st.rho);
+      for (let i=0;i<n;i++) { let length=0; for (let k=0;k<data.dimension;k++) length+=u[i*data.dimension+k]**2; length=Math.sqrt(length); for (let k=0;k<data.dimension;k++) u[i*data.dimension+k]/=length; }
+      const bits=atob(st.inside), inside=new Uint8Array(n*n);
+      for (let i=0;i<n*n;i++) inside[i]=(bits.charCodeAt(i>>3)>>(i&7))&1;
+      return Object.assign({},st,{u,rho,inside});
+    });
+    prepared[key]={n,labels,pairIndex,states};
+  });
+  function relation(s,t,dataset=selection.d) { return prepared[dataset].labels[s*prepared[dataset].n+t]; }
+  function pairMath(st,s,t) {
+    const dim=data.dimension;
+    let c=0, delta=0;
+    for(let k=0;k<dim;k++){const a=st.u[s*dim+k],b=st.u[t*dim+k]; c+=a*b; delta+=(a-b)**2/2;}
+    c=Math.max(-1,Math.min(1,c));
+    let transverse2=0;
+    for(let k=0;k<dim;k++) transverse2+=(st.u[t*dim+k]-c*st.u[s*dim+k])**2;
+    const axial=Math.sinh(st.rho[t]-st.rho[s])-Math.cosh(st.rho[s])*Math.sinh(st.rho[t])*delta;
+    const transverse=Math.sinh(st.rho[t])*Math.sqrt(transverse2);
+    const length=Math.hypot(axial,transverse), sine=2*data.K/Math.sinh(st.rho[s]);
+    const clearance=sine*sine/(1+Math.sqrt(1-sine*sine));
+    const cosAngle=length?axial/length:1;
+    const loss=axial>=0?(transverse/length)**2/(1+cosAngle):1-cosAngle;
+    return {c, gap:s===t?null:loss/clearance-1, angle:s===t?0:Math.atan2(transverse,axial)*180/Math.PI,
+            aperture:Math.asin(sine)*180/Math.PI};
+  }
+  function role(s,t,st,dataset=selection.d) {
+    const label=relation(s,t,dataset);
+    if(label===1) return "positive";
+    if(label===2) return "negative";
+    return st.inside[s*prepared[dataset].n+t]?"extra":"other";
+  }
+  function color(kind) { return {positive:"var(--blue)",negative:"var(--red)",extra:"var(--orange)",other:"var(--muted-foreground)",source:"var(--foreground)"}[kind]; }
+  function symbol(kind,size) {
+    return d3.symbol().type(kind==="source"||kind==="extra"?d3.symbolDiamond:kind==="negative"?d3.symbolSquare:d3.symbolCircle).size(size)();
+  }
+  function textLine(parent,text,cls) { const el=document.createElement("p");el.textContent=text;if(cls)el.className=cls;parent.append(el); }
+  function showTooltip(event,text) {
+    tooltip.textContent=text;tooltip.hidden=false;
+    const x=Math.min(event.pageX+12,window.scrollX+document.documentElement.clientWidth-tooltip.offsetWidth-10);
+    tooltip.style.left=Math.max(8,x)+"px";tooltip.style.top=(event.pageY+12)+"px";
+  }
+  function hideTooltip() { tooltip.hidden=true; }
+  function closePickers() {
+    for(const kind of ["source","result"]) $(kind+"-picker").open=false;
+  }
+  function populateChoices(kind) {
+    const field=kind==="source"?"s":"t", query=$(kind+"-search").value.trim().toLowerCase();
+    const list=$(kind+"-options");list.replaceChildren();
+    const rank=name=>name===query?0:name.startsWith(query)?1:2;
+    const choices=data.datasets[selection.d].nodes.map((node,index)=>({node,index}));
+    choices.sort((a,b)=>rank(a.node.name.toLowerCase())-rank(b.node.name.toLowerCase())||a.index-b.index);
+    choices.forEach(({node,index})=>{
+      if(!node.name.toLowerCase().includes(query))return;
+      const button=document.createElement("button");button.type="button";
+      button.textContent=node.name;button.dataset.nodeIndex=String(index);
+      button.setAttribute("aria-current",String(index===selection[field]));
+      button.addEventListener("click",()=>{
+        selection[field]=index;exampleKey="custom";closePickers();populateControls();render();
+        $(kind+"-picker").querySelector("summary").focus({preventScroll:true});
+      });
+      list.append(button);
+    });
+    $(kind+"-empty").hidden=list.childElementCount>0;
+  }
+  function populateControls() {
+    for(const [kind,index] of [["source",selection.s],["result",selection.t]]) {
+      $(kind+"-name").textContent=data.datasets[selection.d].nodes[index].name;
+      $(kind+"-search").value="";populateChoices(kind);
+    }
+  }
+  function fittedState(dataset=selection.d,update=checkpointUpdate) {
+    const state=prepared[dataset].states.find(item=>item.update===update);
+    if(!state) throw new Error("Requested saved checkpoint is absent");
+    return state;
+  }
+  function chainNode(parent,index,roleLabel,dataset=selection.d) {
+    const node=document.createElement("div");node.className="chain-node";
+    const label=document.createElement("span");label.className="node-role";label.textContent=roleLabel;node.append(label);
+    const name=document.createElement("strong");
+    data.datasets[dataset].nodes[index].name.split(".").forEach((part,i)=>{if(i){name.append(document.createTextNode("."),document.createElement("wbr"));}name.append(document.createTextNode(part));});
+    node.append(name);parent.append(node);
+  }
+  function drawChain(target="advanced-real-chain",selected=selection,withEvidence=true) {
+    const {d:dataset,s,t}=selected, d=data.datasets[dataset], p=prepared[dataset];
+    const label=relation(s,t,dataset), pair=p.pairIndex.get(s*p.n+t), chain=$(target);
+    chain.replaceChildren();
+    const path=label===1&&pair&&pair.path.length?pair.path:[s,t];
+    path.forEach((index,i)=>{
+      if(i) {
+        const kind=label===1?"checked":label===2?"rejected":"unknown";
+        const description=s===t?"Same interface; excluded from the relationship audit":label===1?"Checked derivation":label===2?(dataset==="D0"?"No path in the declared-parent catalogue":"Checked failure of this implication"):"Unknown relationship; not a checked implication";
+        const arrow=document.createElementNS("http://www.w3.org/2000/svg","svg");
+        arrow.setAttribute("viewBox","0 0 35 20");arrow.setAttribute("class","chain-arrow "+kind);
+        arrow.setAttribute("role","img");arrow.setAttribute("aria-label",description);
+        const title=document.createElementNS(arrow.namespaceURI,"title");title.textContent=description;arrow.append(title);
+        for(const [name,shape] of [["arrow-shaft","M1,10 H31"],["arrow-head","M24,4 L31,10 L24,16"],...(label===2?[["arrow-strike","M12,17 L20,3"]]:[])]) {
+          const line=document.createElementNS(arrow.namespaceURI,"path");
+          line.setAttribute("class",name);line.setAttribute("d",shape);arrow.append(line);
+        }
+        chain.append(arrow);
+      }
+      chainNode(chain,index,i===0?"Source A":i===path.length-1?"Result B":"Intermediate",dataset);
+    });
+    if(!withEvidence)return;
+    let status;
+    if(s===t) status="The selected nodes are identical. Reflexive pairs are excluded from the audits below.";
+    else if(label===1) status=(dataset==="D0"?"Checked parent-projection path.":"Lean-checked implication in the stated context.")+(pair&&pair.held?" This composed pair was held out of direct pair supervision; its nodes and primitive maps were available during fitting.":" This pair was included in structural supervision.");
+    else if(label===2) status=dataset==="D0"?"Rejected reverse direction in the complete declared-parent catalogue. This is a scoped ancestry negative.":"A Lean-checked example has the source property but lacks the result property.";
+    else status=dataset==="D0"?"No declared parent-projection path connects this ordered pair. Broader mathematical implications remain untested.":"Unknown in this packet. There is no certified positive or negative label for this pair.";
+    $("relation-status").textContent=status;
+    $("relation-context").textContent=dataset==="D0"?"Scope: native unary parent projections in the candidate Mathlib checkout.":"Context for A: "+d.nodes[s].context+" | Context for B: "+d.nodes[t].context;
+    const evidence=$("pair-evidence");evidence.replaceChildren();
+    if(pair&&pair.witness.length) pair.witness.forEach(w=>textLine(evidence,w));
+    else textLine(evidence,pair&&pair.proof?pair.proof:"No positive witness path is stored for this ordered pair.");
+  }
+  function geoBoundary(radius,aperture,sign) {
+    const result=[];
+    for(let i=0;i<=320;i++) {
+      const t=1-(1-i/320)**3, q=Math.min(.9999999,t), zx=q*Math.cos(aperture),zy=sign*q*Math.sin(aperture);
+      const den=1+2*radius*zx+radius*radius*q*q;
+      result.push([((1+2*radius*zx+q*q)*radius+(1-radius*radius)*zx)/den,(1-radius*radius)*zy/den]);
+    }
+    return result;
+  }
+  function fitAxes(svg,x,y,frame) {
+    const tickCount=frame.width<320?3:4;
+    const axisFormat=v=>fmt(".3f")(v);
+    svg.append("g").attr("class","axis").attr("transform","translate(0,"+(frame.y+frame.height)+")").call(d3.axisBottom(x).ticks(tickCount).tickFormat(axisFormat).tickSizeOuter(0));
+    svg.append("g").attr("class","axis").attr("transform","translate("+frame.x+",0)").call(d3.axisLeft(y).ticks(3).tickFormat(axisFormat).tickSizeOuter(0));
+  }
+  function drawCone(id,st,prefix,selected=selection,windowMode=extentMode,update=checkpointUpdate,plotHeight=350) {
+    const d=data.datasets[selected.d], p=prepared[selected.d], {s,t}=selected;
+    const svg=d3.select($(id)), width=Math.round($(id).getBoundingClientRect().width), height=plotHeight;
+    if(width<100) return;
+    svg.selectAll("*").remove();svg.attr("viewBox","0 0 "+width+" "+height).attr("height",height);
+    svg.append("title").text("Saved update "+st.update+": "+d.nodes[s].name+" to "+d.nodes[t].name);
+    svg.append("desc").text("Real source-focused 128D cone decisions. Green is the source cone; A is the source and B is the selected result. Window: "+windowMode+".");
+    const math=pairMath(st,s,t), r=Math.tanh(st.rho[s]/2), aperture=math.aperture*Math.PI/180;
+    const pair=p.pairIndex.get(s*p.n+t), witness=pair&&pair.label==="positive"?pair.path:[];
+    const points=d.nodes.map((node,i)=>{
+      const m=pairMath(st,s,i), radius=Math.tanh(st.rho[i]/2);
+      return {i,x:i===s?r:radius*m.c,y:i===s?0:radius*Math.sqrt(Math.max(0,1-m.c*m.c)),kind:i===s?"source":role(s,i,st,selected.d)};
+    });
+    let focus=points.filter(point=>point.i===s||point.i===t||witness.includes(point.i));
+    if(windowMode==="common") {
+      for(const other of [p.states[0],fittedState(selected.d,update)]) {
+        for(const index of Array.from(new Set([s,t,...witness]))) {
+          const rr=Math.tanh(other.rho[index]/2),mm=pairMath(other,s,index);
+          focus.push({x:index===s?rr:rr*mm.c,y:index===s?0:rr*Math.sqrt(Math.max(0,1-mm.c*mm.c))});
+        }
+      }
+    }
+    const xe=d3.extent(focus,v=>v.x), ye=d3.extent(focus,v=>v.y);
+    const frame={x:64,y:18,width:width-82,height:height-74};
+    const desiredX=Math.max(.026,(xe[1]-xe[0])*1.55), desiredY=Math.max(.022,(ye[1]-ye[0])*1.55);
+    const scale=Math.min(frame.width/desiredX,frame.height/desiredY);
+    svg.attr("data-pixels-per-unit",scale).attr("data-window",windowMode).attr("data-checkpoint",st.update);
+    const dx=frame.width/scale,dy=frame.height/scale,cx=(xe[0]+xe[1])/2,cy=(ye[0]+ye[1])/2;
+    const x=d3.scaleLinear().domain([cx-dx/2,cx+dx/2]).range([frame.x,frame.x+frame.width]);
+    const y=d3.scaleLinear().domain([cy-dy/2,cy+dy/2]).range([frame.y+frame.height,frame.y]);
+    const clipId=id+"-clip";
+    svg.append("defs").append("clipPath").attr("id",clipId).append("rect").attr("x",frame.x).attr("y",frame.y).attr("width",frame.width).attr("height",frame.height);
+    const plot=svg.append("g").attr("clip-path","url(#"+clipId+")");
+    const upper=geoBoundary(r,aperture,1),lower=geoBoundary(r,aperture,-1),angle=Math.atan2(upper[upper.length-1][1],upper[upper.length-1][0]);
+    const arc=d3.range(1,81).map(i=>[Math.cos(angle*(1-2*i/80)),Math.sin(angle*(1-2*i/80))]);
+    const line=d3.line().x(v=>x(v[0])).y(v=>y(v[1]));
+    plot.append("path").attr("d",line(upper.concat(arc,lower.slice().reverse()))+"Z").attr("fill","var(--cone)").attr("data-cone-region","");
+    [upper,lower].forEach(boundary=>plot.append("path").attr("d",line(boundary)).attr("fill","none").attr("stroke","var(--green)").attr("stroke-width",1.5));
+    plot.append("line").attr("x1",frame.x).attr("x2",frame.x+frame.width).attr("y1",y(0)).attr("y2",y(0)).attr("stroke","var(--border)");
+    const visible=points.filter(pt=>x(pt.x)>=frame.x+4&&x(pt.x)<=frame.x+frame.width-4&&y(pt.y)>=frame.y+4&&y(pt.y)<=frame.y+frame.height-4);
+    visible.filter(pt=>pt.i!==s&&pt.i!==t).sort((a,b)=>(a.kind==="other"?0:1)-(b.kind==="other"?0:1)).forEach(pt=>{
+      plot.append("path").attr("d",symbol(pt.kind,pt.kind==="other"?15:36)).attr("transform","translate("+x(pt.x)+","+y(pt.y)+")").attr("fill",color(pt.kind)).attr("opacity",pt.kind==="other"?.32:.8).attr("data-node",pt.i);
+    });
+    const annotations=[];
+    for(const index of Array.from(new Set([s,...witness.filter(i=>i!==s&&i!==t),t]))) {
+      const pt=points[index],selected=index===t,source=index===s;
+      if(!source&&!selected&&!visible.includes(pt)) continue;
+      const g=plot.append("g").attr("transform","translate("+x(pt.x)+","+y(pt.y)+")").attr("data-selected-node",index);
+      g.append("path").attr("d",symbol(source?"source":pt.kind,source?80:50)).attr("fill",color(source?"source":pt.kind)).attr("stroke","var(--background)").attr("stroke-width",1.3);
+      if(selected)g.append("circle").attr("r",8).attr("fill","none").attr("stroke","var(--foreground)").attr("stroke-width",1.6);
+      annotations.push({index,px:x(pt.x),py:y(pt.y),label:source?"A":selected?"B":"via"});
+    }
+    const labelBoxes=[];
+    annotations.sort((a,b)=>a.label==="A"?-1:b.label==="A"?1:a.label==="B"?-1:1).forEach(a=>{
+      const candidates=[[12,-12,"start"],[12,24,"start"],[-12,-12,"end"],[-12,24,"end"],[0,-25,"middle"],[0,34,"middle"]];
+      let placed=false;
+      for(const [ox,oy,anchor] of candidates) {
+        const el=svg.append("text").attr("x",a.px+ox).attr("y",a.py+oy).attr("text-anchor",anchor).attr("data-point-label",a.label).text(a.label);
+        const box=el.node().getBBox();
+        const within=box.x>=frame.x+2&&box.y>=frame.y+2&&box.x+box.width<=frame.x+frame.width-2&&box.y+box.height<=frame.y+frame.height-2;
+        const collides=labelBoxes.some(b=>box.x<b.x+b.width+4&&box.x+box.width+4>b.x&&box.y<b.y+b.height+4&&box.y+box.height+4>b.y);
+        const markOverlap=annotations.some(b=>Math.abs((box.x+box.width/2)-b.px)<box.width/2+8&&Math.abs((box.y+box.height/2)-b.py)<box.height/2+8);
+        if(within&&!collides&&!markOverlap){labelBoxes.push(box);placed=true;break;}el.remove();
+      }
+      if(!placed&&a.label==="via") return;
+    });
+    svg.append("rect").attr("class","frame").attr("data-chart-frame","").attr("x",frame.x).attr("y",frame.y).attr("width",frame.width).attr("height",frame.height);
+    fitAxes(svg,x,y,frame);
+    svg.append("text").attr("class","axis-title").attr("data-axis","x").attr("x",frame.x+frame.width/2).attr("y",height-7).attr("text-anchor","middle").text("Along source A");
+    svg.append("text").attr("class","axis-title").attr("data-axis","y").attr("transform","translate(14,"+(frame.y+frame.height/2)+") rotate(-90)").attr("text-anchor","middle").text("Away from source A");
+    const hit=svg.append("rect").attr("x",frame.x).attr("y",frame.y).attr("width",frame.width).attr("height",frame.height).attr("fill","transparent").attr("data-chart-hit","");
+    hit.on("pointermove",event=>{
+      const [mx,my]=d3.pointer(event,svg.node());let best=null,bestD=144;
+      for(const pt of visible){const dist=(x(pt.x)-mx)**2+(y(pt.y)-my)**2;if(dist<bestD){best=pt;bestD=dist;}}
+      if(best){const m=pairMath(st,s,best.i);showTooltip(event,d.nodes[best.i].name+" | "+(best.i===s?"source A":st.inside[s*p.n+best.i]?"inside A's cone":"outside A's cone")+(m.gap===null?"":" | normalized gap "+num(m.gap)));}else hideTooltip();
+    }).on("pointerleave",hideTooltip);
+    const inside=s===t||st.inside[s*p.n+t];
+    $(prefix+"-verdict").textContent=s===t?"A and B are identical":"B is "+(inside?"inside":"outside")+" A's cone";
+    $(prefix+"-verdict").dataset.contained=String(Boolean(inside));
+
+  }
+  function pairDescription(s,t) {
+    const d=data.datasets[selection.d],p=prepared[selection.d],label=relation(s,t),inside=fittedState().inside[s*p.n+t];
+    return d.nodes[s].name+" -> "+d.nodes[t].name+" | "+(s===t?"identity, excluded":label===1?"recorded positive":label===2?selection.d==="D0"?"reverse path rejected":"does not imply (checked)":"unknown implication")+" | fitted: "+(s===t?"identity":inside?"inside":"outside");
+  }
+  function drawMatrix(id,learned) {
+    const d=data.datasets[selection.d],p=prepared[selection.d],n=p.n,st=fittedState();
+    const svg=d3.select($(id)),width=Math.round($(id).getBoundingClientRect().width),height=Math.max(290,width);
+    if(width<100)return;svg.selectAll("*").remove();svg.attr("viewBox","0 0 "+width+" "+height).attr("height",height);
+    svg.append("title").text(learned?"Real fitted containment for all ordered pairs":"Recorded positive relationships for all ordered pairs");
+    const frame={x:64,y:18,width:width-82,height:height-76}, cell=Math.min(frame.width,frame.height)/n;
+    frame.width=cell*n;frame.height=cell*n;
+    const position=new Map(d.order.map((index,i)=>[index,i]));
+    d.boundaries.slice(0,-1).forEach((start,i)=>{
+      const length=d.boundaries[i+1]-start;
+      svg.append("rect").attr("x",frame.x+start*cell).attr("y",frame.y+start*cell).attr("width",length*cell).attr("height",length*cell).attr("fill","var(--soft)").attr("stroke","none");
+    });
+    const paths={positive:[],extra:[],negative:[]};
+    for(let s=0;s<n;s++)for(let t=0;t<n;t++){
+      if(s===t)continue;const label=p.labels[s*n+t],inside=st.inside[s*n+t];
+      if((learned&&!inside)||(!learned&&label!==1))continue;
+      const kind=label===1?"positive":label===2?"negative":"extra";
+      const x=frame.x+position.get(t)*cell,y=frame.y+position.get(s)*cell;
+      paths[kind].push("M"+x+","+y+"h"+cell+"v"+cell+"h"+(-cell)+"Z");
+    }
+    Object.entries(paths).forEach(([kind,path])=>svg.append("path").attr("d",path.join("")).attr("fill",color(kind)).attr("data-relation-cells",kind).attr("data-count",path.length).attr("shape-rendering","crispEdges"));
+    const sx=frame.x+(position.get(selection.t)+.5)*cell,sy=frame.y+(position.get(selection.s)+.5)*cell;
+    svg.append("line").attr("x1",sx).attr("x2",sx).attr("y1",frame.y).attr("y2",frame.y+frame.height).attr("stroke","var(--foreground)").attr("opacity",.3);
+    svg.append("line").attr("y1",sy).attr("y2",sy).attr("x1",frame.x).attr("x2",frame.x+frame.width).attr("stroke","var(--foreground)").attr("opacity",.3);
+    svg.append("circle").attr("cx",sx).attr("cy",sy).attr("r",Math.max(4,cell*.6)).attr("fill","none").attr("stroke","var(--foreground)").attr("stroke-width",1.2);
+    svg.append("rect").attr("class","frame").attr("data-chart-frame","").attr("x",frame.x).attr("y",frame.y).attr("width",frame.width).attr("height",frame.height);
+    const axis=d3.scaleLinear().domain([.5,n+.5]).range([frame.x,frame.x+frame.width]),ay=d3.scaleLinear().domain([.5,n+.5]).range([frame.y,frame.y+frame.height]);
+    const ticks=n<=12?d3.range(1,n+1,2):[1,Math.round(n/3),Math.round(n*2/3),n];
+    svg.append("g").attr("class","axis").attr("transform","translate(0,"+(frame.y+frame.height)+")").call(d3.axisBottom(axis).tickValues(ticks).tickFormat(fmt("d")).tickSizeOuter(0));
+    svg.append("g").attr("class","axis").attr("transform","translate("+frame.x+",0)").call(d3.axisLeft(ay).tickValues(ticks).tickFormat(fmt("d")).tickSizeOuter(0));
+    svg.append("text").attr("class","axis-title").attr("data-axis","x").attr("x",frame.x+frame.width/2).attr("y",frame.y+frame.height+43).attr("text-anchor","middle").text("Result B");
+    svg.append("text").attr("class","axis-title").attr("data-axis","y").attr("transform","translate(16,"+(frame.y+frame.height/2)+") rotate(-90)").attr("text-anchor","middle").text("Source A");
+    svg.append("rect").attr("x",frame.x).attr("y",frame.y).attr("width",frame.width).attr("height",frame.height).attr("fill","transparent").attr("data-matrix-hit",id).on("pointermove",event=>{
+      const [x,y]=d3.pointer(event,svg.node()),t=d.order[Math.max(0,Math.min(n-1,Math.floor((x-frame.x)/cell)))],s=d.order[Math.max(0,Math.min(n-1,Math.floor((y-frame.y)/cell)))];
+      $("matrix-detail").textContent=pairDescription(s,t);showTooltip(event,pairDescription(s,t));
+    }).on("pointerleave",()=>{hideTooltip();$("matrix-detail").textContent=pairDescription(selection.s,selection.t)+"";}).on("click",event=>{
+      const [x,y]=d3.pointer(event,svg.node()),t=d.order[Math.max(0,Math.min(n-1,Math.floor((x-frame.x)/cell)))],s=d.order[Math.max(0,Math.min(n-1,Math.floor((y-frame.y)/cell)))];
+      if(s===t)return;selection.s=s;selection.t=t;exampleKey="custom";populateControls();hideTooltip();render();
+    });
+  }
+  function exampleSelection(key) {
+    const e=examples[key],nodes=data.datasets[e.d].nodes;
+    return {d:e.d,s:nodes.findIndex(n=>n.name===e.a),t:nodes.findIndex(n=>n.name===e.b)};
+  }
+  function validSelection(value) {
+    return value&&data.datasets[value.d]&&Number.isInteger(value.s)&&Number.isInteger(value.t)&&value.s>=0&&value.t>=0&&value.s<data.datasets[value.d].nodes.length&&value.t<data.datasets[value.d].nodes.length;
+  }
+  function applyWorkspace() {
+    for(const view of ["pair","map"]) $(view+"-workspace").hidden=workspaceView!==view;
+    $("pair-builder").hidden=workspaceView!=="pair";
+    $("scale-controls").hidden=workspaceView!=="pair";
+    const groups=[["view",workspaceView],["dataset",selection.d],["checkpoint",String(checkpointUpdate)],["extent",extentMode],["guide",guidedExample]];
+    for(const [attribute,value] of groups)root.querySelectorAll("button[data-"+attribute+"]").forEach(button=>{
+      button.setAttribute("aria-pressed",String(button.dataset[attribute]===value));
+    });
+  }
+  function interpretationFor(state,update) {
+    const {d,s,t}=state,p=prepared[d],label=relation(s,t,d);
+    const before=p.states[0].inside[s*p.n+t],after=fittedState(d,update).inside[s*p.n+t];
+    if(s===t)return "Choose two different nodes to inspect a directed relationship.";
+    if(label===1)return after?(before?"The checked relationship is inside both cones.":"The fitted cone recovers the checked relationship."):"The cone does not yet contain this checked relationship.";
+    if(label===2)return after?"The cone incorrectly contains this tested negative.":d==="D0"?"The reverse direction stays outside the fitted cone.":"The fitted cone rejects this false implication.";
+    return after?"The cone contains this pair, but no checked implication supports it.":"This pair stays outside. Its semantic status remains uncertified.";
+  }
+  function renderGuidedDetail() {
+    const dialog=$("guided-detail");if(!dialog.open)return;
+    const state=exampleSelection(guidedExample),d=data.datasets[state.d],final=fittedState(state.d,1000);
+    drawCone("guided-detail-cone",final,"guided-detail",state,"independent",1000,Math.max(280,Math.min(520,innerHeight-270)));
+    // The detail is a larger view of the same pair, without extra hover controls.
+    d3.select("#guided-detail-cone [data-chart-hit]").style("pointer-events","none");
+    const short=name=>name.replace(/^CategoryTheory\./,"");
+    $("guided-detail-pair").textContent="A: "+short(d.nodes[state.s].name)+" · B: "+short(d.nodes[state.t].name);
+    const ratio=Number($("guided-detail-cone").dataset.pixelsPerUnit)/Number($("after-cone").dataset.pixelsPerUnit);
+    $("guided-detail-scale").textContent=fmt(".1f")(ratio)+"× magnification · same fitted coordinates";
+    dialog.dataset.magnification=String(ratio);dialog.dataset.packet=state.d;
+    dialog.dataset.source=d.nodes[state.s].name;dialog.dataset.result=d.nodes[state.t].name;
+  }
+  function renderGuided() {
+    const state=exampleSelection(guidedExample),d=data.datasets[state.d],p=prepared[state.d];
+    drawChain("real-chain",state,false);
+    drawCone("before-cone",p.states[0],"before",state,"common",1000);
+    drawCone("after-cone",fittedState(state.d,1000),"after",state,"common",1000);
+    $("case-intuition").textContent=examples[guidedExample].text;
+    $("fit-interpretation").textContent=interpretationFor(state,1000);
+    $("guided-domain").textContent=state.d==="D0"?"Parent interfaces":"Property implications";
+    const target=$("guided-preview");target.dataset.example=guidedExample;target.dataset.packet=state.d;
+    target.dataset.source=d.nodes[state.s].name;target.dataset.result=d.nodes[state.t].name;
+    target.dataset.afterGap=String(pairMath(fittedState(state.d,1000),state.s,state.t).gap);
+    renderGuidedDetail();
+  }
+  function render() {
+    const d=data.datasets[selection.d],p=prepared[selection.d],{s,t}=selection,label=relation(s,t),final=fittedState(),after=final.inside[s*p.n+t];
+    applyWorkspace();renderGuided();
+    drawChain("advanced-real-chain");
+    drawCone("advanced-before-cone",p.states[0],"advanced-before");drawCone("advanced-after-cone",final,"advanced-after");
+    $("advanced-after-heading").textContent=checkpointUpdate===1000?"After fitting":checkpointUpdate===0?"Initial state":"After "+checkpointUpdate+" steps";
+    $("advanced-case-intuition").textContent=examples[exampleKey]?examples[exampleKey].text:
+      label===1?"A checked path connects these interfaces.":label===2?"This direction is a checked negative in the selected study.":"This pair has no checked implication in the selected study.";
+    $("advanced-fit-interpretation").textContent=interpretationFor(selection,checkpointUpdate);
+    $("known-title").textContent=selection.d==="D0"?"Checked parent paths":"Checked implications";
+    $("learned-title").textContent="Learned cones · "+integer(checkpointUpdate)+" steps";
+    const counts=final.counts,rejected=counts["2"].total-counts["2"].inside;
+    $("summary-positive").textContent=integer(counts["1"].inside)+" / "+integer(counts["1"].total);
+    $("summary-negative").textContent=integer(rejected)+" / "+integer(counts["2"].total);
+    $("summary-positive-label").textContent=selection.d==="D0"?"Checked paths inside":"Checked implications inside";
+    $("summary-negative-label").textContent=selection.d==="D0"?"Reverse paths outside":"Checked negatives outside";
+    drawMatrix("known-matrix",false);drawMatrix("learned-matrix",true);
+    $("matrix-detail").textContent=pairDescription(s,t);
+    $("pair-label").textContent=s===t?"Identity excluded":label===1?"Checked implication":label===2?selection.d==="D0"?"Reverse path rejected":"Does not imply":selection.d==="D0"?"No parent path":"Unknown";
+    $("pair-label").dataset.kind=label===1?"positive":label===2?"negative":"unknown";
+    $("pair-decision").textContent=s===t?"Not evaluated":after?"Inside the cone":"Outside the cone";
+    $("pair-decision").dataset.kind=s===t?"unknown":label===1?(after?"positive":"negative"):label===2?(after?"negative":"positive"):"unknown";
+    pairMemory[selection.d]={...selection,example:exampleKey};
+    root.dataset.ready="true";root.dataset.packet=selection.d;root.dataset.source=d.nodes[s].name;root.dataset.result=d.nodes[t].name;
+    root.dataset.beforeGap=String(pairMath(p.states[0],s,t).gap);root.dataset.afterGap=String(pairMath(final,s,t).gap);
+    root.dataset.viewState=JSON.stringify({d:selection.d,s,t,example:exampleKey,checkpoint:checkpointUpdate,extent:extentMode,view:workspaceView,guidedExample,pairMemory});
+  }
+  $("guided-zoom").addEventListener("click",()=>{
+    hideTooltip();$("guided-detail").showModal();renderGuidedDetail();
+  });
+  $("guided-detail-close").addEventListener("click",()=>$("guided-detail").close());
+  $("guided-detail").addEventListener("close",()=>$("guided-zoom").focus({preventScroll:true}));
+  root.querySelectorAll("[data-guide]").forEach(button=>button.addEventListener("click",()=>{
+    guidedExample=button.dataset.guide;render();
+  }));
+  root.querySelectorAll("[data-view]").forEach(button=>button.addEventListener("click",()=>{
+    closePickers();workspaceView=button.dataset.view;render();
+  }));
+  root.querySelectorAll("[data-dataset]").forEach(button=>button.addEventListener("click",()=>{
+    const next=button.dataset.dataset;if(selection.d===next)return;
+    pairMemory[selection.d]={...selection,example:exampleKey};
+    const remembered=pairMemory[next],key=next==="D0"?"composed":"semantic";
+    selection=remembered?{d:next,s:remembered.s,t:remembered.t}:exampleSelection(key);
+    exampleKey=remembered?remembered.example:key;closePickers();populateControls();render();
+  }));
+  $("inspect-map-pair").addEventListener("click",()=>{workspaceView="pair";render();});
+  root.querySelectorAll("[data-checkpoint]").forEach(button=>button.addEventListener("click",()=>{
+    closePickers();checkpointUpdate=Number(button.dataset.checkpoint);render();
+  }));
+  root.querySelectorAll("[data-extent]").forEach(button=>button.addEventListener("click",()=>{
+    closePickers();extentMode=button.dataset.extent;render();
+  }));
+  $("swap-pair").addEventListener("click",()=>{
+    closePickers();[selection.s,selection.t]=[selection.t,selection.s];exampleKey="custom";populateControls();render();
+  });
+  for(const kind of ["source","result"]) {
+    const picker=$(kind+"-picker"),search=$(kind+"-search"),list=$(kind+"-options");
+    picker.addEventListener("toggle",()=>{
+      if(picker.open){$(kind==="source"?"result-picker":"source-picker").open=false;search.focus({preventScroll:true});}
+    });
+    search.addEventListener("input",()=>populateChoices(kind));
+    picker.addEventListener("keydown",event=>{
+      const options=Array.from(list.querySelectorAll("button")),index=options.indexOf(document.activeElement);
+      if(event.key==="Escape") { event.preventDefault();picker.open=false;picker.querySelector("summary").focus({preventScroll:true}); }
+      else if(["ArrowDown","ArrowUp"].includes(event.key)&&picker.open&&options.length) {
+        event.preventDefault();const next=index<0?0:(index+(event.key==="ArrowDown"?1:-1)+options.length)%options.length;options[next].focus();
+      }
+    });
+  }
+  document.addEventListener("click",event=>{
+    for(const kind of ["source","result"])if(!$(kind+"-picker").contains(event.target))$(kind+"-picker").open=false;
+  });
+  $("advanced").addEventListener("toggle",()=>{closePickers();render();});
+  document.querySelectorAll('a[href="#advanced"]').forEach(link=>link.addEventListener("click",()=>{$("advanced").open=true;}));
+  function revealDeepLink() {
+    const target=document.getElementById(location.hash.slice(1));if(!target)return;
+    if($("study-notes").contains(target)){requestAnimationFrame(()=>target.scrollIntoView());return;}
+    if($("advanced").contains(target)){
+      $("advanced").open=true;
+      if(target.closest("#map-workspace"))workspaceView="map";
+      else if(target.closest("#pair-workspace"))workspaceView="pair";
+    }else return;
+    render();requestAnimationFrame(()=>target.scrollIntoView());
+  }
+  window.addEventListener("hashchange",revealDeepLink);
+  const saved=root.dataset.viewState?JSON.parse(root.dataset.viewState):null;
+  if(validSelection(saved)) {
+    selection={d:saved.d,s:saved.s,t:saved.t};exampleKey=examples[saved.example]?saved.example:"custom";
+    if([0,100,300,1000].includes(saved.checkpoint))checkpointUpdate=saved.checkpoint;
+    if(["common","independent"].includes(saved.extent))extentMode=saved.extent;
+    if(["pair","map"].includes(saved.view))workspaceView=saved.view;
+    if(["composed","reverse","countermodel"].includes(saved.guidedExample))guidedExample=saved.guidedExample;
+    for(const key of ["D0","D1"]){
+      const value=saved.pairMemory&&saved.pairMemory[key];
+      if(validSelection(value)&&value.d===key)pairMemory[key]={d:key,s:value.s,t:value.t,example:examples[value.example]?value.example:"custom"};
+    }
+  }else selection=exampleSelection("composed");
+  populateControls();render();
+  revealDeepLink();
+  root.querySelectorAll("button,input").forEach(control=>control.disabled=false);
+  $("runtime-status").hidden=true;
+  $("save-html").addEventListener("click",()=>{
+    closePickers();
+    const copy=document.documentElement.cloneNode(true),main=copy.querySelector("main");
+    main.dataset.ready="static";
+    copy.querySelector("#guided-detail").removeAttribute("open");
+    copy.querySelectorAll("button,input").forEach(control=>control.disabled=true);
+    copy.querySelector("#view-tooltip").hidden=true;
+    const blob=new Blob(["<!doctype html>\n"+copy.outerHTML],{type:"text/html;charset=utf-8"});
+    const url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download="hyperbolic-results-view.html";
+    document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  });
+  $("export-svg").addEventListener("click",()=>{
+    const source=$("advanced-after-cone"),copy=source.cloneNode(true),css=getComputedStyle(document.documentElement);
+    copy.setAttribute("xmlns","http://www.w3.org/2000/svg");
+    copy.setAttribute("style",["--foreground","--muted-foreground","--border","--blue","--orange","--green","--red","--cone","--background"].map(key=>key+":"+css.getPropertyValue(key).trim()).join(";"));
+    const style=document.createElementNS("http://www.w3.org/2000/svg","style");
+    style.textContent="text{font-family:Arial,sans-serif;font-size:16px;fill:var(--foreground)}.axis text{font-size:14px;fill:var(--muted-foreground)}.axis path,.axis line{stroke:var(--border)}.frame{fill:none;stroke:var(--border);stroke-width:1}";
+    copy.insertBefore(style,copy.firstChild);
+    const blob=new Blob([new XMLSerializer().serializeToString(copy)],{type:"image/svg+xml;charset=utf-8"});
+    const url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download=selection.d+"-update-"+checkpointUpdate+"-cone.svg";
+    document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  });
+  let resizeTimer;
+  const resized=()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(render,60);};
+  if(typeof ResizeObserver!=="undefined"){const observer=new ResizeObserver(resized);observer.observe(root);}else window.addEventListener("resize",resized);
+  const media=window.matchMedia("(prefers-color-scheme: dark)");
+  if(media.addEventListener) media.addEventListener("change",render);else if(media.addListener)media.addListener(render);
+  } catch(error) {
+    root.dataset.ready="static";
+    root.querySelectorAll("button,input").forEach(control=>control.disabled=true);
+    const status=document.getElementById("runtime-status");
+    status.hidden=false;status.textContent="Interactive exploration is unavailable. The saved figures remain available.";
+    document.getElementById("advanced").open=true;
+    console.error("Lean Structure Atlas initialization:",error);
+  }
+})();
+</script>
+</body>
+</html>

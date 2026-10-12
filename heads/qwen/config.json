@@ -1,0 +1,39 @@
+{
+  "schema": "lean-context-head-distribution-v1",
+  "kind": "joint_pair_linear_residual",
+  "base_model": "Qwen/Qwen3-Reranker-8B",
+  "base_revision": "local_file_hashes_only_external_revision_unattested",
+  "weights_file": "head.npz",
+  "weights_sha256": "2134a403f2ef2ac26be0c9a69cb222bbc12a2bef3afae6c0e99c7dff2bcdc1d7",
+  "npz_arrays": {
+    "delta": [
+      4096
+    ]
+  },
+  "dtype": "float64",
+  "parameters": 4096,
+  "input_dimension": 4096,
+  "input_normalization": "per-pair RMS",
+  "epsilon": 1e-08,
+  "beta": 1.0,
+  "score": "efficient_yes_minus_no_margin + beta * dot(delta,hidden/RMS(hidden))",
+  "feature_contract_id": "f82112f61b7bd554e14dfde8ed8e586f8073508628c2bf1771f346918fc23984",
+  "training": {
+    "lambda": 0.001,
+    "updates": 500,
+    "label_provenance": "LLM-only-provisional"
+  },
+  "inference": {
+    "precision": "BF16",
+    "attention": "SDPA",
+    "padding": "left",
+    "yes_token_id": 9693,
+    "no_token_id": 2152,
+    "max_length": 8192,
+    "passages": "original indexed passages",
+    "candidate_pool": "C+E0 top200",
+    "alpha_for_pool": 0.3
+  },
+  "no_final_E0_score_fusion": true,
+  "custom_loader_required": true
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "lean-context-head-distribution-v1",
+  "kind": "shared_affine_cosine_head",
+  "base_model": "Qwen/Qwen3-Embedding-8B",
+  "base_revision": "local_file_hashes_only_external_revision_unattested",
+  "weights_file": "head.npz",
+  "weights_sha256": "d2cbc75546284bb6f9297c21aea0be536494e7bc07baf9e64cc8ec5a975a6700",
+  "npz_arrays": {
+    "weights": [
+      128,
+      4096
+    ],
+    "bias": [
+      128
+    ]
+  },
+  "dtype": "float32",
+  "parameters": 524416,
+  "input_dimension": 4096,
+  "output_dimension": 128,
+  "input_normalization": "L2",
+  "output_normalization": "L2",
+  "epsilon": 1e-08,
+  "alpha": 0.3,
+  "score": "(1-alpha)*cosine(normalized_input_query,normalized_input_document)+alpha*cosine(normalized_projected_query,normalized_projected_document)",
+  "training": {
+    "seed": 20261001,
+    "updates": 100,
+    "queries": 88,
+    "families": 43,
+    "label_provenance": "LLM-only-provisional"
+  },
+  "encoder_contract_id": "edd10041a67d7645983b9e537bd8925b1d3a55a3b5e538e5f9d2e5def9f8d21e",
+  "representation_id": "C:4a0e184ca64af35038d88bc1c8fa640ab9dd0944a06b63d86433fb38869d48e0",
+  "original_C_manifest_sha256": "6b4ab52981621965f7743ed75c86cab8327165b99536456e70bb44162708d296",
+  "context_provenance": "candidate_context_only",
+  "custom_loader_required": true,
+  "compatible_new_corpus_representation_family": "complete-context-v1"
+}
